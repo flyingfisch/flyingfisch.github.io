@@ -1,236 +1,211 @@
-/**
- * Site header
- */
-.site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Source+Sans+Pro:400,700,900,400italic,700italic);
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
-}
-
-.site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
+@mixin respond-to($media) {
+    @if $media == handhelds {
+        @media only screen and (max-width: 320px) { @content; }
+    }
+    @else if $media == medium-screens {
+        @media only screen and (max-width: 1024px) { @content; }
+    }
+    @else if $media == wide-screens {
+        @media only screen and (min-width: 1024px) { @content; }
     }
 }
 
-.site-nav {
-    float: right;
-    line-height: 56px;
 
-    .menu-icon {
-        display: none;
+$headerFontStack: 'Source Sans Pro', sans-serif;
+$bodyFontStack: 'Merriweather', serif;
+$bodyFontSize: 14px;
+
+$bodyGutter: 15%;
+$bodyWidth: 100% - ($bodyGutter * 2);
+
+$foreground: #000;
+$foreground-highlight: #933;
+$background: #fff;
+$background-highlight: #edc;
+
+$standardBorder: 10px solid ($background - #111);
+
+html * {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $bodyFontStack;
+    font-size: $bodyFontSize;
+}
+
+body {
+    background: $background;
+    color: $foreground;
+    margin: 0 auto;
+}
+
+article > * {
+    padding: 0 $bodyGutter;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headerFontStack;
+}
+
+h1 {
+    padding-top: 1em;
+    text-transform: uppercase;
+    color: $foreground;
+
+    &:hover .id {
+        opacity: 1;
     }
 
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
+    .id {
+        font-size: .5em;
+        color: $foreground-highlight;
+        text-decoration: none;
+        margin-left: .5em;
 
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
+        transition: 500ms;
+        opacity: 0.2;
+
+        &:before {
+            content: '#';
         }
     }
+}
 
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
+a {
+    color: $foreground-highlight;
+}
 
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
+header {
+    overflow: hidden;
+    text-align: center;
+    font-size: 2em;
 
-            > svg {
-                width: 18px;
-                height: 15px;
+    nav {
+        a {
+            text-decoration: none;
+            font-size: .5em;
+            font-weight: bold;
+            color: $foreground;
+            margin: 0 1.2em;
+            character-spacing: 1px;
 
-                path {
-                    fill: $grey-color-dark;
-                }
+            &:hover {
+                text-decoration: underline;
             }
         }
+    }
+}
 
-        .trigger {
-            clear: both;
-            display: none;
+nav.article {
+    text-align: center;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+
+    a {
+        display: block;
+        text-decoration: none;
+    }
+}
+
+article {
+    line-height: 2.5em;
+    color: $foreground + #333;
+
+    p {
+        text-align: justify;
+        hyphens: auto;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
+
+.post-info {
+    line-height: 1.9em;
+    font-size: .8em;
+    border-top: $standardBorder;
+    padding-top: 1em;
+    
+    @include respond-to(wide-screens) {
+        margin-left: 1%;
+        margin-top: 3em;
+        padding: 0;
+        width: $bodyGutter - 2%;
+        float: left;
+    }
+    
+    @include respond-to(medium-screens) {
+        margin-top: 1em;
+    }
+}
+
+blockquote {
+    font-size: .9em;
+}
+
+figure {
+    position: relative;
+    padding: 0;
+    margin: 2em 0;
+    text-align: center;
+ 
+    img {
+        max-width: $bodyWidth;
+    }
+
+    figcaption {
+        border-top: $standardBorder;
+        padding-top: .5em;
+        font-size: .7em;
+        text-align: left;
+
+        @include respond-to(wide-screens) {
+            position: absolute;
+            top: 0;
+            right: 1%;
+            width: $bodyGutter - 2%;
         }
 
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
+        @include respond-to(medium-screens) {
+            width: $bodyWidth;
+            margin: 0 auto;
         }
     }
 }
 
+footer {
+    line-height: 2em;
+    margin-top: 2em;
+    text-align: left;
+    color: $foreground + #777;
 
-
-/**
- * Site footer
- */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
-}
-
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
-
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
+    & p {
+        width: $bodyWidth;
+        padding-left: 1em;
+        position: relative;
+        z-index: 1000;
+        margin-bottom: 1em;
     }
 
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-
-
-/**
- * Page content
- */
-.page-content {
-    padding: $spacing-unit 0;
-}
-
-.page-heading {
-    font-size: 20px;
-}
-
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-link {
-    display: block;
-    font-size: 24px;
-}
-
-
-
-/**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
-}
-
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
-}
-
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
+    &:before {
+        position: relative;
+        z-index: 0;
+        content: 'Lorem Ipsum';
+        display: block;
+        color: $background-highlight;
+        text-align: center;
+        font-family: $headerFontStack;
+        font-size: 15em;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: .7em;
+        margin-bottom: -.7em;
+        white-space: nowrap;
+        overflow: hidden;
     }
 }

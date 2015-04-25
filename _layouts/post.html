@@ -1,15 +1,16 @@
 ---
 layout: default
 ---
-<div class="post">
 
-  <header class="post-header">
+<nav class="article"></nav>
+
+<article lang="en">
+    <div class="post-info">
+        {% if page.author %}<strong>Author:</strong> {{ page.author }}<br>{% endif %}
+        <strong>Posted:</strong> {{ page.date | date: "%b %-d, %Y" }}<br>
+        {% if page.meta %}<strong>Meta:</strong> {{ page.meta }}{% endif %}
+    </div>
+
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
     {{ content }}
-  </article>
-
-</div>
+</article>
