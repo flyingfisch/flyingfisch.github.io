@@ -47,6 +47,51 @@ pre, code {
     font-family: $sourceCodeFontStack;
 }
 
+div.highlight {
+    overflow: hidden;
+    padding-top: 0;
+    margin: 2em;
+}
+
+pre {
+    border-top: $standardBorder;
+    border-bottom: $standardBorder;
+    margin: 0;
+    position: relative;
+
+    code {
+        display: block;
+        position: relative;
+        margin-top: .7em;
+        margin-bottom: 1em;
+
+        span {
+            position: relative;
+            z-index: 1;
+        }
+
+        &:after {
+            color: $background-highlight;
+            font-family: $headerFontStack;
+            font-weight: bold;
+            font-size: 8em;
+            text-transform: uppercase;
+            position: absolute;
+            bottom: -1px;
+            right: -4px;
+            z-index: 0;
+        }
+    }
+
+    code.language-ruby:after {
+        content: "Ruby";
+    }
+
+    code.language-html:after {
+        content: "HTML";
+    }
+}
+
 article > * {
     padding: 0 $bodyGutter;
 }
@@ -88,14 +133,23 @@ header {
     text-align: center;
     font-size: 2em;
 
+    a {
+        text-decoration: none;
+    }
+
     nav {
         a {
             text-decoration: none;
-            font-size: .5em;
+            font-size: .7em;
             font-weight: bold;
             color: $foreground;
             margin: 0 1.2em;
+            white-space: nowrap;
             character-spacing: 1px;
+
+            @include respond-to(handhelds) {
+                display: block;
+            }
 
             &:hover {
                 text-decoration: underline;
