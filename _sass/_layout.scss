@@ -151,6 +151,7 @@ h1 {
 
 h1.post-title {
     font-size: 3em;
+    padding-top: .7em;
 }
 
 a {
@@ -270,11 +271,10 @@ figure {
 footer {
     line-height: 2em;
     margin-top: 8em;
-    text-align: left;
+    text-align: center;
     color: $foreground + #777;
 
     & p {
-        width: $bodyWidth;
         padding-left: 1em;
         position: relative;
         z-index: 1000;
