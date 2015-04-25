@@ -22,9 +22,7 @@ defaults:
   -
     scope:
         path: "" # ever little thang
-        type: "posts" # I lied: only the posts.
     values:
-        comments: true
         author: Mark Fischer, Jr.
 
 # gems
