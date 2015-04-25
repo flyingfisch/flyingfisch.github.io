@@ -62,8 +62,9 @@ pre {
     code {
         display: block;
         position: relative;
-        margin-top: .7em;
+        margin-top: 1em;
         margin-bottom: 1em;
+        line-height: 1.7em;
 
         span {
             position: relative;
@@ -77,7 +78,7 @@ pre {
             font-size: 8em;
             text-transform: uppercase;
             position: absolute;
-            bottom: -1px;
+            bottom: 4px;
             right: -4px;
             z-index: 0;
         }
@@ -89,6 +90,30 @@ pre {
 
     code.language-html:after {
         content: "HTML";
+    }
+
+    code.language-python:after {
+        content: "Python";
+    }
+
+    code.language-php:after {
+        content: "PHP";
+    }
+
+    code.language-css:after {
+        content: "CSS";
+    }
+
+    code.language-scss:after {
+        content: "Sass";
+    }
+
+    code.language-haskell:after {
+        content: "Haskell";
+    }
+
+    code.language-csharp:after {
+        content: "C#";
     }
 }
 
@@ -122,6 +147,10 @@ h1 {
             content: '#';
         }
     }
+}
+
+h1.post-title {
+    font-size: 3em;
 }
 
 a {
@@ -240,7 +269,7 @@ figure {
 
 footer {
     line-height: 2em;
-    margin-top: 2em;
+    margin-top: 8em;
     text-align: left;
     color: $foreground + #777;
 

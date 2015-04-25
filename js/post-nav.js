@@ -12,7 +12,7 @@ $(document).ready(function() {
         $(this).find('figcaption').prepend('<a href="#' + id + '">Figure ' + i + ':</a> ');
     });
 
-    $('article h1').each(function(index) {
+    $('article h1:not(.post-title)').each(function(index) {
         // replace spaces with dashes, and remove non-alphanumeric chars
         var id = '';
         id = $(this).html().replace(/\s/g, '-');
