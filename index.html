@@ -7,7 +7,13 @@ layout: default
 
     <div class="post-info">
         {% if post.author %}<strong>Author:</strong> {{ post.author }}<br>{% endif %}
+
         <strong>Posted:</strong> {{ post.date | date: "%b %-d, %Y" }}<br>
+
+        {% unless post.categories == empty %}
+        <strong>Tags:</strong> {{ post.categories | category_links }}<br>
+        {% endunless %}
+
         {% if post.meta %}<strong>Meta:</strong> {{ post.meta }}{% endif %}
     </div>
 

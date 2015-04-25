@@ -7,7 +7,13 @@ layout: default
 <article lang="en">
     <div class="post-info">
         {% if page.author %}<strong>Author:</strong> {{ page.author }}<br>{% endif %}
+
         <strong>Posted:</strong> {{ page.date | date: "%b %-d, %Y" }}<br>
+
+        {% unless page.categories == empty %}
+        <strong>Tags:</strong> {{ page.categories | category_links }}<br>
+        {% endunless %}
+
         {% if page.meta %}<strong>Meta:</strong> {{ page.meta }}{% endif %}
     </div>
 
