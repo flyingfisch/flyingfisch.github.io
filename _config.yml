@@ -17,7 +17,7 @@ redcarpet:
 kramdown:
     auto_ids: true
 
-highlighter: true
+#highlighter: true
 paginate: 3
 
 # Default YAML Front Matter
