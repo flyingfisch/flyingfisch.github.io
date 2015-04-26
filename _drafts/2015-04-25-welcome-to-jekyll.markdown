@@ -19,7 +19,7 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 ~~~
 
-~~~html
+~~~markup
 <span>Something</span>
 ~~~
 
