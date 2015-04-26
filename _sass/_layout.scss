@@ -225,6 +225,8 @@ article {
     font-size: .8em;
     border-top: $standardBorder;
     padding-top: 1em;
+    position: relative;
+    z-index: 1;
 
     @include respond-to(wide-screens) {
         margin-left: 1%;
