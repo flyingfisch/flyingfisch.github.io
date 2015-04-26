@@ -9,7 +9,10 @@ twitter_username: flyingfisch_
 github_username:  flyingfisch
 
 # Build settings
-markdown: KramdownPygments
+markdown: redcarpet
+
+redcarpet:
+    extensions: [fenced_code_blocks]
 
 kramdown:
     auto_ids: true

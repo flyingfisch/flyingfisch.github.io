@@ -58,6 +58,7 @@ pre {
     border-bottom: $standardBorder;
     margin: 0;
     position: relative;
+    z-index: 1;
 
     code {
         display: block;
@@ -65,56 +66,51 @@ pre {
         margin-top: 1em;
         margin-bottom: 1em;
         line-height: 1.7em;
-
-        span {
-            position: relative;
-            z-index: 1;
-        }
-
-        &:after {
-            color: $background-highlight;
-            font-family: $headerFontStack;
-            font-weight: bold;
-            font-size: 8em;
-            text-transform: uppercase;
-            position: absolute;
-            bottom: 4px;
-            right: -4px;
-            z-index: 0;
-        }
+        z-index: 1;
     }
 
-    code.language-ruby:after {
-        content: "Ruby";
+    &:after {
+        color: $background-highlight;
+        font-family: $headerFontStack;
+        font-weight: bold;
+        font-size: 8em;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 12px;
+        right: -4px;
+        z-index: 0;
     }
+}
+pre.language-ruby:after {
+    content: "Ruby";
+}
 
-    code.language-html:after {
-        content: "HTML";
-    }
+pre.language-html:after {
+    content: "HTML";
+}
 
-    code.language-python:after {
-        content: "Python";
-    }
+pre.language-python:after {
+    content: "Python";
+}
 
-    code.language-php:after {
-        content: "PHP";
-    }
+pre.language-php:after {
+    content: "PHP";
+}
 
-    code.language-css:after {
-        content: "CSS";
-    }
+pre.language-css:after {
+    content: "CSS";
+}
 
-    code.language-scss:after {
-        content: "Sass";
-    }
+pre.language-scss:after {
+    content: "Sass";
+}
 
-    code.language-haskell:after {
-        content: "Haskell";
-    }
+pre.language-haskell:after {
+    content: "Haskell";
+}
 
-    code.language-csharp:after {
-        content: "C#";
-    }
+pre.language-csharp:after {
+    content: "C#";
 }
 
 article > * {
