@@ -159,6 +159,10 @@ header {
     text-align: center;
     font-size: 2em;
 
+    h1 {
+        text-shadow: .1em .05em $background-highlight;
+    }
+
     a {
         text-decoration: none;
     }
@@ -187,7 +191,8 @@ header {
 nav.article {
     text-align: center;
     position: fixed;
-    left: 0;
+    //@new right or left? still deciding.
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1000;
@@ -209,6 +214,10 @@ article {
         margin-top: 2em;
         margin-bottom: 2em;
     }
+}
+
+.light {
+    color: lighten($foreground, 70);
 }
 
 .post-info {

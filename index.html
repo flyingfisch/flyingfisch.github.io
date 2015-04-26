@@ -21,8 +21,8 @@ layout: default
         <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
 
         <p>
-            {{ post.excerpt | remove: "<p>" | remove: "</p>" }}
-            <strong><a href="{{ post.url | prepend: site.baseurl }}">more...</a></strong>
+            {{ post.content | replace: '</h1>', '&#182;' | replace: '</h2>', '&#182;' | replace: '</p>', '&#182;' | strip_html | truncatewords: 50 | replace: '&#182;', '<span class="light"> &#182;</span>' }}
+            {% comment %}<strong><a href="{{ post.url | prepend: site.baseurl }}">more</a></strong>{% endcomment %}
         </p>
 
     </section>
