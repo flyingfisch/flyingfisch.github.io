@@ -27,6 +27,7 @@ layout: default
         /* * * CONFIGURATION VARIABLES * * */
         // Required: on line below, replace text in quotes with your forum shortname
         var disqus_shortname = 'expositus';
+        var diqus_identifier = '{% if page.disqusid %}{{ page.disqusid }}{% else %}{{ page.title | remove: " " }}{% endif %}';
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
