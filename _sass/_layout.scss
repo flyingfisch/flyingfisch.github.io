@@ -159,8 +159,19 @@ header {
     text-align: center;
     font-size: 2em;
 
-    h1 {
+    &:after, h1 {
         text-shadow: .1em .05em $background-highlight;
+    }
+
+    &:after {
+        content: "❧";
+        font-size: 2em;
+        display: block;
+        border-bottom: 1px solid $background-highlight;
+    }
+
+    h1 {
+        margin-bottom: 0;
     }
 
     a {
