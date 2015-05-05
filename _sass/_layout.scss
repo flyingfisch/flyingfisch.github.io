@@ -113,7 +113,7 @@ pre.language-csharp:after {
     content: "C#";
 }
 
-article > * {
+article > *, .center {
     padding: 0 $bodyGutter;
 }
 
