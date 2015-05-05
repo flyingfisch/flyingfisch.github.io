@@ -117,12 +117,6 @@ article > *, .center {
     padding: 0 $bodyGutter;
 }
 
-article:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: $headerFontStack;
 }
@@ -230,6 +224,18 @@ article {
         hyphens: auto;
         margin-top: 2em;
         margin-bottom: 2em;
+    }
+    
+    img {
+        float: left;
+        padding: 0;
+        margin: 1em 2em;
+    }
+    
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
     }
 }
 
