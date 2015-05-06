@@ -230,6 +230,12 @@ article {
         float: left;
         padding: 0;
         margin: 1em 2em;
+        max-width: $bodyWidth;
+        
+        @include respond-to(handhelds) {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
     
     &:after {
@@ -273,10 +279,6 @@ figure {
     padding: 0;
     margin: 2em 0;
     text-align: center;
-
-    img {
-        max-width: $bodyWidth;
-    }
 
     figcaption {
         border-top: $standardBorder;
