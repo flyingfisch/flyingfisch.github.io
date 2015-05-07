@@ -117,7 +117,7 @@ pre.language-javascript:after {
     content: "JS";
 }
 
-article > * {
+article > *, .center {
     padding: 0 $bodyGutter;
 }
 
@@ -234,6 +234,24 @@ article {
         margin-top: 2em;
         margin-bottom: 2em;
     }
+
+    img {
+        float: left;
+        padding: 0;
+        margin: 1em 2em;
+        max-width: $bodyWidth;
+
+        @include respond-to(handhelds) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 
 .light {
@@ -270,10 +288,6 @@ figure {
     padding: 0;
     margin: 2em 0;
     text-align: center;
-
-    img {
-        max-width: $bodyWidth;
-    }
 
     figcaption {
         border-top: $standardBorder;
