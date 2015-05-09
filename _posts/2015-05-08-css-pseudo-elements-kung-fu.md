@@ -7,7 +7,7 @@ categories: jekyll update
 
 I recently found that the `content` property can contain cooler stuff than just
 strings. For instance, you can show the `href` of a link in a cool popup with
-absolutely no JS with one little line of code.
+absolutely no JS:
 
 ~~~css
 content: attr(href);
