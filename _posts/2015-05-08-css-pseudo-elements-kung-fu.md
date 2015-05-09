@@ -2,7 +2,7 @@
 layout: post
 title: "Pseudo-Element Kung-Fu"
 date: 2015-05-08
-categories: jekyll update
+categories: css programming web
 ---
 
 I recently found that the `content` property can contain cooler stuff than just
