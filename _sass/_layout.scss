@@ -262,8 +262,9 @@ article.post {
         max-width: $bodyWidth;
 
         @include respond-to(handhelds) {
-            margin-left: 0;
-            margin-right: 0;
+            display: block;
+            clear: both;
+            float: none;
         }
     }
 
