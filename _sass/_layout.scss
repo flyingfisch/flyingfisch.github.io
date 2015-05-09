@@ -2,7 +2,7 @@
 
 @mixin respond-to($media) {
     @if $media == handhelds {
-        @media only screen and (max-width: 320px) { @content; }
+        @media only screen and (max-width: 640px) { @content; }
     }
     @else if $media == medium-screens {
         @media only screen and (max-width: 1024px) { @content; }
@@ -16,12 +16,13 @@
 $headerFontStack: 'Source Sans Pro', sans-serif;
 $sourceCodeFontStack: 'Source Code Pro', sans-serif;
 $bodyFontStack: 'Merriweather', serif;
-$bodyFontSize: 14px;
+$bodyFontSize: 16px;
+$mobileBodyFontSize: 14px;
 
 $bodyGutter: 15%;
 $bodyWidth: 100% - ($bodyGutter * 2);
 
-$foreground: #000;
+$foreground: #222;
 $foreground-highlight: #933;
 $background: #fff;
 $background-highlight: #edc;
@@ -33,13 +34,17 @@ html * {
 }
 
 html {
+    background: $background;
+    color: $foreground;
     font-family: $bodyFontStack;
     font-size: $bodyFontSize;
+
+    @include respond-to(handhelds) {
+        font-size: $mobileBodyFontSize;
+    }
 }
 
 body {
-    background: $background;
-    color: $foreground;
     margin: 0 auto;
 }
 
@@ -63,8 +68,8 @@ pre {
     code {
         display: block;
         position: relative;
-        margin-top: 1em;
-        margin-bottom: 1em;
+        margin-top: 1.15em;
+        margin-bottom: 1.15em;
         line-height: 1.7em;
         z-index: 1;
     }
@@ -76,7 +81,7 @@ pre {
         font-size: 8em;
         text-transform: uppercase;
         position: absolute;
-        bottom: 12px;
+        bottom: 16px;
         right: 15px;
         z-index: 0;
     }
@@ -224,7 +229,7 @@ nav.article {
     }
 }
 
-article {
+article.post {
     line-height: 2.5em;
     color: $foreground + #333;
 
@@ -233,6 +238,13 @@ article {
         hyphens: auto;
         margin-top: 2em;
         margin-bottom: 2em;
+    }
+
+    > p:first-of-type:not(.normal-font) {
+        &:first-letter {
+            
+        }
+        font-size: 1.25em;
     }
 
     img {

@@ -5,6 +5,8 @@ date: 2015-05-04
 categories: programming frontend
 ---
 
+> This post needs a lot of help. May not finish it.
+
 I was building an ASP.NET MVC web app recently and thought I would document some
 of different schemes I came up with. These are pretty high-level, so they should
 relate to most if not all web backend languages. I will be using C# for the
@@ -40,16 +42,16 @@ public class User : Controller
 
     // Ex: /User/
     [HttpPost]
-    public ActionResult Index()
+    public ActionResult Index(User user)
     {
-        // show form to create user
+        // create new user
     }
 
     // Ex: /User/3
     [HttpPatch]
     public ActionResult Index(int id)
     {
-        // show form to update user
+        // update user
     }
 
     // Ex: /User/3
@@ -97,6 +99,54 @@ Which brings us to the next solution.
 
 # AJAX to the rescue -- Take 2
 
+The previous solution works, but to maintain a separation of concerns, you
+probably don't want your API spitting out HTML. To prevent this you can have
+your AJAX calls act a little smarter. To begin with, we have to change both the
+client and the server side slightly.
 
+~~~csharp
+public class User : Controller
+{
+    // Ex: /User/3
+    [HttpGet]
+    public ActionResult Index(int id)
+    {
+        // show user by id
+    }
 
+    // Ex: /User/
+    [HttpPost]
+    public ActionResult Index()
+    {
+        var tSuccess = false;
+
+        AddUser
+
+        if (successful)
+        {
+            tSuccess = true;
+        }
+        else
+        {
+            tSuccess = false;
+        }
+
+        return Json(new { success = tSuccess });
+    }
+
+    // Ex: /User/3
+    [HttpPatch]
+    public ActionResult Index(int id)
+    {
+        // show form to update user
+    }
+
+    // Ex: /User/3
+    [HttpDelete]
+    public ActionResult Index(int id)
+    {
+        // Delete user by id
+    }
+}
+~~~
   [1]:http://tools.ietf.org/html/draft-gregorio-uritemplate-05
