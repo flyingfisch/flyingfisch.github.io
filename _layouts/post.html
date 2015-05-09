@@ -11,7 +11,8 @@ layout: default
         <strong>Posted:</strong> {{ page.date | date: "%b %-d, %Y" }}<br>
 
         {% unless page.categories == empty %}
-        <strong>Tags:</strong> {{ page.categories | category_links }}<br>
+        {% comment %}<strong>Tags:</strong> {{ page.categories | category_links }}<br>{% endcomment %}
+        <strong>Tags:</strong> {{ page.categories | join: ', ' }}<br>
         {% endunless %}
 
         {% if page.meta %}<strong>Meta:</strong> {{ page.meta }}{% endif %}
