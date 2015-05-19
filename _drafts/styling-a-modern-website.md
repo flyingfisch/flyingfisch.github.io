@@ -44,4 +44,9 @@ html {
 
 Another thing I do is add lots of margin and padding between different elements on the page, like headers, footers, and navigation. Here is an example of a crowded design:
 
+<p data-height="268" data-theme-id="6851" data-slug-hash="zGBMqy" data-default-tab="result" data-user="flyingfisch" class='codepen'>See the Pen <a href='http://codepen.io/flyingfisch/pen/zGBMqy/'>example for a blog post</a> by flyingfisch (<a href='http://codepen.io/flyingfisch'>@flyingfisch</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+We can improve this quite a bit by adding some spacing, like so:
+
 
