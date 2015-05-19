@@ -295,7 +295,9 @@ article.post {
 }
 
 blockquote {
+    background-color: $background-highlight;
     font-size: .9em;
+    margin: 0;
 }
 
 figure {
