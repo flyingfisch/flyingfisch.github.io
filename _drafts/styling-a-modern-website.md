@@ -34,11 +34,11 @@ You don't need to use the same color for your entire site, but these are some id
 > <cite>[Antoine de Saint-Exupéry](https://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry) --
 > French aristocrat, writer, poet, and pioneering aviator</cite>
 
-An important part of making an interface look designed is giving it whitespace. Crowded layouts are difficult to navigate, whereas well-spaced layouts are a pleasure to behold. One of the first things I do when designing a website is adding copious line-spacing to the `html` element. This relieves strain on the eyes, making long paragraphs much more readable.
+An important part of making an interface look designed is giving it whitespace. Crowded layouts are difficult to navigate, whereas well-spaced layouts are a pleasure to behold. One of the first things I do when designing a website is adding copious line-height to the `html` element. This relieves strain on the eyes, making long paragraphs much more readable.
 
 ~~~css
 html {
-    line-spacing: 2.5em;
+    line-height: 2em;
 }
 ~~~
 
@@ -47,6 +47,9 @@ Another thing I do is add lots of margin and padding between different elements 
 <p data-height="268" data-theme-id="6851" data-slug-hash="zGBMqy" data-default-tab="result" data-user="flyingfisch" class='codepen'>See the Pen <a href='http://codepen.io/flyingfisch/pen/zGBMqy/'>example for a blog post</a> by flyingfisch (<a href='http://codepen.io/flyingfisch'>@flyingfisch</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-We can improve this quite a bit by adding some spacing, like so:
+Here is the result with `line-height` set to 2em and margin added between the `aside` and `header`:
+
+<p data-height="426" data-theme-id="6851" data-slug-hash="EjyMwz" data-default-tab="result" data-user="flyingfisch" class='codepen'>See the Pen <a href='http://codepen.io/flyingfisch/pen/EjyMwz/'>example for a blog post</a> by flyingfisch (<a href='http://codepen.io/flyingfisch'>@flyingfisch</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 
