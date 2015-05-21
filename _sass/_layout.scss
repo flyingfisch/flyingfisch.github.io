@@ -262,6 +262,37 @@ article.post {
         }
     }
 
+    figure {
+        position: relative;
+        padding: 0;
+        margin: 2em 0;
+        text-align: center;
+
+        img {
+            float: none;
+        }
+
+        figcaption {
+            border-top: $standardBorder;
+            padding-top: .5em;
+            font-size: .7em;
+            text-align: left;
+
+            @include respond-to(wide-screens) {
+                position: absolute;
+                top: 0;
+                right: 1%;
+                width: $bodyGutter - 2%;
+            }
+
+            @include respond-to(medium-screens) {
+                width: $bodyWidth;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    // clearfix
     &:after {
         content: "";
         display: table;
@@ -298,32 +329,6 @@ blockquote {
     background-color: $background-highlight;
     font-size: .9em;
     margin: 0;
-}
-
-figure {
-    position: relative;
-    padding: 0;
-    margin: 2em 0;
-    text-align: center;
-
-    figcaption {
-        border-top: $standardBorder;
-        padding-top: .5em;
-        font-size: .7em;
-        text-align: left;
-
-        @include respond-to(wide-screens) {
-            position: absolute;
-            top: 0;
-            right: 1%;
-            width: $bodyGutter - 2%;
-        }
-
-        @include respond-to(medium-screens) {
-            width: $bodyWidth;
-            margin: 0 auto;
-        }
-    }
 }
 
 footer {
