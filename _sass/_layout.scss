@@ -277,6 +277,7 @@ article.post {
             padding-top: .5em;
             font-size: .7em;
             text-align: left;
+            line-height: 2em;
 
             @include respond-to(wide-screens) {
                 position: absolute;
