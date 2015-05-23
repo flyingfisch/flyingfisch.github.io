@@ -34,17 +34,9 @@ The colors for this site are going to be blue and white. I got the exact shades 
 <figcaption>Colors: #ffffff, #eeeeec, #3465a4, #204a87</figcaption>
 </figure>
 
-# Designing the Header
+# Fonts
 
-The first thing I do when designing in the browser is write the HTML for a simple header. For this project it will look like this:
-
-~~~markup
-<header>
-    <h1>R. S. Sailing Club</h1>
-</header>
-~~~
-
-The next thing I usually do is choose a font to use. For this project I just ran over to [Google Fonts](https://www.google.com/fonts/) and chose Montserrat for the headers and Alegreya for the copy. As a rule of thumb it is usually good to choose a serif font for your body text if the headers are sans-serif, and vice versa.
+The first thing I like to do before actually designing the site is find a font to use. For this project I just ran over to [Google Fonts](https://www.google.com/fonts/) and chose Montserrat for the headers and Alegreya for the copy. As a rule of thumb it is usually good to choose a serif font for your body text if the headers are sans-serif, and vice versa.
 
 Here is the `link` tag for the fonts, we're just going to add it into the header. Although there are other methods of using Google Fonts, the `link` tag has the best browser support.
 
@@ -85,4 +77,21 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 ~~~
+
+# Designing the header
+
+Now that the fonts have been selected, we can start on the header. The markup for now is pretty simple.
+
+~~~markup
+<header>
+    <h1>R. S. Sailing Club</h1>
+</header>
+~~~
+
+Now let's get into the CSS. We want the background of the header to be dark blue, and the font should be white. Here is the site so far:
+
+<p data-height="268" data-theme-id="6851" data-slug-hash="eNdaoe" data-default-tab="result" data-user="flyingfisch" class='codepen'>See the Pen <a href='http://codepen.io/flyingfisch/pen/eNdaoe/'>eNdaoe</a> by flyingfisch (<a href='http://codepen.io/flyingfisch'>@flyingfisch</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+This is probably a good time to go over a general SASS nuance -- nested selectors.
 
