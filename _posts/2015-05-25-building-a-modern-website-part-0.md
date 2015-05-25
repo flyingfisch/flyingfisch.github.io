@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Building a Minimal Modern Website"
-date: 2015-05-18
-categories: frontend design
+title: "Building a Modern Website: Part 0"
+date: 2015-05-25
+categories: frontend design tutorial
 ---
 
-I thought of writing a post going over the abstract concepts of building a modern website, but decided to scratch that idea in favor of a step-by-step demo of the way I build websites. In this post I will be going from design to delivery on a nautical themed website for a sailing club. Let's get started!
-
+This is the first of a 3-post series on building a modern website. The demo website is going to be for a fictional sailing club. This post covers the mockup process and building the header. The next part will go into the navigation bar and body text.
 
 # Layout
 
@@ -93,5 +92,74 @@ Now let's get into the CSS. We want the background of the header to be dark blue
 <p data-height="268" data-theme-id="6851" data-slug-hash="eNdaoe" data-default-tab="result" data-user="flyingfisch" class='codepen'>See the Pen <a href='http://codepen.io/flyingfisch/pen/eNdaoe/'>eNdaoe</a> by flyingfisch (<a href='http://codepen.io/flyingfisch'>@flyingfisch</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-This is probably a good time to go over a general SASS nuance -- nested selectors.
+# SASS 101
+
+This is probably a good time to go over a couple important SASS features: variables and nested selectors.
+
+## Variables
+
+Variables names start with a `$`, and can contain any information you can put in a property. For example:
+
+~~~scss
+$my-border: 2px solid black;
+
+div {
+    border: $my-border;
+}
+~~~
+
+That compiles to this CSS:
+
+~~~css
+div {
+    border: 2px solid black;
+}
+~~~
+
+# Nested Selectors
+
+If you want to select an element inside another element, you can nest the selectors. Here is an example:
+
+~~~scss
+header {
+    h1 {
+        color: #fff;
+    }
+}
+~~~
+
+This compiles to:
+
+~~~css
+header h1 {
+    color: #fff;
+}
+~~~
+
+You can also use the `&` to select the parent element, like this:
+
+~~~scss
+a {
+    color #000;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+~~~
+
+Which compiles into this CSS:
+
+~~~css
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+~~~
+
+
 
