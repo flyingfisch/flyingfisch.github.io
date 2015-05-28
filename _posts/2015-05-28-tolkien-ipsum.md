@@ -5,7 +5,7 @@ date: 2015-05-28
 categories: announcement
 ---
 
-I built a little website that generates Lord of the Rings themed Lorem Ipsum. You can [check it out live](http://http://tolkienipsum.cloudapp.net/) or view the source on [GitHub](https://github.com/flyingfisch/tolkienIpsum).
+I built a little website that generates Lord of the Rings themed Lorem Ipsum. You can [check it out live](http://tolkienipsum.cloudapp.net/) or view the source on [GitHub](https://github.com/flyingfisch/tolkienIpsum).
 
 # For Geeks
 
