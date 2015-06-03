@@ -2,7 +2,7 @@
 layout: post
 title: "Building a Modern Website: Part 0"
 date: 2015-05-25
-categories: frontend design tutorial
+categories: frontend design tutorial modern-website-series
 ---
 
 This is the first of a 3-post series on building a modern website. The demo website is going to be for a fictional sailing club. This post covers the mockup process and building the header. The next part will go into the navigation bar and body text.
