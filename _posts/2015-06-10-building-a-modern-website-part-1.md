@@ -24,7 +24,8 @@ The way we are going to do the navigation bar is putting the links in an unorder
 </ul>
 ~~~
 
-> **Update**
+> ##Update
+>
 > At the time of writing I forgot, but the `ul` element should be within a `nav` to make it more semantic, like this:
 >
 > ~~~markup
