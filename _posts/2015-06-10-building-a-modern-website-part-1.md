@@ -24,6 +24,15 @@ The way we are going to do the navigation bar is putting the links in an unorder
 </ul>
 ~~~
 
+> **Update**
+> At the time of writing I forgot, but the `ul` element should be within a `nav` to make it more semantic, like this:
+>
+> ~~~markup
+> <nav>
+>     <ul>
+>          <li>...</li>
+> ~~~
+
 Now we have to style it. The first thing we'll do is get rid of the bullets, margin and the padding.
 
 ~~~scss
