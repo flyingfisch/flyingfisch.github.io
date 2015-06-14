@@ -6,13 +6,13 @@
 </description>
     <link>http://flyingfisch.github.io/</link>
     <atom:link href="http://flyingfisch.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 14 Jun 2015 18:17:31 -0400</pubDate>
-    <lastBuildDate>Sun, 14 Jun 2015 18:17:31 -0400</lastBuildDate>
+    <pubDate>Sun, 14 Jun 2015 18:25:02 -0400</pubDate>
+    <lastBuildDate>Sun, 14 Jun 2015 18:25:02 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>Building a Modern Website: Part 1</title>
-        <description>&lt;p&gt;This is the second of a 3-post series on building a modern website. The demo website is a fictional sailing club’s homepage. This post covers the navigation bar and body text. The last part will go over the footer and finishing touches. This is what the site looked like at the end of the last post:&lt;/p&gt;
+        <description>&lt;p&gt;This is the second of a &lt;a href=&quot;/modern-website-series/&quot;&gt;3-post series&lt;/a&gt; on building a modern website. The demo website is a fictional sailing club’s homepage. This post covers the navigation bar and body text. The last part will go over the footer and finishing touches. This is what the site looked like at the end of the last post:&lt;/p&gt;
 
 &lt;p data-height=&quot;150&quot; data-theme-id=&quot;6851&quot; data-slug-hash=&quot;eNdaoe&quot; data-default-tab=&quot;result&quot; data-user=&quot;flyingfisch&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/flyingfisch/pen/eNdaoe/&quot;&gt;eNdaoe&lt;/a&gt; by flyingfisch (&lt;a href=&quot;http://codepen.io/flyingfisch&quot;&gt;@flyingfisch&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
@@ -171,7 +171,7 @@
     
       <item>
         <title>Building a Modern Website: Part 0</title>
-        <description>&lt;p&gt;This is the first of a 3-post series on building a modern website. The demo website is a fictional sailing club’s homepage. This post covers the mockup process and building the header. The next part will go into the navigation bar and body text.&lt;/p&gt;
+        <description>&lt;p&gt;This is the first of a &lt;a href=&quot;/modern-website-series/&quot;&gt;3-post series&lt;/a&gt; series on building a modern website. The demo website is a fictional sailing club’s homepage. This post covers the mockup process and building the header. The next part will go into the navigation bar and body text.&lt;/p&gt;
 
 &lt;h1 id=&quot;layout&quot;&gt;Layout&lt;/h1&gt;
 
