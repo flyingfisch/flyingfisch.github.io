@@ -6,8 +6,8 @@
 </description>
     <link>http://flyingfisch.github.io/</link>
     <atom:link href="http://flyingfisch.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 14 Jun 2015 18:25:02 -0400</pubDate>
-    <lastBuildDate>Sun, 14 Jun 2015 18:25:02 -0400</lastBuildDate>
+    <pubDate>Wed, 17 Jun 2015 19:21:49 -0400</pubDate>
+    <lastBuildDate>Wed, 17 Jun 2015 19:21:49 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -29,16 +29,16 @@
 &amp;lt;/ul&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;blockquote&gt;
-  &lt;h2 id=&quot;update&quot;&gt;Update&lt;/h2&gt;
+&lt;aside&gt;
+&lt;h2 id=&quot;update&quot;&gt;Update&lt;/h2&gt;
 
-  &lt;p&gt;At the time of writing I forgot, but the &lt;code&gt;ul&lt;/code&gt; element should be within a &lt;code&gt;nav&lt;/code&gt; to make it more semantic, like this:&lt;/p&gt;
+&lt;p&gt;At the time of writing I forgot, but the &lt;code&gt;ul&lt;/code&gt; element should be within a &lt;code&gt;nav&lt;/code&gt; to make it more semantic, like this:&lt;/p&gt;
 
-  &lt;pre&gt;&lt;code class=&quot;language-markup&quot;&gt;&amp;lt;nav&amp;gt;
+&lt;pre&gt;&lt;code class=&quot;language-markup&quot;&gt;&amp;lt;nav&amp;gt;
     &amp;lt;ul&amp;gt;
          &amp;lt;li&amp;gt;...&amp;lt;/li&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/blockquote&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;Now we have to style it. The first thing we’ll do is get rid of the bullets, margin and the padding.&lt;/p&gt;
 
