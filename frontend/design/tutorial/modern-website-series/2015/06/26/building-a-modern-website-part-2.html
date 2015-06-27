@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Pseudo-Element Kung-Fu</title>
+    <title>Building a Modern Website: Part 2</title>
     <meta name="description" content="My personal blog where I post about programming as well as other topics.
 ">
 
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/prism.css">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://flyingfisch.github.io/css/programming/web/2015/05/08/css-pseudo-elements-kung-fu.html">
+    <link rel="canonical" href="http://flyingfisch.github.io/frontend/design/tutorial/modern-website-series/2015/06/26/building-a-modern-website-part-2.html">
 </head>
 
 
@@ -115,43 +115,83 @@
     <div class="post-info">
         <strong>Author:</strong> Mark Fischer, Jr.<br>
 
-        <strong>Posted:</strong> May 8, 2015<br>
+        <strong>Posted:</strong> Jun 26, 2015<br>
 
         
         
-        <strong>Tags:</strong> css, programming, web<br>
+        <strong>Tags:</strong> frontend, design, tutorial, modern-website-series<br>
         
 
         
     </div>
 
-    <h1 class="post-title">Pseudo-Element Kung-Fu</h1>
-    <p>I recently found that the <code>content</code> property can contain cooler stuff than just
-strings. For instance, you can show the <code>href</code> of a link in a cool popup with
-absolutely no JS:</p>
+    <h1 class="post-title">Building a Modern Website: Part 2</h1>
+    <p>This is the third of a <a href="/modern-website-series/">3-post series</a> on building a modern website (if you don’t understand the post title, this may help you: the series started with Part 0. <a href="http://stackoverflow.com/questions/2785704/why-do-lua-arraystables-start-at-1-instead-of-0">Lua developers are excused</a> for not getting the significance.). The demo website is a fictional sailing club’s homepage. This post will go over the footer and finishing touches. This is what the site looked like at the end of the last post:</p>
 
-<pre><code class="language-css">content: attr(href);
-</code></pre>
-
-<p data-height="378" data-theme-id="6851" data-slug-hash="YXypBV" data-default-tab="result" data-user="flyingfisch" class="codepen">See the Pen <a href="http://codepen.io/flyingfisch/pen/YXypBV/">Pure CSS link hover popup</a> by flyingfisch (<a href="http://codepen.io/flyingfisch">@flyingfisch</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="424" data-theme-id="6851" data-slug-hash="GJEWMR" data-default-tab="result" data-user="flyingfisch" class="codepen">See the Pen <a href="http://codepen.io/flyingfisch/pen/GJEWMR/">GJEWMR</a> by flyingfisch (<a href="http://codepen.io/flyingfisch">@flyingfisch</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-<p>This allows us to show popups without JS as well, like so:</p>
+<h1 id="footer">Footer</h1>
 
-<pre><code class="language-markup">&lt;span class="popup" data-popuptext="This is a CSS-only popup!"&gt;Hover!&lt;/span&gt;
+<p>Before we get to the CSS, let’s stick a little markup in the footer like so:</p>
+
+<pre><code class="language-markup">&lt;footer&gt;
+    &amp;copy; 2015 R. S. Sailing Club
+&lt;/footer&gt;
 </code></pre>
 
-<pre><code class="language-css">span.popup:hover:after {
-    content: attr(data-popuptext);
+<p>OK, with that out of the way we can start styling. Let’s start by giving it a background color (remember that we set variables for the color values at the top of the stylesheet):</p>
+
+<pre><code class="language-scss">footer {
+    background-color: $light-secondary;
 }
 </code></pre>
 
-<p>And of course a live demo with the full source:</p>
+<p>Now let’s throw some padding on it:</p>
 
-<p data-height="268" data-theme-id="6851" data-slug-hash="oXbBXz" data-default-tab="result" data-user="flyingfisch" class="codepen">See the Pen <a href="http://codepen.io/flyingfisch/pen/oXbBXz/">Pure CSS hover popup</a> by flyingfisch (<a href="http://codepen.io/flyingfisch">@flyingfisch</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<pre><code class="language-scss">padding: 2em;
+</code></pre>
+
+<p>And then make the font a little larger and centered:</p>
+
+<pre><code class="language-scss">font-size: 1.2em;
+text-align: center;
+</code></pre>
+
+<p>That’s it for the footer, now let’s do some quick mobile optimizations and wrap this project up.</p>
+
+<h1 id="mobile">Mobile</h1>
+
+<p>The first thing we can do is make the navigation go below the logo on mobile.</p>
+
+<pre><code class="language-scss">header {
+    @media (max-width: 630px) {
+        nav {
+            display: block;
+        }
+    }
+}
+</code></pre>
+
+<p>Next let’s make the feature section come all the way to the edges of the screen.</p>
+
+<pre><code class="language-scss">article {
+    .feature {
+        padding: 0;
+    }
+}
+</code></pre>
+
+<p>That’s it!</p>
+
+<h1 id="going-forward">Going Forward</h1>
+
+<p>That finishes this tutorial series, but there is still plenty left to do. For instance, we haven’t covered image styling or captions, and the footer is pretty empty. Maybe a background image behind the feature section would be a good idea, it’s up to you.</p>
+
+<p data-height="378" data-theme-id="6851" data-slug-hash="yNzQwd" data-default-tab="result" data-user="flyingfisch" class="codepen">See the Pen <a href="http://codepen.io/flyingfisch/pen/yNzQwd/">yNzQwd</a> by flyingfisch (<a href="http://codepen.io/flyingfisch">@flyingfisch</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-<p>That’s all I’ve got, have fun messing around with <code>content</code>!</p>
+<p>Feel free to fork the pen and make it your own!</p>
 
 
 </article>
@@ -164,7 +204,7 @@ absolutely no JS:</p>
         /* * * CONFIGURATION VARIABLES * * */
         // Required: on line below, replace text in quotes with your forum shortname
         var disqus_shortname = 'expositus';
-        var diqus_identifier = 'Pseudo-ElementKung-Fu';
+        var diqus_identifier = 'BuildingaModernWebsite:Part2';
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
