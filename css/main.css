@@ -109,8 +109,6 @@ header {
   overflow: hidden;
   text-align: center;
   font-size: 2em; }
-  header:after, header h1 {
-    text-shadow: 0.1em 0.05em #bf4040; }
   header:after {
     content: "❧";
     color: #edc;
