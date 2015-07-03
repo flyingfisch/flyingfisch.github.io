@@ -114,7 +114,7 @@ header {
     color: #edc;
     font-size: 2em;
     display: block;
-    border-bottom: 1px solid #edc; }
+    border-bottom: 10px solid #edc; }
   header h1 {
     color: #fff;
     margin-bottom: 0; }
