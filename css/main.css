@@ -104,17 +104,21 @@ a {
   color: #933; }
 
 header {
+  background-image: url("/assets/bg.jpg");
+  background-size: cover;
   overflow: hidden;
   text-align: center;
   font-size: 2em; }
   header:after, header h1 {
-    text-shadow: 0.1em 0.05em #edc; }
+    text-shadow: 0.1em 0.05em #bf4040; }
   header:after {
     content: "❧";
+    color: #edc;
     font-size: 2em;
     display: block;
     border-bottom: 1px solid #edc; }
   header h1 {
+    color: #fff;
     margin-bottom: 0; }
   header a {
     text-decoration: none; }
