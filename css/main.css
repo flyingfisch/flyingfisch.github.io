@@ -161,15 +161,13 @@ article.post {
     margin-top: 2em;
     margin-bottom: 2em; }
   article.post > p:first-of-type:not(.normal-font) {
-    font-size: 1.25em; }
+    font-size: 1.1em; }
     article.post > p:first-of-type:not(.normal-font):first-letter {
-      display: block;
       font-size: 2em;
-      float: left;
-      margin-right: .1em;
-      margin-top: .1em; }
+      vertical-align: middle; }
     article.post > p:first-of-type:not(.normal-font):first-line {
-      font-variant: small-caps; }
+      font-variant: small-caps;
+      font-size: 1.25em; }
   article.post img {
     float: left;
     padding: 0;
@@ -232,7 +230,21 @@ article.post {
 blockquote {
   background-color: #edc;
   font-size: .9em;
+  line-height: 2em;
   margin: 0; }
+  blockquote::before, blockquote::after {
+    color: #933;
+    display: block;
+    font-size: 3em;
+    text-align: center;
+    width: 100%; }
+  blockquote::before {
+    content: '“';
+    height: .5em; }
+  blockquote::after {
+    content: '”';
+    top: .65em;
+    position: relative; }
 
 footer {
   line-height: 2em;
