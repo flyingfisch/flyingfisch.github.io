@@ -6,8 +6,8 @@
 </description>
     <link>http://flyingfisch.github.io/</link>
     <atom:link href="http://flyingfisch.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 04 Aug 2015 21:14:49 -0400</pubDate>
-    <lastBuildDate>Tue, 04 Aug 2015 21:14:49 -0400</lastBuildDate>
+    <pubDate>Wed, 05 Aug 2015 19:11:28 -0400</pubDate>
+    <lastBuildDate>Wed, 05 Aug 2015 19:11:28 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -17,7 +17,7 @@
 &lt;p data-height=&quot;391&quot; data-theme-id=&quot;6851&quot; data-slug-hash=&quot;XbOmwQ&quot; data-default-tab=&quot;result&quot; data-user=&quot;flyingfisch&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/flyingfisch/pen/XbOmwQ/&quot;&gt;Quote of the Day - Day 6 (Antoine de Saint-Exupery)&lt;/a&gt; by Mark Fischer, Jr (&lt;a href=&quot;http://codepen.io/flyingfisch&quot;&gt;@flyingfisch&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;The most challenging part, and the part that spawned the whole thing, were the lines on each side of the quotation marks. Actually, I should say &lt;em&gt;line&lt;/em&gt;, but we’ll get to that in a moment. The first thing you have to do is make the line. This is easy enough, we just add &lt;code&gt;border-bottom&lt;/code&gt; like so:&lt;/p&gt;
+&lt;p&gt;The most challenging part, and the part that spawned the whole thing, were the lines on each side of the quotation marks. The first thing you have to do is make the line. This is easy enough, we just add &lt;code&gt;border-bottom&lt;/code&gt; like so:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;blockquote {
     &amp;amp;::before {
@@ -26,7 +26,7 @@
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Next, we need that line to go behind our &lt;code&gt;::before&lt;/code&gt; element. We can do this by making the height of the element half of the height of the letters, best way to do that is with &lt;code&gt;0.5em&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Next, we need that line to go behind our &lt;code&gt;::before&lt;/code&gt; element. We can do this by making the height of the element half of the height of the letters, the best way to do that is with &lt;code&gt;0.5em&lt;/code&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;blockquote {
     &amp;amp;::before {
