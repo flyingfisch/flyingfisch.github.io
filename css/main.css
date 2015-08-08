@@ -67,6 +67,9 @@ pre.language-haskell:after {
 pre.language-csharp:after {
   content: "C#"; }
 
+pre.language-c:after {
+  content: "C"; }
+
 pre.language-javascript:after {
   content: "JS"; }
 
@@ -153,7 +156,7 @@ nav.article {
     text-decoration: none; }
 
 article.post {
-  line-height: 2.5em;
+  line-height: 2.1rem;
   color: #555555; }
   article.post p {
     text-align: justify;
@@ -232,6 +235,13 @@ blockquote {
   font-size: .9em;
   line-height: 2em;
   margin: 0; }
+  blockquote.pull-quote {
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center; }
+    blockquote.pull-quote::before, blockquote.pull-quote::after {
+      content: none; }
   blockquote::before, blockquote::after {
     color: #933;
     display: block;
