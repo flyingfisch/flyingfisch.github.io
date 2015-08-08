@@ -6,131 +6,9 @@
 </description>
     <link>http://flyingfisch.github.io/</link>
     <atom:link href="http://flyingfisch.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 07 Aug 2015 22:33:14 -0400</pubDate>
-    <lastBuildDate>Fri, 07 Aug 2015 22:33:14 -0400</lastBuildDate>
+    <pubDate>Fri, 07 Aug 2015 23:05:07 -0400</pubDate>
+    <lastBuildDate>Fri, 07 Aug 2015 23:05:07 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
-    
-      <item>
-        <title>Don&#39;t Worry, Just Code</title>
-        <description>&lt;p&gt;Use &lt;a href=&quot;http://lifehacker.com/this-graphic-helps-you-pick-your-first-programming-lang-1719213677&quot;&gt;this chart&lt;/a&gt; to decide your first programming language. Hey, come back! I was just making a point. Hello?&lt;/p&gt;
-
-&lt;p&gt;For those of you who stayed, charts like this are just about the worst way to choose a programming language.&lt;/p&gt;
-
-&lt;h1 id=&quot;my-saga&quot;&gt;My Saga&lt;/h1&gt;
-
-&lt;p&gt;&lt;em&gt;If you don’t want to read the long personal story of my relationship with programming, you can take the elevator &lt;a href=&quot;#Its-easy-to-learn-new-languages&quot;&gt;another floor down&lt;/a&gt;.&lt;/em&gt; &lt;/p&gt;
-
-&lt;figure&gt;
-&lt;img src=&quot;/assets/fx9750gii.jpeg&quot; alt=&quot;Casio fx-9750GII&quot; /&gt;
-&lt;figcaption&gt;The fx-9750GII&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;This is a Casio fx-9750GII, the device that first introduced me to programming. It was given to me on my 14th birthday and I was overjoyed. The first thing I did was start reading the manual from page one. After getting through the calculating and graphing sections, I came across a chapter I didn’t expect to see, labeled “Programming”. Well, right there I decided I was going to program the thing (there was no tutorial, just a syntax guide and documentation of the built-in functions). My first program ever was named &lt;code&gt;SQRT&lt;/code&gt;, and it looked something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;?→A
-Locate 1,1,√A
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It took user input, assigned it to &lt;code&gt;A&lt;/code&gt;, and then printed the square root of &lt;code&gt;A&lt;/code&gt; at position &lt;code&gt;1, 1&lt;/code&gt; on the screen. My next program printed “Yay I can code!” over and over and over again. As much as I hate to admit it, it used &lt;code&gt;goto&lt;/code&gt; instead of a &lt;code&gt;while&lt;/code&gt; loop.&lt;/p&gt;
-
-&lt;p&gt;Fast forward a couple months. I had learned from some friendly people on the &lt;a href=&quot;http://casiocalc.org/&quot;&gt;Universal Casio Forums&lt;/a&gt; that using &lt;code&gt;goto&lt;/code&gt; was usually a bad idea, and had started using loops and subroutines to organize my code. I had also begun to realize that Casio’s BASIC dialect was pretty slow for anything other than math. Since I wanted to program games for it, I started researching other ways to program calculators. After googling around a bit I learned that the hardware on my calculator was actually the same as the hardware on the fx-9860GII, which had an SDK for developing &lt;em&gt;addins&lt;/em&gt; for it in C. So I installed a third-party custom ROM with the addin feature flag set to true, and got to work learning C.&lt;/p&gt;
-
-&lt;p&gt;There was a problem, though. Writing C for that calculator was hard. Most of the default libraries that online C tutorials referenced were not available or were named differently, and the documentation for the SDK was somewhat obscure. I ended up going back to good old BASIC and optimizing the programs I wrote to try to improve their speed.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Lua-logo-nolabel.svg/128px-Lua-logo-nolabel.svg.png&quot; alt=&quot;Lua logo&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This wasn’t the end though, because a couple weeks later I came across a thread on a french calculator forum announcing development on a Lua port for the fx9860GII. I couldn’t wait for the first release, and probably pestered the developers much more than I should have (to the point where I am surprised they continued to put up with me), but it finally came.&lt;/p&gt;
-
-&lt;p&gt;And then I dove into Lua. I wrote sh’mups. I made some obstacle dodging games. I wrote a couple libraries to help other developers who came my way. Life was good.&lt;/p&gt;
-
-&lt;figure&gt;
-&lt;img src=&quot;/assets/prizm.jpeg&quot; alt=&quot;Casio fx-9750GII&quot; /&gt;
-&lt;figcaption&gt;The Casio PRIZM&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Until Casio released the &lt;a href=&quot;http://www.casioeducation.com/prizm&quot;&gt;PRIZM&lt;/a&gt;. It had colors! I had to have one, but I knew no one would justify $99 on another calculator when the one I had was working just fine. And then it happened. Casio started a promotion where they gave away free PRIZM’s to people who finished their online training course. I took the course, and a week later my beautiful PRIZM was waiting for me in the mailbox. So I delved deep into the inner workings of the PRIZM, managing to brick three of them in two years before Casio got suspicious and stopped sending replacements (though I hadn’t voided my warranty).&lt;/p&gt;
-
-&lt;p&gt;Around the same time one of my dad’s friends wanted a website built for his company and my dad asked if I wanted to try building one for him. I took that offer and spent two months learning HTML and CSS, as well as GIMP and Inkscape so I could make the background image. The website I made &lt;a href=&quot;https://web.archive.org/web/20120625182415/http://www.atgworldwide.us/&quot;&gt;looked somewhat crude&lt;/a&gt;, but  the my dad’s friend liked it and I was proud of it.&lt;/p&gt;
-
-&lt;p&gt;I spent my free time in the next couple years experimenting with web programming, and hacking on my calculator, eventually starting &lt;a href=&quot;http://casio.clrhome.org/&quot;&gt;a blog&lt;/a&gt; to try to help other people learn to program their calculators as well. The experience with the blog got me into web development, and I ended up freelancing during my last two high school summers. I built a website in vanilla PHP for converting PNG images to sprites that calculators could understand and then uploading them to share, in the process learning about open source licenses, filetype validation, and basic hacking techniques like SQL injection. That experience led me to &lt;a href=&quot;http://laravel.com/&quot;&gt;Laravel&lt;/a&gt;, an excellent MVC framework written in PHP which allowed me to write much more organized and safe code.&lt;/p&gt;
-
-&lt;p&gt;The summer following learning Laravel, I decided to challenge myself by learning Haskell, which I had heard would help me thing about coding problems in a different way. Boy, did it. It took me a long time to learn, not only because it is a completely different paradigm, but because I was my first real experience with a statically typed language since C.&lt;/p&gt;
-
-&lt;p&gt;In the end I had a pretty satisfying sense of accomplishment, and I wondered if I had learned enough to be able to make it into the world of professional programmers. So I wrote up a resumé, took a look around, and applied for a couple of junior web developer positions, not really expecting anything to happen since I was less than a year out of high school, but a couple days later I started getting phone interviews, then face-to-face interviews, and ended up starting at &lt;a href=&quot;http://pantherpremium.com/&quot;&gt;Panther&lt;/a&gt; about a month later. This happened even though they develop exclusively in C# on the backend, and I was very open about the fact that I hadn’t touched the language at all.&lt;/p&gt;
-
-&lt;p&gt;The fact of the matter was, I had enough general programming experience to build on that I didn’t need to know the language I was going to work in. It took me two weeks to get familiar enough with C# to start working on projects. Which makes a good segway for my next point.&lt;/p&gt;
-
-&lt;h1 id=&quot;its-easy-to-learn-new-languages&quot;&gt;It’s easy to learn new languages.&lt;/h1&gt;
-
-&lt;p&gt;Take a look at this code:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;if (a == 2) {
-    print(&quot;hello world&quot;);
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now have a look at this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;if (a == 2) {
-    console.log(&quot;hello world&quot;);
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And this (getting a little trickier):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;if ($a == 2) {
-    print(&quot;hello world&quot;);
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The point is, knowing one language makes learning another much easier. Even with Python’s different syntax, the &lt;code&gt;if&lt;/code&gt; statement still works the same way.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;if a == 2:
-    print(&quot;hello world&quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Even though the syntax has changed slightly and the curly brackets are gone, you still know what an &lt;code&gt;if&lt;/code&gt; statement is and when to use it. Programming is 90% thinking and 10% typing. Knowing what to express is more important than knowing how to express it.&lt;/p&gt;
-
-&lt;p&gt;So Ruby developers make more, on average, than Python developers? Who cares? You can always switch later.&lt;/p&gt;
-
-&lt;h1 id=&quot;one-language-programmers-considered-harmful&quot;&gt;One-language programmers considered harmful&lt;/h1&gt;
-
-&lt;figure&gt;
-&lt;img src=&quot;https://i.imgflip.com/p8zfl.jpg&quot; alt=&quot;One does not simply learn one language only.&quot; /&gt;
-&lt;figcaption&gt;Boromir even knows!&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;(Yes, I know, &lt;a href=&quot;http://meyerweb.com/eric/comment/chech.html&quot;&gt;it’s cliché&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;p&gt;You can’t know the shortcomings of a language unless you experience them yourself. Regardless of how much you may think you know that PHP “doesn’t scale”, without attempting to use it for a large project you will never truly understand what that means. Conversly, unless you have experienced the shortcomings of vanilla PHP, you won’t truly appreciate the added perceived complexity of an MVC framework like Django.&lt;/p&gt;
-
-&lt;p&gt;When starting out in programming, you can’t know what you don’t know. A man who has lived his entire life in a totalitarian state without ever hearing of freedom doesn’t understand why he would want it. Likewise, someone who has never experienced functional programming would never know why or when to use &lt;code&gt;map&lt;/code&gt; in Python or pass functions as arguments in C#.&lt;/p&gt;
-
-&lt;h1 id=&quot;skill-is-directly-proportional-to-salary&quot;&gt;Skill is directly proportional to salary&lt;/h1&gt;
-
-&lt;p&gt;The idea that the language you code in is a major factor in the amount of money you make is also somewhat absurd. The first problem is that those are average salaries – a great PHP developer can make more at Facebook than a Python developer is going to make writing one-off scripts at a small business (not a far-fetched example either, I have a coworker who did just that before switching to C#).&lt;/p&gt;
-
-&lt;p&gt;The application you write code for is actually more related to your salary than the language you are coding in. Writing guidance systems C or Ada for NASA, or fly-by-wire systems in FORTRAN for General Dynamics is going to be a higher paying job than designing websites for small companies in Ruby on Rails. That said, your expertise may be in animations and interface design instead of the more technical side of programming. This is absolutely fine. Persue what you enjoy, not just what seems more lucrative.&lt;/p&gt;
-
-&lt;h1 id=&quot;no-one-remembers-you-for-your-code&quot;&gt;No one remembers you for your code&lt;/h1&gt;
-
-&lt;p&gt;One last point before wrapping up (promise!): no one is going to remember you for the language you programmed in. What they will remember is the products you build. No one is going to remember Mark Zuckerberg because he was a PHP whiz, they’ll remember him because he built Facebook. No one remembers Linus Torvalds for his C, they remember him for Linux.&lt;/p&gt;
-
-&lt;blockquote class=&quot;pull-quote&quot;&gt;
-Don&#39;t worry about languages, go build awesome stuff!
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Tue, 04 Aug 2015 00:00:00 -0400</pubDate>
-        <link>http://flyingfisch.github.io/culture/programming/2015/08/04/dont-worry-just-build.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/culture/programming/2015/08/04/dont-worry-just-build.html</guid>
-        
-        
-        <category>culture</category>
-        
-        <category>programming</category>
-        
-      </item>
     
       <item>
         <title>A Week in Quotes</title>
@@ -263,36 +141,6 @@ text-align: center;
         <category>tutorial</category>
         
         <category>modern-website-series</category>
-        
-      </item>
-    
-      <item>
-        <title>Mozilla&#39;s Stance on the Web is Divided</title>
-        <description>&lt;p&gt;Last month, &lt;em&gt;The Verge&lt;/em&gt; published &lt;a href=&quot;http://www.theverge.com/2015/7/20/9002721/the-mobile-web-sucks&quot;&gt;an article&lt;/a&gt; on the current state of the mobile web. The author laments the advent of proprietary “browsers” such as Facebook Instant Articles and Apple News, which he says were developed in response to poor mobile browser performance. This point was challenged in &lt;a href=&quot;http://blog.lmorchard.com/2015/07/22/the-verge-web-sucks/&quot;&gt;Les Orchard’s excellent rebuttal&lt;/a&gt;, which pointed out that ad-heavy websites like &lt;em&gt;The Verge&lt;/em&gt; are actually killing the web, not browsers.&lt;/p&gt;
-
-&lt;p&gt;Though I agree with almost everything in the article, I think it illustrates the fact that Mozilla’s stance on the web is divided.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Then, there’s what that code’s actually doing once it runs. There’s the usual reporting on every scrap of browser fingerprint data. There’s deciding whether and what ads to fetch &amp;amp; inject. I’ve seen scripts that record every pixel of mouse movement and phone home every few seconds.&lt;/p&gt;
-
-  &lt;p&gt;Some spawn lots of hidden iframes, each doing something fun. Others run code 10 times per second that trigger little invisible page re-renderings that chew up CPU and make scrolling &amp;amp; orientation changes chug. Some scripts get run multiple times and perform duplicate work. Attack ships on fire off the shoulder of Orion. I watched C-beams glitter in the dark near the Tannhauser gate.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This is the traditional, free-as-in-freedom side of Mozilla talking. Contrast this with &lt;a href=&quot;https://bugzilla.mozilla.org/show_bug.cgi?id=1172126#c33&quot;&gt;this response&lt;/a&gt; to a request for the removal of Pocket integration from Firefox:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;I don’t see anything malicious or out of place here. It’s a bit ambiguous and could be clarified, but most of this fearmongering about “Pocket could change their ToS and become malicious” is unnecessary given that you use Firefox under the Firefox ToS and you’re not prompted about the Pocket ToS until you actually click the button and go through a bunch of steps. So “common sense” as you say dictates that there’s no additional danger to the user here. Ambiguity, yes. Danger, no.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The comment completely sidesteps the fact that Firefox is breaking with the &lt;a href=&quot;https://www.gnu.org/philosophy/free-sw.html&quot;&gt;Free Software tradition&lt;/a&gt; by preventing users from completely disabling these applications.&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 26 Jun 2015 00:00:00 -0400</pubDate>
-        <link>http://flyingfisch.github.io/culture/2015/06/26/2015-07-27-firefox-divided-stance-on-the-web.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/culture/2015/06/26/2015-07-27-firefox-divided-stance-on-the-web.html</guid>
-        
-        
-        <category>culture</category>
         
       </item>
     
@@ -757,160 +605,27 @@ absolutely no JS:&lt;/p&gt;
       </item>
     
       <item>
-        <title>Thoughts on UI</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;This post needs a lot of help. May not finish it.&lt;/p&gt;
-&lt;/blockquote&gt;
+        <title>Welcome</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/laptop.jpg&quot; alt=&quot;laptop&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;I was building an ASP.NET MVC web app recently and thought I would document some
-of different schemes I came up with. These are pretty high-level, so they should
-relate to most if not all web backend languages. I will be using C# for the
-examples, however.&lt;/p&gt;
+&lt;p&gt;Welcome to my blog. I am a frontend .NET web developer (mainly ASP.net MVC with C#).
+At home I use Linux exclusively and code in Python, Haskell, PHP (with the excellent
+&lt;a href=&quot;http://laravel.org/&quot;&gt;Laravel&lt;/a&gt; framework), or any other language that fits the bill.&lt;/p&gt;
 
-&lt;h1 id=&quot;concerns&quot;&gt;Concerns&lt;/h1&gt;
+&lt;p&gt;I plan to post about programming mainly, but I may also post on other topics as well.
+Stay tuned – or don’t (I won’t hate you).&lt;/p&gt;
 
-&lt;p&gt;Some of the concerns that each of these solutions addresses are:&lt;/p&gt;
+&lt;h2 id=&quot;ps&quot;&gt;P.S.&lt;/h2&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Clean URLs. No more
- &lt;code&gt;/blog?startdate=01-20-2014&amp;amp;startdate=01-22-2015&amp;amp;adnauseam&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Separation of concerns. We shouldn’t be doing any business logic in our
- views, and there shouldn’t be any knowledge outside of our models.&lt;/li&gt;
-  &lt;li&gt;DRY (Don’t Repeat Yourself)&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;“Expositus” is Latin for “open” and “accessible”.&lt;/p&gt;
 
-&lt;h1 id=&quot;restful-crud&quot;&gt;RESTful CRUD&lt;/h1&gt;
-
-&lt;p&gt;CRUD stands for the 4 basic data commands: Create, Read, Update, and Delete.
-When implemented on the web the HTTP verbs &lt;code&gt;POST&lt;/code&gt;, &lt;code&gt;GET&lt;/code&gt;, &lt;code&gt;PATCH&lt;/code&gt;, and &lt;code&gt;DELETE&lt;/code&gt;
-are usually used to determine the operation. REST is a &lt;a href=&quot;http://tools.ietf.org/html/draft-gregorio-uritemplate-05&quot;&gt;URL naming scheme&lt;/a&gt;
-intended to make URLs more self-explanatory. Here is an example of a controller
-using this architecture:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-csharp&quot;&gt;public class User : Controller
-{
-    // Ex: /User/3
-    [HttpGet]
-    public ActionResult Index(int id)
-    {
-        // show user by id
-    }
-
-    // Ex: /User/
-    [HttpPost]
-    public ActionResult Index(User user)
-    {
-        // create new user
-    }
-
-    // Ex: /User/3
-    [HttpPatch]
-    public ActionResult Index(int id)
-    {
-        // update user
-    }
-
-    // Ex: /User/3
-    [HttpDelete]
-    public ActionResult Index(int id)
-    {
-        // Delete user by id
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The pros are that this is easy to read, and works for many applications,
-especially APIs. However, sometimes you do not want a separate page for each
-CRUD operation. This is especially true when you have a dashboard which may have
-delete, modify, and add buttons all on the same page.&lt;/p&gt;
-
-&lt;h1 id=&quot;ajax-to-the-rescue&quot;&gt;AJAX to the rescue!&lt;/h1&gt;
-
-&lt;p&gt;We can use AJAX to keep our RESTful URL structure while also being able to use
-multiple commands in one view. We can do this by making our dashboard html look
-something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-markup&quot;&gt;&amp;lt;div class=&quot;UserProfile&quot;&amp;gt;&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And some jQuery to bring it all together:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;$(document).ready(function () {
-    $.get(&#39;/user/&#39; + userId, function (data) {
-        // embed /user/userId in .UserProfile
-        $(&#39;.UserProfile&#39;).html(data);
-    });
-});
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You could then do AJAX calls for all the rest of your commands as well. This
-fixes the lack of flexibility in a pure server-side REST API, but it also brings
-it’s own drawbacks. For one thing, parts of the page simply will not load if the
-user has Javascript turned off or if the Javascript simply takes too long to
-load.&lt;/p&gt;
-
-&lt;p&gt;Which brings us to the next solution.&lt;/p&gt;
-
-&lt;h1 id=&quot;ajax-to-the-rescue----take-2&quot;&gt;AJAX to the rescue – Take 2&lt;/h1&gt;
-
-&lt;p&gt;The previous solution works, but to maintain a separation of concerns, you
-probably don’t want your API spitting out HTML. To prevent this you can have
-your AJAX calls act a little smarter. To begin with, we have to change both the
-client and the server side slightly.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-csharp&quot;&gt;public class User : Controller
-{
-    // Ex: /User/3
-    [HttpGet]
-    public ActionResult Index(int id)
-    {
-        // show user by id
-    }
-
-    // Ex: /User/
-    [HttpPost]
-    public ActionResult Index()
-    {
-        var tSuccess = false;
-
-        AddUser
-
-        if (successful)
-        {
-            tSuccess = true;
-        }
-        else
-        {
-            tSuccess = false;
-        }
-
-        return Json(new { success = tSuccess });
-    }
-
-    // Ex: /User/3
-    [HttpPatch]
-    public ActionResult Index(int id)
-    {
-        // show form to update user
-    }
-
-    // Ex: /User/3
-    [HttpDelete]
-    public ActionResult Index(int id)
-    {
-        // Delete user by id
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
 </description>
-        <pubDate>Mon, 04 May 2015 00:00:00 -0400</pubDate>
-        <link>http://flyingfisch.github.io/programming/frontend/2015/05/04/thoughts-on-ui.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/programming/frontend/2015/05/04/thoughts-on-ui.html</guid>
+        <pubDate>Sat, 25 Apr 2015 14:44:00 -0400</pubDate>
+        <link>http://flyingfisch.github.io/announcement/2015/04/25/welcome.html</link>
+        <guid isPermaLink="true">http://flyingfisch.github.io/announcement/2015/04/25/welcome.html</guid>
         
         
-        <category>programming</category>
-        
-        <category>frontend</category>
+        <category>announcement</category>
         
       </item>
     
