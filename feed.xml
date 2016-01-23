@@ -6,9 +6,56 @@
 </description>
     <link>http://flyingfisch.github.io/</link>
     <atom:link href="http://flyingfisch.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 31 Aug 2015 22:12:14 -0400</pubDate>
-    <lastBuildDate>Mon, 31 Aug 2015 22:12:14 -0400</lastBuildDate>
+    <pubDate>Sat, 23 Jan 2016 17:38:20 -0500</pubDate>
+    <lastBuildDate>Sat, 23 Jan 2016 17:38:20 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Setting up Linux on a Lenovo X1 Carbon</title>
+        <description>&lt;p&gt;I bought a Lenovo X1 Carbon (3rd Generation) to replace my old low-end Toshiba Satellite as my primary development laptop. Overall, I am extremely pleased with the laptop’s build quality and performance. I found the keyboard particularly nice, especially for a chicklet keyboard.&lt;/p&gt;
+
+&lt;h1 id=&quot;disassembly&quot;&gt;Disassembly&lt;/h1&gt;
+
+&lt;p&gt;The X1 version I purchased was came with the i5 processor, WQHD touchscreen, 8GB of RAM, and a Crucial 256GB SSD, which I replaced with a 500GB SSD. Disassembly was very straightforward, there are 7 screws on the bottom which you remove, and the bottom cover comes right off. When reassembling, the bottom cover may not rest flush with the bottom of the laptop before you tighten the screws. Just go ahead and tighten the screws, if you try to press the cover down to make it flush you will only cause issues when trying to tighten the screws. I am documenting this here since none of the tutorials I saw mentioned it.&lt;/p&gt;
+
+&lt;h1 id=&quot;installing-linux&quot;&gt;Installing Linux&lt;/h1&gt;
+
+&lt;p&gt;The Linux distro I chose to install was Ubuntu GNOME, even though I planned on installing Cinnamon. I did this because Mint wouldn’t fit on my 1GB USB drive (vanilla Ubuntu wouldn’t either). I did get a chance to test GNOME 3 with the touch screen though, and the support was very nice, even nicer than Cinnamon’s. I decided to go ahead with installing Cinnamon anyway though, since I didn’t plan on using the touchscreen very much.&lt;/p&gt;
+
+&lt;p&gt;Driver support is excellent, though I never did get the fingerprint reader working 100%. I know the drivers are installed since it now flashes green when I do a sudo command or go to the login screen, but it does nothing when I swipe my finger.&lt;/p&gt;
+
+&lt;h1 id=&quot;installing-the-desktop-environment&quot;&gt;Installing the desktop environment&lt;/h1&gt;
+
+&lt;p&gt;Installing Cinnamon was pretty easy, these three commands did the trick for me:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ sudo add-apt-repository ppa:tsvetko.tsvetkov/cinnamon
+$ sudo apt-get update
+$ sudo apt-get install cinnamon
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Although Cinnamon comes with a scaling mode, you can only switch between 1x and 2x GUI scaling. My screen’s DPI isn’t quite high enough for 2x, though it is high enough that at 1x the fonts were too small to read easily. I was able to solve this by changing the font scale to 1.2. The default height for the Cinnamon panel seemed small as well, so I made it taller.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/x1screenshot1.jpg&quot; alt=&quot;Screenshot showing Cinnamon with the numix theme&quot; /&gt;
+&lt;figcaption&gt;Cinnamon with Numix&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;misc&quot;&gt;Misc&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Battery life on Windows was about 8 hours, and on Linux it was about 5 hours. I was able to increase it to 8 by installing TLP using the &lt;a href=&quot;http://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html#installation&quot;&gt;installation instructions on their site&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;I found &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu&quot;&gt;this guide&lt;/a&gt; helpful for installing the LAMP stack.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 17 Jan 2016 00:00:00 -0500</pubDate>
+        <link>http://flyingfisch.github.io/linux/2016/01/17/linux-on-lenovo-x1-carbon.html</link>
+        <guid isPermaLink="true">http://flyingfisch.github.io/linux/2016/01/17/linux-on-lenovo-x1-carbon.html</guid>
+        
+        
+        <category>linux</category>
+        
+      </item>
     
       <item>
         <title>Don&#39;t Worry, Just Code</title>
@@ -18,7 +65,7 @@
 
 &lt;h1 id=&quot;my-saga&quot;&gt;My Saga&lt;/h1&gt;
 
-&lt;p&gt;&lt;em&gt;If you don’t want to read the long personal story of my relationship with programming, you can take the elevator &lt;a href=&quot;#Its-easy-to-learn-new-languages&quot;&gt;another floor down&lt;/a&gt;.&lt;/em&gt; &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;If you don’t want to read the long personal story of my relationship with programming, you can take the elevator &lt;a href=&quot;#Its-easy-to-learn-new-languages&quot;&gt;another floor down&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
 &lt;figure&gt;
 &lt;img src=&quot;/assets/fx9750gii.jpeg&quot; alt=&quot;Casio fx-9750GII&quot; /&gt;
