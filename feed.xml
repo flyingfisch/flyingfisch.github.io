@@ -6,8 +6,8 @@
 </description>
     <link>http://flyingfisch.github.io/</link>
     <atom:link href="http://flyingfisch.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 23 Jan 2016 17:41:24 -0500</pubDate>
-    <lastBuildDate>Sat, 23 Jan 2016 17:41:24 -0500</lastBuildDate>
+    <pubDate>Sat, 05 Mar 2016 10:43:07 -0500</pubDate>
+    <lastBuildDate>Sat, 05 Mar 2016 10:43:07 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -28,11 +28,10 @@
 
 &lt;p&gt;Installing Cinnamon was pretty easy, these three commands did the trick for me:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-$ sudo add-apt-repository ppa:tsvetko.tsvetkov/cinnamon
+&lt;pre&gt;&lt;code&gt;$ sudo add-apt-repository ppa:tsvetko.tsvetkov/cinnamon
 $ sudo apt-get update
 $ sudo apt-get install cinnamon
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Although Cinnamon comes with a scaling mode, you can only switch between 1x and 2x GUI scaling. My screen’s DPI isn’t quite high enough for 2x, though it is high enough that at 1x the fonts were too small to read easily. I was able to solve this by changing the font scale to 1.2. The default height for the Cinnamon panel seemed small as well, so I made it taller.&lt;/p&gt;
 
@@ -47,6 +46,7 @@ $ sudo apt-get install cinnamon
   &lt;li&gt;Battery life on Windows was about 8 hours, and on Linux it was about 5 hours. I was able to increase it to 8 by installing TLP using the &lt;a href=&quot;http://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html#installation&quot;&gt;installation instructions on their site&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;I found &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu&quot;&gt;this guide&lt;/a&gt; helpful for installing the LAMP stack.&lt;/li&gt;
 &lt;/ul&gt;
+
 </description>
         <pubDate>Sun, 17 Jan 2016 00:00:00 -0500</pubDate>
         <link>http://flyingfisch.github.io/linux/2016/01/17/linux-on-lenovo-x1-carbon.html</link>
