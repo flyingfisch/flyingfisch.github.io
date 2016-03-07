@@ -6,9 +6,42 @@
 </description>
     <link>http://flyingfisch.github.io/</link>
     <atom:link href="http://flyingfisch.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 05 Mar 2016 10:43:07 -0500</pubDate>
-    <lastBuildDate>Sat, 05 Mar 2016 10:43:07 -0500</lastBuildDate>
+    <pubDate>Mon, 07 Mar 2016 16:47:22 -0500</pubDate>
+    <lastBuildDate>Mon, 07 Mar 2016 16:47:22 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>A thought on Self Documenting Code</title>
+        <description>&lt;p&gt;At risk of sounding like I don’t know what I am talking about, I’m writing this post to document something that most programmers have probably known for a long time, even though I only just discovered it.&lt;/p&gt;
+
+&lt;p&gt;Often when programming we may write something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// Checks if user is authorized to use shoot()
+if (user.type == &#39;soldier&#39; || (user.type == &#39;police&#39; &amp;amp;&amp;amp; situation.location == &#39;USA&#39;)) {
+  shoot();
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The problem with this is that the comment could become out of date when the code is refactored. My thought is that code like this can be refactored to use a variable instead of a comment to document it. For instance:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;var isAuthorizedToShoot = user.type == &#39;soldier&#39; || (user.type == &#39;police&#39; &amp;amp;&amp;amp; situation.location == &#39;USA&#39;)
+
+if (isAuthorizedToShoot) {
+  shoot();
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;One problem I can see with it is that the variable name might not be updated, just like the comment. My thought is that there would be more incentive to update the variable name since it is actually part of the code, but let me know what you think.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 06 Mar 2016 00:00:00 -0500</pubDate>
+        <link>http://flyingfisch.github.io/programming/2016/03/06/a-thought-on-self-documenting-code.html</link>
+        <guid isPermaLink="true">http://flyingfisch.github.io/programming/2016/03/06/a-thought-on-self-documenting-code.html</guid>
+        
+        
+        <category>programming</category>
+        
+      </item>
     
       <item>
         <title>Setting up Linux on a Lenovo X1 Carbon</title>
@@ -770,31 +803,6 @@ absolutely no JS:&lt;/p&gt;
         <category>programming</category>
         
         <category>web</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/assets/laptop.jpg&quot; alt=&quot;laptop&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Welcome to my blog. I am a frontend .NET web developer (mainly ASP.net MVC with C#).
-At home I use Linux exclusively and code in Python, Haskell, PHP (with the excellent
-&lt;a href=&quot;http://laravel.org/&quot;&gt;Laravel&lt;/a&gt; framework), or any other language that fits the bill.&lt;/p&gt;
-
-&lt;p&gt;I plan to post about programming mainly, but I may also post on other topics as well.
-Stay tuned – or don’t (I won’t hate you).&lt;/p&gt;
-
-&lt;h2 id=&quot;ps&quot;&gt;P.S.&lt;/h2&gt;
-
-&lt;p&gt;“Expositus” is Latin for “open” and “accessible”.&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 25 Apr 2015 14:44:00 -0400</pubDate>
-        <link>http://flyingfisch.github.io/announcement/2015/04/25/welcome.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/announcement/2015/04/25/welcome.html</guid>
-        
-        
-        <category>announcement</category>
         
       </item>
     
