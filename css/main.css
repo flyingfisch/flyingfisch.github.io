@@ -279,7 +279,8 @@ footer {
     text-transform: uppercase;
     line-height: .7em;
     margin-bottom: -.7em;
-    white-space: nowrap; }
+    white-space: nowrap;
+    overflow-x: hidden; }
 
 /**
  * Syntax highlighting styles
