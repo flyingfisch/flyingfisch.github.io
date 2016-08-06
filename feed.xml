@@ -6,9 +6,87 @@
 </description>
     <link>http://flyingfisch.github.io/</link>
     <atom:link href="http://flyingfisch.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 08 Mar 2016 16:48:58 -0500</pubDate>
-    <lastBuildDate>Tue, 08 Mar 2016 16:48:58 -0500</lastBuildDate>
+    <pubDate>Fri, 05 Aug 2016 22:24:06 -0400</pubDate>
+    <lastBuildDate>Fri, 05 Aug 2016 22:24:06 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>FSX Review: L-39C Freeware</title>
+        <description>&lt;p&gt;I just came across this excellent L-39C this weekend, and I had to share. Interestingly, the only references to it seem to be in a &lt;a href=&quot;http://www.sim-outhouse.com/sohforums/showthread.php?92435-DoughBree-L-39C-%28FSX%29&quot;&gt;forum thread on SimOuthouse&lt;/a&gt;. To my knowledge, this is the first review ever written for it.&lt;/p&gt;
+
+&lt;h1 id=&quot;model&quot;&gt;Model&lt;/h1&gt;
+
+&lt;h2 id=&quot;exterior&quot;&gt;Exterior&lt;/h2&gt;
+
+&lt;p&gt;The exterior model is very detailed, with many extra features such as chocks, remove before flight tags, opening canopy, steps, and icing textures.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/l39-exterior.png&quot; alt=&quot;Picture of the l-39&#39;s exterior&quot; /&gt;
+&lt;figcaption&gt;The L-39&#39;s exterior model. Featuring the &lt;a href=&quot;http://www.sim-outhouse.com/sohforums/showthread.php?94934-L39C-Albatros-Capali-zip&quot;&gt;Hungarian Air Force &quot;red 135&quot; livery&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/l39-exterior-front.png&quot; alt=&quot;Picture of the l-39&#39;s exterior&quot; /&gt;
+&lt;figcaption&gt;Same plane and livery from the front.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;interior&quot;&gt;Interior&lt;/h2&gt;
+
+&lt;p&gt;The L-39’s virtual cockpit is where it really shines. Practically everything is clickable, and the switches and gauges have been meticulously modelled to look and function like those installed in the real aircraft. The comm radio even has the same quick dial system as on the original. The nav radio has a single frequency display with different modes for the VORs, NDB, and transponder. Lights all work, and the panel lights and cockpit lights are separate. Warning lights are all modelled, make sure you refer to the manual to understand what they mean.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/l39-interior.png&quot; alt=&quot;Picture of the l-39&#39;s interior&quot; /&gt;
+&lt;figcaption&gt;Shot of the interior showing most of the clickable controls.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;systems&quot;&gt;Systems&lt;/h1&gt;
+
+&lt;p&gt;&lt;code&gt;Ctrl-E&lt;/code&gt; is disabled on this plane, you have to refer to the manual for engine start instructions. There is a damage system included, which keeps track of stress and hours of operation for each main system component. Damage and hours of operation are saved periodically, and restarting the simulator does not remove damage. A damage assessment panel can be accessed with &lt;code&gt;Shift-4&lt;/code&gt;, more details on how to fix components are included in the manual.&lt;/p&gt;
+
+&lt;p&gt;The landing gear, flaps, air brakes, and wheel brakes are powered by the hydraulic system. There are backup levers for each in case the hydraulic pump fails, though they only work once, so in an emergency make sure you are committed to landing before you deploy them.&lt;/p&gt;
+
+&lt;p&gt;The radios, lights, and most gauges are powered by the electrical system. The L-39 has an APU for engine start, and an emergency Ram Air Turbine to keep the systems running if the engine fails. When the Ram Air Turbine arming switch is set to “on”, the RAT will be automatically deployed when either the engine or alternator fail.&lt;/p&gt;
+
+&lt;p&gt;The cabin pressurization is regulated by the Environmental Control System. The system is fully automatic, but if the 115V inverter fails, the ECS will turn off and the “ECS -OFF-“ warning light will illuminate. Also the ECS may have difficulty regulating pressurization during rapid altitude changes. If this is the case, the “CABIN PRESS” light will illuminate to inform you that the cabin pressure is outside of safe operating range. In this case slow your descent/ascent and the cabin pressure should eventually return to normal.&lt;/p&gt;
+
+&lt;p&gt;The cabin heat/cooling switch is modelled and clicking the switch changes its position but doesn’t actually affect any systems.&lt;/p&gt;
+
+&lt;p&gt;Excessive engine exhaust gas tempurature (&amp;gt;685C) will cause damage to the engine over extended periods of time. A chart showing the approximate time to engine failure at various tempuratures is included in the manual.&lt;/p&gt;
+
+&lt;p&gt;As you’ve probably gathered already, reading the manual is highly recommended before flying this aircraft.&lt;/p&gt;
+
+&lt;h1 id=&quot;more-screenshots&quot;&gt;More screenshots&lt;/h1&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/l39-interior-seat.png&quot; alt=&quot;Picture of the l-39&#39;s interior&quot; /&gt;
+&lt;figcaption&gt;Shot of the interior facing the back of the cockpit.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/l39-interior-panel.png&quot; alt=&quot;Picture of the l-39&#39;s interior&quot; /&gt;
+&lt;figcaption&gt;Shot of the instrument panel and control stick.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/l39-interior-approach.png&quot; alt=&quot;Picture of the l-39&#39;s interior&quot; /&gt;
+&lt;figcaption&gt;On approach for runway 25 at KAKR.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;download&quot;&gt;Download&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://drive.google.com/file/d/0B6K_xiE2GqmMNElNWHpEOTE1UE0/view?usp=sharing&quot;&gt;Download link&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 01 Aug 2016 00:00:00 -0400</pubDate>
+        <link>http://flyingfisch.github.io/flight-simulator,/fsx/2016/08/01/best-fsx-plane.html</link>
+        <guid isPermaLink="true">http://flyingfisch.github.io/flight-simulator,/fsx/2016/08/01/best-fsx-plane.html</guid>
+        
+        
+        <category>flight-simulator,</category>
+        
+        <category>fsx</category>
+        
+      </item>
     
       <item>
         <title>A thought on Self Documenting Code</title>
@@ -756,49 +834,6 @@ print(Dictionary.read())
         <link>http://flyingfisch.github.io/programming/web/2015/05/17/using-rest-internally.html</link>
         <guid isPermaLink="true">http://flyingfisch.github.io/programming/web/2015/05/17/using-rest-internally.html</guid>
         
-        
-        <category>programming</category>
-        
-        <category>web</category>
-        
-      </item>
-    
-      <item>
-        <title>Pseudo-Element Kung-Fu</title>
-        <description>&lt;p&gt;I recently found that the &lt;code&gt;content&lt;/code&gt; property can contain cooler stuff than just
-strings. For instance, you can show the &lt;code&gt;href&lt;/code&gt; of a link in a cool popup with
-absolutely no JS:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;content: attr(href);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p data-height=&quot;378&quot; data-theme-id=&quot;6851&quot; data-slug-hash=&quot;YXypBV&quot; data-default-tab=&quot;result&quot; data-user=&quot;flyingfisch&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/flyingfisch/pen/YXypBV/&quot;&gt;Pure CSS link hover popup&lt;/a&gt; by flyingfisch (&lt;a href=&quot;http://codepen.io/flyingfisch&quot;&gt;@flyingfisch&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;This allows us to show popups without JS as well, like so:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-markup&quot;&gt;&amp;lt;span class=&quot;popup&quot; data-popuptext=&quot;This is a CSS-only popup!&quot;&amp;gt;Hover!&amp;lt;/span&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;span.popup:hover:after {
-    content: attr(data-popuptext);
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And of course a live demo with the full source:&lt;/p&gt;
-
-&lt;p data-height=&quot;268&quot; data-theme-id=&quot;6851&quot; data-slug-hash=&quot;oXbBXz&quot; data-default-tab=&quot;result&quot; data-user=&quot;flyingfisch&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/flyingfisch/pen/oXbBXz/&quot;&gt;Pure CSS hover popup&lt;/a&gt; by flyingfisch (&lt;a href=&quot;http://codepen.io/flyingfisch&quot;&gt;@flyingfisch&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;That’s all I’ve got, have fun messing around with &lt;code&gt;content&lt;/code&gt;!&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 08 May 2015 00:00:00 -0400</pubDate>
-        <link>http://flyingfisch.github.io/css/programming/web/2015/05/08/css-pseudo-elements-kung-fu.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/css/programming/web/2015/05/08/css-pseudo-elements-kung-fu.html</guid>
-        
-        
-        <category>css</category>
         
         <category>programming</category>
         
