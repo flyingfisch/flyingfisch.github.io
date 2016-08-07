@@ -6,9 +6,30 @@
 </description>
     <link>http://flyingfisch.github.io/</link>
     <atom:link href="http://flyingfisch.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 05 Aug 2016 22:24:06 -0400</pubDate>
-    <lastBuildDate>Fri, 05 Aug 2016 22:24:06 -0400</lastBuildDate>
+    <pubDate>Sun, 07 Aug 2016 19:04:02 -0400</pubDate>
+    <lastBuildDate>Sun, 07 Aug 2016 19:04:02 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Getting neosnippet to work with deoplete</title>
+        <description>&lt;p&gt;It took me a bit of searching, but I finally figured out how to get neosnippet to work with deoplete. The issue is that the deoplete auto-complete trigger is &lt;code&gt;&amp;lt;Tab&amp;gt;&lt;/code&gt;, which is also the neosnippet expansion trigger. So we want to change the neosnippet trigger to something else, like &lt;code&gt;&amp;lt;C-k&amp;gt;&lt;/code&gt;. Here are the lines to add to your &lt;code&gt;init.vim&lt;/code&gt; file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-vim&quot;&gt;let g:deoplete#enable_at_startup = 1
+
+imap &amp;lt;C-k&amp;gt;     &amp;lt;Plug&amp;gt;(neosnippet_expand_or_jump)
+smap &amp;lt;C-k&amp;gt;     &amp;lt;Plug&amp;gt;(neosnippet_expand_or_jump)
+xmap &amp;lt;C-k&amp;gt;     &amp;lt;Plug&amp;gt;(neosnippet_expand_target)
+&lt;/code&gt;&lt;/pre&gt;
+
+</description>
+        <pubDate>Sun, 07 Aug 2016 00:00:00 -0400</pubDate>
+        <link>http://flyingfisch.github.io/vim/2016/08/07/deoplete-and-neosnippet-compat.html</link>
+        <guid isPermaLink="true">http://flyingfisch.github.io/vim/2016/08/07/deoplete-and-neosnippet-compat.html</guid>
+        
+        
+        <category>vim</category>
+        
+      </item>
     
       <item>
         <title>FSX Review: L-39C Freeware</title>
@@ -78,11 +99,11 @@
 
 </description>
         <pubDate>Mon, 01 Aug 2016 00:00:00 -0400</pubDate>
-        <link>http://flyingfisch.github.io/flight-simulator,/fsx/2016/08/01/best-fsx-plane.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/flight-simulator,/fsx/2016/08/01/best-fsx-plane.html</guid>
+        <link>http://flyingfisch.github.io/flight-simulator/fsx/2016/08/01/best-fsx-plane.html</link>
+        <guid isPermaLink="true">http://flyingfisch.github.io/flight-simulator/fsx/2016/08/01/best-fsx-plane.html</guid>
         
         
-        <category>flight-simulator,</category>
+        <category>flight-simulator</category>
         
         <category>fsx</category>
         
@@ -743,101 +764,6 @@ a:hover {
         <category>tutorial</category>
         
         <category>modern-website-series</category>
-        
-      </item>
-    
-      <item>
-        <title>Using REST Inside Programs</title>
-        <description>&lt;p&gt;Rich Hickey proposed an interesting idea in his &lt;a href=&quot;https://www.youtube.com/watch?v=rI8tNMsozo0&quot;&gt;keynote at RailsConf 2012&lt;/a&gt;.
-The idea, if I understand correctly, is that if serialization is good between
-servers as a way to separate concerns, then why don’t we do it between different
-sections of code on the same server?&lt;/p&gt;
-
-&lt;p&gt;Using REST between different code blocks seems like a good idea, but serialization seems a bit useless
-in my humble opinion, since it only seems to add complexity to the program.&lt;/p&gt;
-
-&lt;p&gt;I decided to write a little &lt;a href=&quot;https://github.com/flyingfisch/python-rest-poc/commits?author=flyingfisch&quot;&gt;proof-of-concept&lt;/a&gt; for this program in Python.
-There is a module &lt;code&gt;rest.py&lt;/code&gt; which currently contains one class: &lt;code&gt;CRUD&lt;/code&gt;. &lt;code&gt;CRUD&lt;/code&gt;
-has four built-in functions: &lt;code&gt;create()&lt;/code&gt;, &lt;code&gt;read()&lt;/code&gt;, &lt;code&gt;update()&lt;/code&gt;, and &lt;code&gt;delete()&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Here is the documentation for each of the built-in functions:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;create(object)
-&quot;&quot;&quot;
-Creates a new object.
-
-Keyword arguments:
-object -- Object or list of objects to create
-&quot;&quot;&quot;
-
-read()
-&quot;&quot;&quot;Returns a list of created objects.&quot;&quot;&quot;
-
-update(objectId, object)
-&quot;&quot;&quot;
-Updates object.
-
-Keyword arguments:
-objectId -- Key of object to update
-object -- Object to update with
-&quot;&quot;&quot;
-
-delete(objectId)
-&quot;&quot;&quot;
-Deletes object from list.
-
-Keyword arguments:
-objectId -- Key of object to delete
-&quot;&quot;&quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The built-in commands operate on an internal list &lt;code&gt;_objects&lt;/code&gt;, accessible through
-&lt;code&gt;read()&lt;/code&gt;. Here is a simple example using the default methods.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;from rest import CRUD
-
-# A dictionary entry class
-class DictEntry:
-    Word = &quot;&quot;
-    Definition = &quot;&quot;
-
-    def __init__(self, word, definition):
-        self.Word = word
-        self.Definition = definition
-
-    def __repr__(self):
-        return &quot;(Word: {0}, Definition: {1})&quot;.format(self.Word, self.Definition)
-
-# Make a CRUD instance
-Dictionary = CRUD()
-
-# Add a word to our dictionary
-Dictionary.create(DictEntry(&quot;Programmer&quot;, &quot;A being that converts pizza and Coke into crde&quot;))
-
-# Update the word
-Dictionary.Update(0, DictEntry(&quot;Programmer&quot;, &quot;A being that converts pizza and Coke into code&quot;)
-
-# Print the dictionary out to the terminal
-print(Dictionary.read())
-
-# Delete the word
-Dictionary.Delete(0)
-
-# Print the (empty) dictionary out to the terminal
-print(Dictionary.read())
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Not sure how useful this is going to be, but it was fun to code up!&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 17 May 2015 00:00:00 -0400</pubDate>
-        <link>http://flyingfisch.github.io/programming/web/2015/05/17/using-rest-internally.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/programming/web/2015/05/17/using-rest-internally.html</guid>
-        
-        
-        <category>programming</category>
-        
-        <category>web</category>
         
       </item>
     
