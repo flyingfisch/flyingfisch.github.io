@@ -6,9 +6,51 @@
 </description>
     <link>http://flyingfisch.github.io/</link>
     <atom:link href="http://flyingfisch.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 07 Aug 2016 19:04:02 -0400</pubDate>
-    <lastBuildDate>Sun, 07 Aug 2016 19:04:02 -0400</lastBuildDate>
+    <pubDate>Fri, 19 Aug 2016 19:00:38 -0400</pubDate>
+    <lastBuildDate>Fri, 19 Aug 2016 19:00:38 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Getting started with the HTML5 notification API</title>
+        <description>&lt;p&gt;I used the HTML5 notification API for the first time today, it’s actually much more simple than I expected. There are two functions you need to know about:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// to ask for permission
+Notification.requestPermission(callback);
+
+// to display a notification
+new Notification(message);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Before you actually display the notification, you need to ask for permission, like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;Notification.requestPermission();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We want to display the notification after giving permission, so we just stick that in a callback:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;Notification.requestPermission(function () {
+   if (Notification.permission === &#39;granted&#39;) {
+      new Notification(&#39;test&#39;);
+   }
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And you’re done! If you want to check that the browser supports the Notification API, you can use the following test:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;function browserSupportsNotifications() {
+   return &quot;Notification&quot; in window;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+</description>
+        <pubDate>Fri, 19 Aug 2016 00:00:00 -0400</pubDate>
+        <link>http://flyingfisch.github.io/javascript/2016/08/19/using-the-html5-notification-api.html</link>
+        <guid isPermaLink="true">http://flyingfisch.github.io/javascript/2016/08/19/using-the-html5-notification-api.html</guid>
+        
+        
+        <category>javascript</category>
+        
+      </item>
     
       <item>
         <title>Getting neosnippet to work with deoplete</title>
@@ -601,169 +643,6 @@ text-align: center;
         
         
         <category>announcement</category>
-        
-      </item>
-    
-      <item>
-        <title>Building a Modern Website: Part 0</title>
-        <description>&lt;p&gt;This is the first of a &lt;a href=&quot;/modern-website-series/&quot;&gt;3-post series&lt;/a&gt; series on building a modern website. The demo website is a fictional sailing club’s homepage. This post covers the mockup process and building the header. The next part will go into the navigation bar and body text.&lt;/p&gt;
-
-&lt;h1 id=&quot;layout&quot;&gt;Layout&lt;/h1&gt;
-
-&lt;p&gt;The first thing I do when building a website is come up with a layout. For this site I thought we would keep the layout fairly minimal. I don’t generally build wireframes, preferring building in the browser instead, but I whipped one up in this case to let you see what kind of layout I am envisioning.&lt;/p&gt;
-
-&lt;figure&gt;
-&lt;img src=&quot;/assets/nautical-wireframe.svg&quot; alt=&quot;Wireframe for desktop layout&quot; /&gt;
-&lt;figcaption&gt;Wireframe for desktop layout.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Since this is going to be responsive, we need to have a mobile layout as well.&lt;/p&gt;
-
-&lt;figure&gt;
-&lt;img src=&quot;/assets/nautical-wireframe-mobile.svg&quot; alt=&quot;Wireframe for mobile layout&quot; /&gt;
-&lt;figcaption&gt;Wireframe for mobile layout.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h1 id=&quot;colors&quot;&gt;Colors&lt;/h1&gt;
-
-&lt;p&gt;The colors for this site are going to be blue and white. I got the exact shades straight from the &lt;a href=&quot;http://tango.freedesktop.org/Tango_Icon_Theme_Guidelines#Color_Palette&quot;&gt;Tango project’s color palette&lt;/a&gt;.&lt;/p&gt;
-
-&lt;figure&gt;
-&lt;img src=&quot;/assets/nautical-palette.svg&quot; alt=&quot;Palette colors: #ffffff, #eeeeec, #3465a4, #204a87&quot; /&gt;
-&lt;figcaption&gt;Colors: #ffffff, #eeeeec, #3465a4, #204a87&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h1 id=&quot;fonts&quot;&gt;Fonts&lt;/h1&gt;
-
-&lt;p&gt;The first thing I like to do before actually designing the site is find a font to use. For this project I just ran over to &lt;a href=&quot;https://www.google.com/fonts/&quot;&gt;Google Fonts&lt;/a&gt; and chose Montserrat for the headers and Alegreya for the copy. As a rule of thumb it is usually good to choose a serif font for your body text if the headers are sans-serif, and vice versa.&lt;/p&gt;
-
-&lt;p&gt;Here is the &lt;code&gt;link&lt;/code&gt; tag for the fonts, we’re just going to add it into the header. Although there are other methods of using Google Fonts, the &lt;code&gt;link&lt;/code&gt; tag has the best browser support.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-markup&quot;&gt;&amp;lt;link href=&quot;http://fonts.googleapis.com/css?family=Montserrat:400,700|Alegreya:400,400italic,700,700italic&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;We will also be using &lt;a href=&quot;https://necolas.github.io/normalize.css/&quot;&gt;Normalize.css&lt;/a&gt; which basically gives you a starting point that looks the same across all browsers. Since we want to override it’s styles with ours we put it’s link tag first. Our &lt;code&gt;head&lt;/code&gt; tag should look something like this now:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-markup&quot;&gt;&amp;lt;head&amp;gt;
-    &amp;lt;title&amp;gt;R. S. Sailing Club&amp;lt;/title&amp;gt;
-
-    &amp;lt;link href=&quot;http://fonts.googleapis.com/css?family=Montserrat:400,700|Alegreya:400,400italic,700,700italic&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&amp;gt;
-    &amp;lt;link href=&quot;/css/normalize.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&amp;gt;
-    &amp;lt;link href=&quot;/css/style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&amp;gt;
-&amp;lt;/head&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;We’re going to be using &lt;a href=&quot;http://sass-lang.com/&quot;&gt;SASS&lt;/a&gt; for the stylesheets, but don’t worry, I’ll explain any nuances we come across in the project. For now, just think of it as CSS with extra features. Here is our stylesheet so far:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;html, body {
-    width: 100%;
-    height: 100%;
-}
-
-body * {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: &#39;Alegreya&#39;, serif;
-    font-size: 16px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: &#39;Montserrat&#39;, sans-serif;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&quot;designing-the-header&quot;&gt;Designing the header&lt;/h1&gt;
-
-&lt;p&gt;Now that the fonts have been selected, we can start on the header. The markup for now is pretty simple.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-markup&quot;&gt;&amp;lt;header&amp;gt;
-    &amp;lt;h1&amp;gt;R. S. Sailing Club&amp;lt;/h1&amp;gt;
-&amp;lt;/header&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now let’s get into the CSS. We want the background of the header to be dark blue, and the font should be white. Here is the site so far:&lt;/p&gt;
-
-&lt;p data-height=&quot;268&quot; data-theme-id=&quot;6851&quot; data-slug-hash=&quot;eNdaoe&quot; data-default-tab=&quot;result&quot; data-user=&quot;flyingfisch&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/flyingfisch/pen/eNdaoe/&quot;&gt;eNdaoe&lt;/a&gt; by flyingfisch (&lt;a href=&quot;http://codepen.io/flyingfisch&quot;&gt;@flyingfisch&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-
-&lt;h1 id=&quot;sass-101&quot;&gt;SASS 101&lt;/h1&gt;
-
-&lt;p&gt;This is probably a good time to go over a couple important SASS features: variables and nested selectors.&lt;/p&gt;
-
-&lt;h2 id=&quot;variables&quot;&gt;Variables&lt;/h2&gt;
-
-&lt;p&gt;Variables names start with a &lt;code&gt;$&lt;/code&gt;, and can contain any information you can put in a property. For example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;$my-border: 2px solid black;
-
-div {
-    border: $my-border;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;That compiles to this CSS:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;div {
-    border: 2px solid black;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&quot;nested-selectors&quot;&gt;Nested Selectors&lt;/h1&gt;
-
-&lt;p&gt;If you want to select an element inside another element, you can nest the selectors. Here is an example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;header {
-    h1 {
-        color: #fff;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This compiles to:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;header h1 {
-    color: #fff;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can also use the &lt;code&gt;&amp;amp;&lt;/code&gt; to select the parent element, like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;a {
-    color #000;
-    text-decoration: none;
-
-    &amp;amp;:hover {
-        text-decoration: underline;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Which compiles into this CSS:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;a {
-    color: #000;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-</description>
-        <pubDate>Mon, 25 May 2015 00:00:00 -0400</pubDate>
-        <link>http://flyingfisch.github.io/frontend/design/tutorial/modern-website-series/2015/05/25/building-a-modern-website-part-0.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/frontend/design/tutorial/modern-website-series/2015/05/25/building-a-modern-website-part-0.html</guid>
-        
-        
-        <category>frontend</category>
-        
-        <category>design</category>
-        
-        <category>tutorial</category>
-        
-        <category>modern-website-series</category>
         
       </item>
     

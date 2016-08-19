@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Category archive for design</title>
+    <title>Getting started with the HTML5 notification API</title>
     <meta name="description" content="My personal blog where I post about programming as well as other topics.
 ">
 
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/prism.css">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://flyingfisch.github.io/design/">
+    <link rel="canonical" href="http://flyingfisch.github.io/javascript/2016/08/19/using-the-html5-notification-api.html">
 </head>
 
 
@@ -169,19 +169,78 @@
 
 
 
-        <article class="post">
-  <h1>Category archive for design</h1>
+        <nav class="article"></nav>
 
-  <div>
-    <ul>
-      <li><a href="/frontend/design/tutorial/modern-website-series/2015/05/25/building-a-modern-website-part-0.html"><span>Building a Modern Website: Part 0<span></a></li>
-<li><a href="/frontend/design/tutorial/modern-website-series/2015/06/10/building-a-modern-website-part-1.html"><span>Building a Modern Website: Part 1<span></a></li>
-<li><a href="/frontend/design/tutorial/modern-website-series/2015/06/26/building-a-modern-website-part-2.html"><span>Building a Modern Website: Part 2<span></a></li>
+<article lang="en" class="post">
+    <div class="post-info">
+        <strong>Author:</strong> Mark Fischer, Jr.<br>
+
+        <strong>Posted:</strong> Aug 19, 2016<br>
+
+        
+        
+        <strong>Tags:</strong> javascript<br>
+        
+
+        
+    </div>
+
+    <h1 class="post-title">Getting started with the HTML5 notification API</h1>
+    <p>I used the HTML5 notification API for the first time today, it’s actually much more simple than I expected. There are two functions you need to know about:</p>
+
+<pre><code class="language-javascript">// to ask for permission
+Notification.requestPermission(callback);
+
+// to display a notification
+new Notification(message);
+</code></pre>
+
+<p>Before you actually display the notification, you need to ask for permission, like so:</p>
+
+<pre><code class="language-javascript">Notification.requestPermission();
+</code></pre>
+
+<p>We want to display the notification after giving permission, so we just stick that in a callback:</p>
+
+<pre><code class="language-javascript">Notification.requestPermission(function () {
+   if (Notification.permission === 'granted') {
+      new Notification('test');
+   }
+});
+</code></pre>
+
+<p>And you’re done! If you want to check that the browser supports the Notification API, you can use the following test:</p>
+
+<pre><code class="language-javascript">function browserSupportsNotifications() {
+   return "Notification" in window;
+}
+</code></pre>
 
 
-    </ul>
-  </div>
-</div>
+</article>
+
+<section id="comments" class="center">
+    <h1 class="post-title">Comments</h1>
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES * * */
+        // Required: on line below, replace text in quotes with your forum shortname
+        var disqus_shortname = 'expositus';
+        var diqus_identifier = 'GettingstartedwiththeHTML5notificationAPI';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</section>
+
+
+<script type="text/javascript" src="/js/post-nav.js"></script>
 
 
 
