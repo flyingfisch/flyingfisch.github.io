@@ -6,9 +6,62 @@
 </description>
     <link>http://flyingfisch.github.io/</link>
     <atom:link href="http://flyingfisch.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 22 Feb 2018 22:01:56 +0000</pubDate>
-    <lastBuildDate>Thu, 22 Feb 2018 22:01:56 +0000</lastBuildDate>
+    <pubDate>Thu, 22 Feb 2018 22:46:53 +0000</pubDate>
+    <lastBuildDate>Thu, 22 Feb 2018 22:46:53 +0000</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Poetry</title>
+        <description>&lt;p&gt;Some poetry I’ve written in the past couple months.&lt;/p&gt;
+
+&lt;h1 id=&quot;morning&quot;&gt;Morning&lt;/h1&gt;
+
+&lt;p&gt;Soft and warm&lt;br /&gt;
+The golden paths&lt;br /&gt;
+And shadows&lt;br /&gt;
+On the carpet.&lt;/p&gt;
+
+&lt;p&gt;Quiet footsteps,&lt;br /&gt;
+It’s morning&lt;br /&gt;
+And the baby’s&lt;br /&gt;
+Still asleep.&lt;/p&gt;
+
+&lt;h1 id=&quot;loss&quot;&gt;Loss&lt;/h1&gt;
+
+&lt;p&gt;Milky, fuzzy, sweet and soft&lt;br /&gt;
+The odor still remains entombed&lt;br /&gt;
+'Til mother lifting up the cloth&lt;br /&gt;
+Escapes the scent into the room.&lt;/p&gt;
+
+&lt;p&gt;Nevermore this berth caress&lt;br /&gt;
+The child of the morning’s ray&lt;br /&gt;
+Forever lonesome by its loss&lt;br /&gt;
+Youth is snatched and now decay.&lt;/p&gt;
+
+&lt;h1 id=&quot;fallen&quot;&gt;Fallen&lt;/h1&gt;
+
+&lt;p&gt;The crimson trees have dropped their leaves
+A cool breeze nips his youthful face
+A flock of geese are heading south.&lt;/p&gt;
+
+&lt;p&gt;The year is drawing to a close
+Or is the next beginning now
+When spring will come again?&lt;/p&gt;
+
+&lt;p&gt;His crimson arm has dropped its sword
+A chilled wind bites his mortal wounds
+Alone the vulture flies above.&lt;/p&gt;
+
+&lt;p&gt;His time is drawing to a close
+But soon his next life shall begin
+Where spring will come again.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 22 Feb 2018 00:00:00 +0000</pubDate>
+        <link>http://flyingfisch.github.io/2018/02/22/poetry.html</link>
+        <guid isPermaLink="true">http://flyingfisch.github.io/2018/02/22/poetry.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Getting started with the HTML5 notification API</title>
@@ -626,23 +679,6 @@ Don't worry about languages, go build awesome stuff!
         <category>tutorial</category>
         
         <category>modern-website-series</category>
-        
-      </item>
-    
-      <item>
-        <title>Announcing Tolkien Ipsum</title>
-        <description>&lt;p&gt;I built a little website that generates Lord of the Rings themed Lorem Ipsum. You can &lt;a href=&quot;http://tolkienipsum.cloudapp.net/&quot;&gt;check it out live&lt;/a&gt; or view the source on &lt;a href=&quot;https://github.com/flyingfisch/tolkienIpsum&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h1 id=&quot;for-geeks&quot;&gt;For Geeks&lt;/h1&gt;
-
-&lt;p&gt;I am hosting the site on a &lt;a href=&quot;http://azure.microsoft.com/&quot;&gt;Microsoft Azure&lt;/a&gt; Ubuntu 14.04 virtual machine. The setup process for serving Django was pretty straightforward, I just adapted the excellent &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-uwsgi-and-nginx-on-ubuntu-14-04&quot;&gt;Digital Ocean tutorial&lt;/a&gt; to my needs. The project does use python3, so if you are planning on hosting it yourself you’ll want to keep that in mind.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
-        <link>http://flyingfisch.github.io/announcement/2015/05/28/tolkien-ipsum.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/announcement/2015/05/28/tolkien-ipsum.html</guid>
-        
-        
-        <category>announcement</category>
         
       </item>
     
