@@ -37,8 +37,6 @@
             
         
             
-                
-            
         
             
                 
@@ -157,11 +155,15 @@
             
         
             
-        
+                
             
         
             
+                
+            
         
+            
+                
             
         
     </nav>
@@ -195,75 +197,75 @@ sections of code on the same server?</p>
 in my humble opinion, since it only seems to add complexity to the program.</p>
 
 <p>I decided to write a little <a href="https://github.com/flyingfisch/python-rest-poc/commits?author=flyingfisch">proof-of-concept</a> for this program in Python.
-There is a module <code>rest.py</code> which currently contains one class: <code>CRUD</code>. <code>CRUD</code>
-has four built-in functions: <code>create()</code>, <code>read()</code>, <code>update()</code>, and <code>delete()</code>.</p>
+There is a module <code class="highlighter-rouge">rest.py</code> which currently contains one class: <code class="highlighter-rouge">CRUD</code>. <code class="highlighter-rouge">CRUD</code>
+has four built-in functions: <code class="highlighter-rouge">create()</code>, <code class="highlighter-rouge">read()</code>, <code class="highlighter-rouge">update()</code>, and <code class="highlighter-rouge">delete()</code>.</p>
 
 <p>Here is the documentation for each of the built-in functions:</p>
 
-<pre><code class="language-python">create(object)
-"""
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">create</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span>
+<span class="s">"""
 Creates a new object.
 
 Keyword arguments:
 object -- Object or list of objects to create
-"""
+"""</span>
 
-read()
-"""Returns a list of created objects."""
+<span class="n">read</span><span class="p">()</span>
+<span class="s">"""Returns a list of created objects."""</span>
 
-update(objectId, object)
-"""
+<span class="n">update</span><span class="p">(</span><span class="n">objectId</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>
+<span class="s">"""
 Updates object.
 
 Keyword arguments:
 objectId -- Key of object to update
 object -- Object to update with
-"""
+"""</span>
 
-delete(objectId)
-"""
+<span class="n">delete</span><span class="p">(</span><span class="n">objectId</span><span class="p">)</span>
+<span class="s">"""
 Deletes object from list.
 
 Keyword arguments:
 objectId -- Key of object to delete
-"""
-</code></pre>
+"""</span>
+</code></pre></div></div>
 
-<p>The built-in commands operate on an internal list <code>_objects</code>, accessible through
-<code>read()</code>. Here is a simple example using the default methods.</p>
+<p>The built-in commands operate on an internal list <code class="highlighter-rouge">_objects</code>, accessible through
+<code class="highlighter-rouge">read()</code>. Here is a simple example using the default methods.</p>
 
-<pre><code class="language-python">from rest import CRUD
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">rest</span> <span class="kn">import</span> <span class="n">CRUD</span>
 
-# A dictionary entry class
-class DictEntry:
-    Word = ""
-    Definition = ""
+<span class="c"># A dictionary entry class</span>
+<span class="k">class</span> <span class="nc">DictEntry</span><span class="p">:</span>
+    <span class="n">Word</span> <span class="o">=</span> <span class="s">""</span>
+    <span class="n">Definition</span> <span class="o">=</span> <span class="s">""</span>
 
-    def __init__(self, word, definition):
-        self.Word = word
-        self.Definition = definition
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">word</span><span class="p">,</span> <span class="n">definition</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Word</span> <span class="o">=</span> <span class="n">word</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Definition</span> <span class="o">=</span> <span class="n">definition</span>
 
-    def __repr__(self):
-        return "(Word: {0}, Definition: {1})".format(self.Word, self.Definition)
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s">"(Word: {0}, Definition: {1})"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Word</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">Definition</span><span class="p">)</span>
 
-# Make a CRUD instance
-Dictionary = CRUD()
+<span class="c"># Make a CRUD instance</span>
+<span class="n">Dictionary</span> <span class="o">=</span> <span class="n">CRUD</span><span class="p">()</span>
 
-# Add a word to our dictionary
-Dictionary.create(DictEntry("Programmer", "A being that converts pizza and Coke into crde"))
+<span class="c"># Add a word to our dictionary</span>
+<span class="n">Dictionary</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">DictEntry</span><span class="p">(</span><span class="s">"Programmer"</span><span class="p">,</span> <span class="s">"A being that converts pizza and Coke into crde"</span><span class="p">))</span>
 
-# Update the word
-Dictionary.Update(0, DictEntry("Programmer", "A being that converts pizza and Coke into code")
+<span class="c"># Update the word</span>
+<span class="n">Dictionary</span><span class="o">.</span><span class="n">Update</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">DictEntry</span><span class="p">(</span><span class="s">"Programmer"</span><span class="p">,</span> <span class="s">"A being that converts pizza and Coke into code"</span><span class="p">)</span>
 
-# Print the dictionary out to the terminal
-print(Dictionary.read())
+<span class="c"># Print the dictionary out to the terminal</span>
+<span class="k">print</span><span class="p">(</span><span class="n">Dictionary</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 
-# Delete the word
-Dictionary.Delete(0)
+<span class="c"># Delete the word</span>
+<span class="n">Dictionary</span><span class="o">.</span><span class="n">Delete</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
-# Print the (empty) dictionary out to the terminal
-print(Dictionary.read())
-</code></pre>
+<span class="c"># Print the (empty) dictionary out to the terminal</span>
+<span class="k">print</span><span class="p">(</span><span class="n">Dictionary</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</code></pre></div></div>
 
 <p>Not sure how useful this is going to be, but it was fun to code up!</p>
 

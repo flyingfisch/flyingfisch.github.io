@@ -37,8 +37,6 @@
             
         
             
-                
-            
         
             
                 
@@ -157,11 +155,15 @@
             
         
             
-        
+                
             
         
             
+                
+            
         
+            
+                
             
         
     </nav>
@@ -199,15 +201,15 @@
 <figcaption>The fx-9750GII</figcaption>
 </figure>
 
-<p>This is a Casio fx-9750GII, the device that first introduced me to programming. It was given to me on my 14th birthday and I was overjoyed. The first thing I did was start reading the manual from page one. After getting through the calculating and graphing sections, I came across a chapter I didn’t expect to see, labeled “Programming”. Well, right there I decided I was going to program the thing (there was no tutorial, just a syntax guide and documentation of the built-in functions). My first program ever was named <code>SQRT</code>, and it looked something like this:</p>
+<p>This is a Casio fx-9750GII, the device that first introduced me to programming. It was given to me on my 14th birthday and I was overjoyed. The first thing I did was start reading the manual from page one. After getting through the calculating and graphing sections, I came across a chapter I didn’t expect to see, labeled “Programming”. Well, right there I decided I was going to program the thing (there was no tutorial, just a syntax guide and documentation of the built-in functions). My first program ever was named <code class="highlighter-rouge">SQRT</code>, and it looked something like this:</p>
 
-<pre><code>?→A
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>?→A
 Locate 1,1,√A
-</code></pre>
+</code></pre></div></div>
 
-<p>It took user input, assigned it to <code>A</code>, and then printed the square root of <code>A</code> at position <code>1, 1</code> on the screen. My next program printed “Yay I can code!” over and over and over again. As much as I hate to admit it, it used <code>goto</code> instead of a <code>while</code> loop.</p>
+<p>It took user input, assigned it to <code class="highlighter-rouge">A</code>, and then printed the square root of <code class="highlighter-rouge">A</code> at position <code class="highlighter-rouge">1, 1</code> on the screen. My next program printed “Yay I can code!” over and over and over again. As much as I hate to admit it, it used <code class="highlighter-rouge">goto</code> instead of a <code class="highlighter-rouge">while</code> loop.</p>
 
-<p>Fast forward a couple months. I had learned from some friendly people on the <a href="http://casiocalc.org/">Universal Casio Forums</a> that using <code>goto</code> was usually a bad idea, and had started using loops and subroutines to organize my code. I had also begun to realize that Casio’s BASIC dialect was pretty slow for anything other than math. Since I wanted to program games for it, I started researching other ways to program calculators. After googling around a bit I learned that the hardware on my calculator was actually the same as the hardware on the fx-9860GII, which had an SDK for developing <em>addins</em> for it in C. So I installed a third-party custom ROM with the addin feature flag set to true, and got to work learning C.</p>
+<p>Fast forward a couple months. I had learned from some friendly people on the <a href="http://casiocalc.org/">Universal Casio Forums</a> that using <code class="highlighter-rouge">goto</code> was usually a bad idea, and had started using loops and subroutines to organize my code. I had also begun to realize that Casio’s BASIC dialect was pretty slow for anything other than math. Since I wanted to program games for it, I started researching other ways to program calculators. After googling around a bit I learned that the hardware on my calculator was actually the same as the hardware on the fx-9860GII, which had an SDK for developing <em>addins</em> for it in C. So I installed a third-party custom ROM with the addin feature flag set to true, and got to work learning C.</p>
 
 <p>There was a problem, though. Writing C for that calculator was hard. Most of the default libraries that online C tutorials referenced were not available or were named differently, and the documentation for the SDK was somewhat obscure. I ended up going back to good old BASIC and optimizing the programs I wrote to try to improve their speed.</p>
 
@@ -238,32 +240,32 @@ Locate 1,1,√A
 
 <p>Take a look at this code:</p>
 
-<pre><code class="language-c">if (a == 2) {
-    print("hello world");
-}
-</code></pre>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">print</span><span class="p">(</span><span class="s">"hello world"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p>Now have a look at this:</p>
 
-<pre><code class="language-javascript">if (a == 2) {
-    console.log("hello world");
-}
-</code></pre>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nx">a</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"hello world"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p>And this (getting a little trickier):</p>
 
-<pre><code class="language-php">if ($a == 2) {
-    print("hello world");
-}
-</code></pre>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nv">$a</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">"hello world"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-<p>The point is, knowing one language makes learning another much easier. Even with Python’s different syntax, the <code>if</code> statement still works the same way.</p>
+<p>The point is, knowing one language makes learning another much easier. Even with Python’s different syntax, the <code class="highlighter-rouge">if</code> statement still works the same way.</p>
 
-<pre><code class="language-python">if a == 2:
-    print("hello world")
-</code></pre>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"hello world"</span><span class="p">)</span>
+</code></pre></div></div>
 
-<p>Even though the syntax has changed slightly and the curly brackets are gone, you still know what an <code>if</code> statement is and when to use it. Programming is 90% thinking and 10% typing. Knowing what to express is more important than knowing how to express it.</p>
+<p>Even though the syntax has changed slightly and the curly brackets are gone, you still know what an <code class="highlighter-rouge">if</code> statement is and when to use it. Programming is 90% thinking and 10% typing. Knowing what to express is more important than knowing how to express it.</p>
 
 <p>So Ruby developers make more, on average, than Python developers? Who cares? You can always switch later.</p>
 
@@ -278,7 +280,7 @@ Locate 1,1,√A
 
 <p>You can’t know the shortcomings of a language unless you experience them yourself. Regardless of how much you may think you know that PHP “doesn’t scale”, without attempting to use it for a large project you will never truly understand what that means. Conversly, unless you have experienced the shortcomings of vanilla PHP, you won’t truly appreciate the added perceived complexity of an MVC framework like Django.</p>
 
-<p>When starting out in programming, you can’t know what you don’t know. A man who has lived his entire life in a totalitarian state without ever hearing of freedom doesn’t understand why he would want it. Likewise, someone who has never experienced functional programming would never know why or when to use <code>map</code> in Python or pass functions as arguments in C#.</p>
+<p>When starting out in programming, you can’t know what you don’t know. A man who has lived his entire life in a totalitarian state without ever hearing of freedom doesn’t understand why he would want it. Likewise, someone who has never experienced functional programming would never know why or when to use <code class="highlighter-rouge">map</code> in Python or pass functions as arguments in C#.</p>
 
 <h1 id="skill-is-directly-proportional-to-salary">Skill is directly proportional to salary</h1>
 

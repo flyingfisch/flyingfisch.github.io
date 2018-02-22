@@ -37,8 +37,6 @@
             
         
             
-                
-            
         
             
                 
@@ -157,11 +155,15 @@
             
         
             
-        
+                
             
         
             
+                
+            
         
+            
+                
             
         
     </nav>
@@ -188,33 +190,33 @@
     <h1 class="post-title">Getting started with the HTML5 notification API</h1>
     <p>I used the HTML5 notification API for the first time today, it’s actually much more simple than I expected. There are two functions you need to know about:</p>
 
-<pre><code class="language-javascript">// to ask for permission
-Notification.requestPermission(callback);
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// to ask for permission</span>
+<span class="nx">Notification</span><span class="p">.</span><span class="nx">requestPermission</span><span class="p">(</span><span class="nx">callback</span><span class="p">);</span>
 
-// to display a notification
-new Notification(message);
-</code></pre>
+<span class="c1">// to display a notification</span>
+<span class="k">new</span> <span class="nx">Notification</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
+</code></pre></div></div>
 
 <p>Before you actually display the notification, you need to ask for permission, like so:</p>
 
-<pre><code class="language-javascript">Notification.requestPermission();
-</code></pre>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Notification</span><span class="p">.</span><span class="nx">requestPermission</span><span class="p">();</span>
+</code></pre></div></div>
 
 <p>We want to display the notification after giving permission, so we just stick that in a callback:</p>
 
-<pre><code class="language-javascript">Notification.requestPermission(function () {
-   if (Notification.permission === 'granted') {
-      new Notification('test');
-   }
-});
-</code></pre>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Notification</span><span class="p">.</span><span class="nx">requestPermission</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+   <span class="k">if</span> <span class="p">(</span><span class="nx">Notification</span><span class="p">.</span><span class="nx">permission</span> <span class="o">===</span> <span class="s1">'granted'</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">new</span> <span class="nx">Notification</span><span class="p">(</span><span class="s1">'test'</span><span class="p">);</span>
+   <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
 
 <p>And you’re done! If you want to check that the browser supports the Notification API, you can use the following test:</p>
 
-<pre><code class="language-javascript">function browserSupportsNotifications() {
-   return "Notification" in window;
-}
-</code></pre>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">browserSupportsNotifications</span><span class="p">()</span> <span class="p">{</span>
+   <span class="k">return</span> <span class="s2">"Notification"</span> <span class="k">in</span> <span class="nb">window</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 
 </article>

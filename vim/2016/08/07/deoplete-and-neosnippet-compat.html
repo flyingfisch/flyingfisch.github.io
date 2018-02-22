@@ -37,8 +37,6 @@
             
         
             
-                
-            
         
             
                 
@@ -157,11 +155,15 @@
             
         
             
-        
+                
             
         
             
+                
+            
         
+            
+                
             
         
     </nav>
@@ -186,14 +188,14 @@
     </div>
 
     <h1 class="post-title">Getting neosnippet to work with deoplete</h1>
-    <p>It took me a bit of searching, but I finally figured out how to get neosnippet to work with deoplete. The issue is that the deoplete auto-complete trigger is <code>&lt;Tab&gt;</code>, which is also the neosnippet expansion trigger. So we want to change the neosnippet trigger to something else, like <code>&lt;C-k&gt;</code>. Here are the lines to add to your <code>init.vim</code> file:</p>
+    <p>It took me a bit of searching, but I finally figured out how to get neosnippet to work with deoplete. The issue is that the deoplete auto-complete trigger is <code class="highlighter-rouge">&lt;Tab&gt;</code>, which is also the neosnippet expansion trigger. So we want to change the neosnippet trigger to something else, like <code class="highlighter-rouge">&lt;C-k&gt;</code>. Here are the lines to add to your <code class="highlighter-rouge">init.vim</code> file:</p>
 
-<pre><code class="language-vim">let g:deoplete#enable_at_startup = 1
+<div class="language-vim highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">let</span> <span class="nv">g:deoplete</span>#enable_at_startup <span class="p">=</span> <span class="m">1</span>
 
-imap &lt;C-k&gt;     &lt;Plug&gt;(neosnippet_expand_or_jump)
-smap &lt;C-k&gt;     &lt;Plug&gt;(neosnippet_expand_or_jump)
-xmap &lt;C-k&gt;     &lt;Plug&gt;(neosnippet_expand_target)
-</code></pre>
+imap <span class="p">&lt;</span>C<span class="p">-</span><span class="k">k</span><span class="p">&gt;</span>     <span class="p">&lt;</span>Plug<span class="p">&gt;(</span>neosnippet_expand_or_jump<span class="p">)</span>
+<span class="k">smap</span> <span class="p">&lt;</span>C<span class="p">-</span><span class="k">k</span><span class="p">&gt;</span>     <span class="p">&lt;</span>Plug<span class="p">&gt;(</span>neosnippet_expand_or_jump<span class="p">)</span>
+xmap <span class="p">&lt;</span>C<span class="p">-</span><span class="k">k</span><span class="p">&gt;</span>     <span class="p">&lt;</span>Plug<span class="p">&gt;(</span>neosnippet_expand_target<span class="p">)</span>
+</code></pre></div></div>
 
 
 </article>

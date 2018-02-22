@@ -37,8 +37,6 @@
             
         
             
-                
-            
         
             
                 
@@ -157,11 +155,15 @@
             
         
             
-        
+                
             
         
             
+                
+            
         
+            
+                
             
         
     </nav>
@@ -216,49 +218,49 @@
 
 <p>Now we have to style it. The first thing we’ll do is get rid of the bullets, margin and the padding.</p>
 
-<pre><code class="language-scss">header {
-    ul {
-        list-style: none;
-        margin: 0;
-    }
-}
-</code></pre>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">header</span> <span class="p">{</span>
+    <span class="nt">ul</span> <span class="p">{</span>
+        <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+        <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p>Hmm, those list items look kind of weird. Let’s line them up horizontally.</p>
 
-<pre><code class="language-scss">header {
-    ul {
-        display: inline-block;
-        margin-left: 1em; // separate them a little
-    }
-}
-</code></pre>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">header</span> <span class="p">{</span>
+    <span class="nt">ul</span> <span class="p">{</span>
+        <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+        <span class="nl">margin-left</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span> <span class="c1">// separate them a little
+</span>    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p>Well, those links are lined up now, but they are hard to read on the blue, so let’s style them up a little.</p>
 
-<pre><code class="language-scss">header {
-    a {
-        color: $light;
-        font-family: $font-header;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-}
-</code></pre>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">header</span> <span class="p">{</span>
+    <span class="nt">a</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="nv">$light</span><span class="p">;</span>
+        <span class="nl">font-family</span><span class="p">:</span> <span class="nv">$font-header</span><span class="p">;</span>
+        <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+        <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p>And then let’s get them to show up on the same line as the club name.</p>
 
-<pre><code class="language-scss">header {
-    h1 {
-        float: left;
-    }
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">header</span> <span class="p">{</span>
+    <span class="nt">h1</span> <span class="p">{</span>
+        <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+    <span class="p">}</span>
 
-    ul {
-        float: right;
-        line-height: 80px; // centers the ul in the header. The trick is if you only need to center a single line of text you can do it by setting line-height to the height of the container
-    }
-}
-</code></pre>
+    <span class="nt">ul</span> <span class="p">{</span>
+        <span class="nl">float</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>
+        <span class="nl">line-height</span><span class="p">:</span> <span class="m">80px</span><span class="p">;</span> <span class="c1">// centers the ul in the header. The trick is if you only need to center a single line of text you can do it by setting line-height to the height of the container
+</span>    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <h1 id="body-copy">Body copy</h1>
 
@@ -273,33 +275,33 @@
 &lt;p&gt;The Men were ravaging the countryside, leaving destruction in their wake. Eowyn attacked Weathertop, and slaughtered the Orcs in a surprise attack. Sam attacked The mines of Moria, and slaughtered the Hobbits in a surprise attack. The Elves ambushed Boromir at Bree. Meanwhile, The attack failed, forcing the Dwarves to retreat to Bree. &lt;/p&gt;
 </code></pre>
 
-<p>Time to style this stuff! The first thing I am going to do is make <code>h1</code> and <code>h2</code> small-caps.</p>
+<p>Time to style this stuff! The first thing I am going to do is make <code class="highlighter-rouge">h1</code> and <code class="highlighter-rouge">h2</code> small-caps.</p>
 
-<pre><code class="language-scss">h1, h2 {
-    font-varient: small-caps;
-    font-weight: normal;
-}
-</code></pre>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span> <span class="p">{</span>
+    <span class="na">font-varient</span><span class="p">:</span> <span class="nb">small-caps</span><span class="p">;</span>
+    <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p>That looks nice, except the letters all touch the left hand side of the screen, making them hard to read. I’m going to add some padding to the article element to fix that.</p>
 
-<pre><code class="language-scss">article {
-    padding: 1em;
-}
-</code></pre>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">article</span> <span class="p">{</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-<p>You may have noticed in the mockup that the first paragraph and header were set off from the rest of the text. We can do this by sticking that text inside a <code>section</code> with class <code>feature</code> and styling it up like so:</p>
+<p>You may have noticed in the mockup that the first paragraph and header were set off from the rest of the text. We can do this by sticking that text inside a <code class="highlighter-rouge">section</code> with class <code class="highlighter-rouge">feature</code> and styling it up like so:</p>
 
-<pre><code class="language-scss">article {
-    .feature {
-        font-size: 1.2em;
-        margin-bottom: 2em;
-        padding-left: 20%;
-        padding-right: 20%;
-        text-align: center;
-    }
-}
-</code></pre>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">article</span> <span class="p">{</span>
+    <span class="nc">.feature</span> <span class="p">{</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">1</span><span class="mi">.2em</span><span class="p">;</span>
+        <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">2em</span><span class="p">;</span>
+        <span class="nl">padding-left</span><span class="p">:</span> <span class="m">20%</span><span class="p">;</span>
+        <span class="nl">padding-right</span><span class="p">:</span> <span class="m">20%</span><span class="p">;</span>
+        <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <h1 id="conclusion">Conclusion</h1>
 

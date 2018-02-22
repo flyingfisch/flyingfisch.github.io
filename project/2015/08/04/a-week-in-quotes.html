@@ -37,8 +37,6 @@
             
         
             
-                
-            
         
             
                 
@@ -157,11 +155,15 @@
             
         
             
-        
+                
             
         
             
+                
+            
         
+            
+                
             
         
     </nav>
@@ -191,35 +193,35 @@
 <p data-height="391" data-theme-id="6851" data-slug-hash="XbOmwQ" data-default-tab="result" data-user="flyingfisch" class="codepen">See the Pen <a href="http://codepen.io/flyingfisch/pen/XbOmwQ/">Quote of the Day - Day 6 (Antoine de Saint-Exupery)</a> by Mark Fischer, Jr (<a href="http://codepen.io/flyingfisch">@flyingfisch</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-<p>The most challenging part, and the part that spawned the whole thing, were the lines on each side of the quotation marks. The first thing you have to do is make the line. This is easy enough, we just add <code>border-bottom</code> like so:</p>
+<p>The most challenging part, and the part that spawned the whole thing, were the lines on each side of the quotation marks. The first thing you have to do is make the line. This is easy enough, we just add <code class="highlighter-rouge">border-bottom</code> like so:</p>
 
-<pre><code class="language-scss">blockquote {
-    &amp;::before {
-        border-bottom: 3px solid #000;
-    }
-}
-</code></pre>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">blockquote</span> <span class="p">{</span>
+    <span class="err">&amp;</span><span class="p">:</span><span class="o">:</span><span class="n">before</span> <span class="p">{</span>
+        <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">3px</span> <span class="nb">solid</span> <span class="mh">#000</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-<p>Next, we need that line to go behind our <code>::before</code> element. We can do this by making the height of the element half of the height of the letters, the best way to do that is with <code>0.5em</code>.</p>
+<p>Next, we need that line to go behind our <code class="highlighter-rouge">::before</code> element. We can do this by making the height of the element half of the height of the letters, the best way to do that is with <code class="highlighter-rouge">0.5em</code>.</p>
 
-<pre><code class="language-scss">blockquote {
-    &amp;::before {
-        border-bottom: 3px solid #000;
-        height: 0.5em
-    }
-}
-</code></pre>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">blockquote</span> <span class="p">{</span>
+    <span class="err">&amp;</span><span class="p">:</span><span class="o">:</span><span class="n">before</span> <span class="p">{</span>
+        <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">3px</span> <span class="nb">solid</span> <span class="mh">#000</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">0</span><span class="mi">.5em</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p>Now comes the tricky part. How do we get the line to only show on either side of the element? One way would be to give the element a background color that matches the parent background color. Unfortunately, this only works when we have a solid background color. Since we want images behind it, we need another method. The one I came up with was using a gradient, like so:</p>
 
-<pre><code class="language-scss">blockquote {
-    &amp;::before {
-        border-bottom: 3px solid #000;
-        border-image: linear-gradient(to right, #555 0, #555 47%, transparent 47%, transparent 53%, #555 53%, #555 100%);
-        height: 0.5em
-    }
-}
-</code></pre>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">blockquote</span> <span class="p">{</span>
+    <span class="err">&amp;</span><span class="p">:</span><span class="o">:</span><span class="n">before</span> <span class="p">{</span>
+        <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">3px</span> <span class="nb">solid</span> <span class="mh">#000</span><span class="p">;</span>
+        <span class="nl">border-image</span><span class="p">:</span> <span class="nf">linear-gradient</span><span class="p">(</span><span class="n">to</span> <span class="nb">right</span><span class="o">,</span> <span class="mh">#555</span> <span class="m">0</span><span class="o">,</span> <span class="mh">#555</span> <span class="m">47%</span><span class="o">,</span> <span class="nb">transparent</span> <span class="m">47%</span><span class="o">,</span> <span class="nb">transparent</span> <span class="m">53%</span><span class="o">,</span> <span class="mh">#555</span> <span class="m">53%</span><span class="o">,</span> <span class="mh">#555</span> <span class="m">100%</span><span class="p">);</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">0</span><span class="mi">.5em</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p>Note that this is not the finished code, I am only showing the interesting properties. If you want code you can copy and paste, check out the source code <a href="http://codepen.io/flyingfisch/pen/XbOmwQ?editors=010">on the pen itself</a>.</p>
 

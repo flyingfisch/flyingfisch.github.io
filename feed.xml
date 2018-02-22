@@ -6,44 +6,64 @@
 </description>
     <link>http://flyingfisch.github.io/</link>
     <atom:link href="http://flyingfisch.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 19 Aug 2016 19:00:38 -0400</pubDate>
-    <lastBuildDate>Fri, 19 Aug 2016 19:00:38 -0400</lastBuildDate>
-    <generator>Jekyll v2.4.0</generator>
+    <pubDate>Thu, 22 Feb 2018 21:50:47 +0000</pubDate>
+    <lastBuildDate>Thu, 22 Feb 2018 21:50:47 +0000</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>test post</title>
+        <description>&lt;h1 id=&quot;this-is-a-test-post&quot;&gt;This is a test post&lt;/h1&gt;
+
+&lt;p&gt;testing&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;test&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;test.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 22 Feb 2018 20:10:00 +0000</pubDate>
+        <link>http://flyingfisch.github.io/test/2018/02/22/forestry-io-test-post.html</link>
+        <guid isPermaLink="true">http://flyingfisch.github.io/test/2018/02/22/forestry-io-test-post.html</guid>
+        
+        
+        <category>test</category>
+        
+      </item>
     
       <item>
         <title>Getting started with the HTML5 notification API</title>
         <description>&lt;p&gt;I used the HTML5 notification API for the first time today, it’s actually much more simple than I expected. There are two functions you need to know about:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// to ask for permission
-Notification.requestPermission(callback);
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// to ask for permission&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;Notification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;requestPermission&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
-// to display a notification
-new Notification(message);
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;c1&quot;&gt;// to display a notification&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Notification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Before you actually display the notification, you need to ask for permission, like so:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;Notification.requestPermission();
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;Notification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;requestPermission&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;We want to display the notification after giving permission, so we just stick that in a callback:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;Notification.requestPermission(function () {
-   if (Notification.permission === &#39;granted&#39;) {
-      new Notification(&#39;test&#39;);
-   }
-});
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;Notification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;requestPermission&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Notification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;permission&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'granted'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Notification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'test'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;And you’re done! If you want to check that the browser supports the Notification API, you can use the following test:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;function browserSupportsNotifications() {
-   return &quot;Notification&quot; in window;
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;browserSupportsNotifications&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Notification&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 </description>
-        <pubDate>Fri, 19 Aug 2016 00:00:00 -0400</pubDate>
+        <pubDate>Fri, 19 Aug 2016 00:00:00 +0000</pubDate>
         <link>http://flyingfisch.github.io/javascript/2016/08/19/using-the-html5-notification-api.html</link>
         <guid isPermaLink="true">http://flyingfisch.github.io/javascript/2016/08/19/using-the-html5-notification-api.html</guid>
         
@@ -54,17 +74,17 @@ new Notification(message);
     
       <item>
         <title>Getting neosnippet to work with deoplete</title>
-        <description>&lt;p&gt;It took me a bit of searching, but I finally figured out how to get neosnippet to work with deoplete. The issue is that the deoplete auto-complete trigger is &lt;code&gt;&amp;lt;Tab&amp;gt;&lt;/code&gt;, which is also the neosnippet expansion trigger. So we want to change the neosnippet trigger to something else, like &lt;code&gt;&amp;lt;C-k&amp;gt;&lt;/code&gt;. Here are the lines to add to your &lt;code&gt;init.vim&lt;/code&gt; file:&lt;/p&gt;
+        <description>&lt;p&gt;It took me a bit of searching, but I finally figured out how to get neosnippet to work with deoplete. The issue is that the deoplete auto-complete trigger is &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;Tab&amp;gt;&lt;/code&gt;, which is also the neosnippet expansion trigger. So we want to change the neosnippet trigger to something else, like &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;C-k&amp;gt;&lt;/code&gt;. Here are the lines to add to your &lt;code class=&quot;highlighter-rouge&quot;&gt;init.vim&lt;/code&gt; file:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-vim&quot;&gt;let g:deoplete#enable_at_startup = 1
+&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;g:deoplete&lt;/span&gt;#enable_at_startup &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
 
-imap &amp;lt;C-k&amp;gt;     &amp;lt;Plug&amp;gt;(neosnippet_expand_or_jump)
-smap &amp;lt;C-k&amp;gt;     &amp;lt;Plug&amp;gt;(neosnippet_expand_or_jump)
-xmap &amp;lt;C-k&amp;gt;     &amp;lt;Plug&amp;gt;(neosnippet_expand_target)
-&lt;/code&gt;&lt;/pre&gt;
+imap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;C&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;     &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;Plug&lt;span class=&quot;p&quot;&gt;&amp;gt;(&lt;/span&gt;neosnippet_expand_or_jump&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;smap&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;C&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;     &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;Plug&lt;span class=&quot;p&quot;&gt;&amp;gt;(&lt;/span&gt;neosnippet_expand_or_jump&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+xmap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;C&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;     &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;Plug&lt;span class=&quot;p&quot;&gt;&amp;gt;(&lt;/span&gt;neosnippet_expand_target&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 </description>
-        <pubDate>Sun, 07 Aug 2016 00:00:00 -0400</pubDate>
+        <pubDate>Sun, 07 Aug 2016 00:00:00 +0000</pubDate>
         <link>http://flyingfisch.github.io/vim/2016/08/07/deoplete-and-neosnippet-compat.html</link>
         <guid isPermaLink="true">http://flyingfisch.github.io/vim/2016/08/07/deoplete-and-neosnippet-compat.html</guid>
         
@@ -84,12 +104,12 @@ xmap &amp;lt;C-k&amp;gt;     &amp;lt;Plug&amp;gt;(neosnippet_expand_target)
 &lt;p&gt;The exterior model is very detailed, with many extra features such as chocks, remove before flight tags, opening canopy, steps, and icing textures.&lt;/p&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/assets/l39-exterior.png&quot; alt=&quot;Picture of the l-39&#39;s exterior&quot; /&gt;
-&lt;figcaption&gt;The L-39&#39;s exterior model. Featuring the &lt;a href=&quot;http://www.sim-outhouse.com/sohforums/showthread.php?94934-L39C-Albatros-Capali-zip&quot;&gt;Hungarian Air Force &quot;red 135&quot; livery&lt;/a&gt;&lt;/figcaption&gt;
+&lt;img src=&quot;/assets/l39-exterior.png&quot; alt=&quot;Picture of the l-39's exterior&quot; /&gt;
+&lt;figcaption&gt;The L-39's exterior model. Featuring the &lt;a href=&quot;http://www.sim-outhouse.com/sohforums/showthread.php?94934-L39C-Albatros-Capali-zip&quot;&gt;Hungarian Air Force &quot;red 135&quot; livery&lt;/a&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/assets/l39-exterior-front.png&quot; alt=&quot;Picture of the l-39&#39;s exterior&quot; /&gt;
+&lt;img src=&quot;/assets/l39-exterior-front.png&quot; alt=&quot;Picture of the l-39's exterior&quot; /&gt;
 &lt;figcaption&gt;Same plane and livery from the front.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -98,13 +118,13 @@ xmap &amp;lt;C-k&amp;gt;     &amp;lt;Plug&amp;gt;(neosnippet_expand_target)
 &lt;p&gt;The L-39’s virtual cockpit is where it really shines. Practically everything is clickable, and the switches and gauges have been meticulously modelled to look and function like those installed in the real aircraft. The comm radio even has the same quick dial system as on the original. The nav radio has a single frequency display with different modes for the VORs, NDB, and transponder. Lights all work, and the panel lights and cockpit lights are separate. Warning lights are all modelled, make sure you refer to the manual to understand what they mean.&lt;/p&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/assets/l39-interior.png&quot; alt=&quot;Picture of the l-39&#39;s interior&quot; /&gt;
+&lt;img src=&quot;/assets/l39-interior.png&quot; alt=&quot;Picture of the l-39's interior&quot; /&gt;
 &lt;figcaption&gt;Shot of the interior showing most of the clickable controls.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;h1 id=&quot;systems&quot;&gt;Systems&lt;/h1&gt;
 
-&lt;p&gt;&lt;code&gt;Ctrl-E&lt;/code&gt; is disabled on this plane, you have to refer to the manual for engine start instructions. There is a damage system included, which keeps track of stress and hours of operation for each main system component. Damage and hours of operation are saved periodically, and restarting the simulator does not remove damage. A damage assessment panel can be accessed with &lt;code&gt;Shift-4&lt;/code&gt;, more details on how to fix components are included in the manual.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-E&lt;/code&gt; is disabled on this plane, you have to refer to the manual for engine start instructions. There is a damage system included, which keeps track of stress and hours of operation for each main system component. Damage and hours of operation are saved periodically, and restarting the simulator does not remove damage. A damage assessment panel can be accessed with &lt;code class=&quot;highlighter-rouge&quot;&gt;Shift-4&lt;/code&gt;, more details on how to fix components are included in the manual.&lt;/p&gt;
 
 &lt;p&gt;The landing gear, flaps, air brakes, and wheel brakes are powered by the hydraulic system. There are backup levers for each in case the hydraulic pump fails, though they only work once, so in an emergency make sure you are committed to landing before you deploy them.&lt;/p&gt;
 
@@ -121,17 +141,17 @@ xmap &amp;lt;C-k&amp;gt;     &amp;lt;Plug&amp;gt;(neosnippet_expand_target)
 &lt;h1 id=&quot;more-screenshots&quot;&gt;More screenshots&lt;/h1&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/assets/l39-interior-seat.png&quot; alt=&quot;Picture of the l-39&#39;s interior&quot; /&gt;
+&lt;img src=&quot;/assets/l39-interior-seat.png&quot; alt=&quot;Picture of the l-39's interior&quot; /&gt;
 &lt;figcaption&gt;Shot of the interior facing the back of the cockpit.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/assets/l39-interior-panel.png&quot; alt=&quot;Picture of the l-39&#39;s interior&quot; /&gt;
+&lt;img src=&quot;/assets/l39-interior-panel.png&quot; alt=&quot;Picture of the l-39's interior&quot; /&gt;
 &lt;figcaption&gt;Shot of the instrument panel and control stick.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/assets/l39-interior-approach.png&quot; alt=&quot;Picture of the l-39&#39;s interior&quot; /&gt;
+&lt;img src=&quot;/assets/l39-interior-approach.png&quot; alt=&quot;Picture of the l-39's interior&quot; /&gt;
 &lt;figcaption&gt;On approach for runway 25 at KAKR.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -140,7 +160,7 @@ xmap &amp;lt;C-k&amp;gt;     &amp;lt;Plug&amp;gt;(neosnippet_expand_target)
 &lt;p&gt;&lt;a href=&quot;https://drive.google.com/file/d/0B6K_xiE2GqmMNElNWHpEOTE1UE0/view?usp=sharing&quot;&gt;Download link&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 01 Aug 2016 00:00:00 -0400</pubDate>
+        <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
         <link>http://flyingfisch.github.io/flight-simulator/fsx/2016/08/01/best-fsx-plane.html</link>
         <guid isPermaLink="true">http://flyingfisch.github.io/flight-simulator/fsx/2016/08/01/best-fsx-plane.html</guid>
         
@@ -157,25 +177,25 @@ xmap &amp;lt;C-k&amp;gt;     &amp;lt;Plug&amp;gt;(neosnippet_expand_target)
 
 &lt;p&gt;Often when programming we may write something like this:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// Checks if user is authorized to use shoot()
-if (user.type == &#39;soldier&#39; || (user.type == &#39;police&#39; &amp;amp;&amp;amp; situation.location == &#39;USA&#39;)) {
-  shoot();
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Checks if user is authorized to use shoot()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'soldier'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'police'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;situation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'USA'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;shoot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;The problem with this is that the comment could become out of date when the code is refactored. My thought is that code like this can be refactored to use a variable instead of a comment to document it. For instance:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;var isAuthorizedToShoot = user.type == &#39;soldier&#39; || (user.type == &#39;police&#39; &amp;amp;&amp;amp; situation.location == &#39;USA&#39;)
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;isAuthorizedToShoot&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'soldier'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'police'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;situation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'USA'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-if (isAuthorizedToShoot) {
-  shoot();
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isAuthorizedToShoot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;shoot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;One problem I can see with it is that the variable name might not be updated, just like the comment. My thought is that there would be more incentive to update the variable name since it is actually part of the code, but let me know what you think.&lt;/p&gt;
 
 </description>
-        <pubDate>Sun, 06 Mar 2016 00:00:00 -0500</pubDate>
+        <pubDate>Sun, 06 Mar 2016 00:00:00 +0000</pubDate>
         <link>http://flyingfisch.github.io/programming/2016/03/06/a-thought-on-self-documenting-code.html</link>
         <guid isPermaLink="true">http://flyingfisch.github.io/programming/2016/03/06/a-thought-on-self-documenting-code.html</guid>
         
@@ -202,10 +222,10 @@ if (isAuthorizedToShoot) {
 
 &lt;p&gt;Installing Cinnamon was pretty easy, these three commands did the trick for me:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ sudo add-apt-repository ppa:tsvetko.tsvetkov/cinnamon
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo add-apt-repository ppa:tsvetko.tsvetkov/cinnamon
 $ sudo apt-get update
 $ sudo apt-get install cinnamon
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Although Cinnamon comes with a scaling mode, you can only switch between 1x and 2x GUI scaling. My screen’s DPI isn’t quite high enough for 2x, though it is high enough that at 1x the fonts were too small to read easily. I was able to solve this by changing the font scale to 1.2. The default height for the Cinnamon panel seemed small as well, so I made it taller.&lt;/p&gt;
 
@@ -222,7 +242,7 @@ $ sudo apt-get install cinnamon
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Sun, 17 Jan 2016 00:00:00 -0500</pubDate>
+        <pubDate>Sun, 17 Jan 2016 00:00:00 +0000</pubDate>
         <link>http://flyingfisch.github.io/linux/2016/01/17/linux-on-lenovo-x1-carbon.html</link>
         <guid isPermaLink="true">http://flyingfisch.github.io/linux/2016/01/17/linux-on-lenovo-x1-carbon.html</guid>
         
@@ -232,7 +252,7 @@ $ sudo apt-get install cinnamon
       </item>
     
       <item>
-        <title>Don&#39;t Worry, Just Code</title>
+        <title>Don't Worry, Just Code</title>
         <description>&lt;p&gt;Use &lt;a href=&quot;http://lifehacker.com/this-graphic-helps-you-pick-your-first-programming-lang-1719213677&quot;&gt;this chart&lt;/a&gt; to decide your first programming language. Hey, come back! I was just making a point. Hello?&lt;/p&gt;
 
 &lt;p&gt;For those of you who stayed, charts like this are just about the worst way to choose a programming language.&lt;/p&gt;
@@ -246,15 +266,15 @@ $ sudo apt-get install cinnamon
 &lt;figcaption&gt;The fx-9750GII&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;This is a Casio fx-9750GII, the device that first introduced me to programming. It was given to me on my 14th birthday and I was overjoyed. The first thing I did was start reading the manual from page one. After getting through the calculating and graphing sections, I came across a chapter I didn’t expect to see, labeled “Programming”. Well, right there I decided I was going to program the thing (there was no tutorial, just a syntax guide and documentation of the built-in functions). My first program ever was named &lt;code&gt;SQRT&lt;/code&gt;, and it looked something like this:&lt;/p&gt;
+&lt;p&gt;This is a Casio fx-9750GII, the device that first introduced me to programming. It was given to me on my 14th birthday and I was overjoyed. The first thing I did was start reading the manual from page one. After getting through the calculating and graphing sections, I came across a chapter I didn’t expect to see, labeled “Programming”. Well, right there I decided I was going to program the thing (there was no tutorial, just a syntax guide and documentation of the built-in functions). My first program ever was named &lt;code class=&quot;highlighter-rouge&quot;&gt;SQRT&lt;/code&gt;, and it looked something like this:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;?→A
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;?→A
 Locate 1,1,√A
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;It took user input, assigned it to &lt;code&gt;A&lt;/code&gt;, and then printed the square root of &lt;code&gt;A&lt;/code&gt; at position &lt;code&gt;1, 1&lt;/code&gt; on the screen. My next program printed “Yay I can code!” over and over and over again. As much as I hate to admit it, it used &lt;code&gt;goto&lt;/code&gt; instead of a &lt;code&gt;while&lt;/code&gt; loop.&lt;/p&gt;
+&lt;p&gt;It took user input, assigned it to &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt;, and then printed the square root of &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt; at position &lt;code class=&quot;highlighter-rouge&quot;&gt;1, 1&lt;/code&gt; on the screen. My next program printed “Yay I can code!” over and over and over again. As much as I hate to admit it, it used &lt;code class=&quot;highlighter-rouge&quot;&gt;goto&lt;/code&gt; instead of a &lt;code class=&quot;highlighter-rouge&quot;&gt;while&lt;/code&gt; loop.&lt;/p&gt;
 
-&lt;p&gt;Fast forward a couple months. I had learned from some friendly people on the &lt;a href=&quot;http://casiocalc.org/&quot;&gt;Universal Casio Forums&lt;/a&gt; that using &lt;code&gt;goto&lt;/code&gt; was usually a bad idea, and had started using loops and subroutines to organize my code. I had also begun to realize that Casio’s BASIC dialect was pretty slow for anything other than math. Since I wanted to program games for it, I started researching other ways to program calculators. After googling around a bit I learned that the hardware on my calculator was actually the same as the hardware on the fx-9860GII, which had an SDK for developing &lt;em&gt;addins&lt;/em&gt; for it in C. So I installed a third-party custom ROM with the addin feature flag set to true, and got to work learning C.&lt;/p&gt;
+&lt;p&gt;Fast forward a couple months. I had learned from some friendly people on the &lt;a href=&quot;http://casiocalc.org/&quot;&gt;Universal Casio Forums&lt;/a&gt; that using &lt;code class=&quot;highlighter-rouge&quot;&gt;goto&lt;/code&gt; was usually a bad idea, and had started using loops and subroutines to organize my code. I had also begun to realize that Casio’s BASIC dialect was pretty slow for anything other than math. Since I wanted to program games for it, I started researching other ways to program calculators. After googling around a bit I learned that the hardware on my calculator was actually the same as the hardware on the fx-9860GII, which had an SDK for developing &lt;em&gt;addins&lt;/em&gt; for it in C. So I installed a third-party custom ROM with the addin feature flag set to true, and got to work learning C.&lt;/p&gt;
 
 &lt;p&gt;There was a problem, though. Writing C for that calculator was hard. Most of the default libraries that online C tutorials referenced were not available or were named differently, and the documentation for the SDK was somewhat obscure. I ended up going back to good old BASIC and optimizing the programs I wrote to try to improve their speed.&lt;/p&gt;
 
@@ -285,32 +305,32 @@ Locate 1,1,√A
 
 &lt;p&gt;Take a look at this code:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;if (a == 2) {
-    print(&quot;hello world&quot;);
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now have a look at this:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;if (a == 2) {
-    console.log(&quot;hello world&quot;);
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;And this (getting a little trickier):&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;if ($a == 2) {
-    print(&quot;hello world&quot;);
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;The point is, knowing one language makes learning another much easier. Even with Python’s different syntax, the &lt;code&gt;if&lt;/code&gt; statement still works the same way.&lt;/p&gt;
+&lt;p&gt;The point is, knowing one language makes learning another much easier. Even with Python’s different syntax, the &lt;code class=&quot;highlighter-rouge&quot;&gt;if&lt;/code&gt; statement still works the same way.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;if a == 2:
-    print(&quot;hello world&quot;)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Even though the syntax has changed slightly and the curly brackets are gone, you still know what an &lt;code&gt;if&lt;/code&gt; statement is and when to use it. Programming is 90% thinking and 10% typing. Knowing what to express is more important than knowing how to express it.&lt;/p&gt;
+&lt;p&gt;Even though the syntax has changed slightly and the curly brackets are gone, you still know what an &lt;code class=&quot;highlighter-rouge&quot;&gt;if&lt;/code&gt; statement is and when to use it. Programming is 90% thinking and 10% typing. Knowing what to express is more important than knowing how to express it.&lt;/p&gt;
 
 &lt;p&gt;So Ruby developers make more, on average, than Python developers? Who cares? You can always switch later.&lt;/p&gt;
 
@@ -325,7 +345,7 @@ Locate 1,1,√A
 
 &lt;p&gt;You can’t know the shortcomings of a language unless you experience them yourself. Regardless of how much you may think you know that PHP “doesn’t scale”, without attempting to use it for a large project you will never truly understand what that means. Conversly, unless you have experienced the shortcomings of vanilla PHP, you won’t truly appreciate the added perceived complexity of an MVC framework like Django.&lt;/p&gt;
 
-&lt;p&gt;When starting out in programming, you can’t know what you don’t know. A man who has lived his entire life in a totalitarian state without ever hearing of freedom doesn’t understand why he would want it. Likewise, someone who has never experienced functional programming would never know why or when to use &lt;code&gt;map&lt;/code&gt; in Python or pass functions as arguments in C#.&lt;/p&gt;
+&lt;p&gt;When starting out in programming, you can’t know what you don’t know. A man who has lived his entire life in a totalitarian state without ever hearing of freedom doesn’t understand why he would want it. Likewise, someone who has never experienced functional programming would never know why or when to use &lt;code class=&quot;highlighter-rouge&quot;&gt;map&lt;/code&gt; in Python or pass functions as arguments in C#.&lt;/p&gt;
 
 &lt;h1 id=&quot;skill-is-directly-proportional-to-salary&quot;&gt;Skill is directly proportional to salary&lt;/h1&gt;
 
@@ -338,11 +358,11 @@ Locate 1,1,√A
 &lt;p&gt;One last point before wrapping up (promise!): no one is going to remember you for the language you programmed in, but they &lt;em&gt;will&lt;/em&gt; remember the products you build. No one is going to remember Mark Zuckerberg because he was a PHP whiz, they’ll remember him for Facebook.&lt;/p&gt;
 
 &lt;blockquote class=&quot;pull-quote&quot;&gt;
-Don&#39;t worry about languages, go build awesome stuff!
+Don't worry about languages, go build awesome stuff!
 &lt;/blockquote&gt;
 
 </description>
-        <pubDate>Tue, 04 Aug 2015 00:00:00 -0400</pubDate>
+        <pubDate>Tue, 04 Aug 2015 00:00:00 +0000</pubDate>
         <link>http://flyingfisch.github.io/culture/programming/2015/08/04/dont-worry-just-build.html</link>
         <guid isPermaLink="true">http://flyingfisch.github.io/culture/programming/2015/08/04/dont-worry-just-build.html</guid>
         
@@ -360,40 +380,40 @@ Don&#39;t worry about languages, go build awesome stuff!
 &lt;p data-height=&quot;391&quot; data-theme-id=&quot;6851&quot; data-slug-hash=&quot;XbOmwQ&quot; data-default-tab=&quot;result&quot; data-user=&quot;flyingfisch&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/flyingfisch/pen/XbOmwQ/&quot;&gt;Quote of the Day - Day 6 (Antoine de Saint-Exupery)&lt;/a&gt; by Mark Fischer, Jr (&lt;a href=&quot;http://codepen.io/flyingfisch&quot;&gt;@flyingfisch&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;The most challenging part, and the part that spawned the whole thing, were the lines on each side of the quotation marks. The first thing you have to do is make the line. This is easy enough, we just add &lt;code&gt;border-bottom&lt;/code&gt; like so:&lt;/p&gt;
+&lt;p&gt;The most challenging part, and the part that spawned the whole thing, were the lines on each side of the quotation marks. The first thing you have to do is make the line. This is easy enough, we just add &lt;code class=&quot;highlighter-rouge&quot;&gt;border-bottom&lt;/code&gt; like so:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;blockquote {
-    &amp;amp;::before {
-        border-bottom: 3px solid #000;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;blockquote&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;before&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;border-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Next, we need that line to go behind our &lt;code&gt;::before&lt;/code&gt; element. We can do this by making the height of the element half of the height of the letters, the best way to do that is with &lt;code&gt;0.5em&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Next, we need that line to go behind our &lt;code class=&quot;highlighter-rouge&quot;&gt;::before&lt;/code&gt; element. We can do this by making the height of the element half of the height of the letters, the best way to do that is with &lt;code class=&quot;highlighter-rouge&quot;&gt;0.5em&lt;/code&gt;.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;blockquote {
-    &amp;amp;::before {
-        border-bottom: 3px solid #000;
-        height: 0.5em
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;blockquote&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;before&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;border-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.5em&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now comes the tricky part. How do we get the line to only show on either side of the element? One way would be to give the element a background color that matches the parent background color. Unfortunately, this only works when we have a solid background color. Since we want images behind it, we need another method. The one I came up with was using a gradient, like so:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;blockquote {
-    &amp;amp;::before {
-        border-bottom: 3px solid #000;
-        border-image: linear-gradient(to right, #555 0, #555 47%, transparent 47%, transparent 53%, #555 53%, #555 100%);
-        height: 0.5em
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;blockquote&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;before&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;border-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;border-image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#555&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#555&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;47%&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;47%&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;53%&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#555&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;53%&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#555&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.5em&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Note that this is not the finished code, I am only showing the interesting properties. If you want code you can copy and paste, check out the source code &lt;a href=&quot;http://codepen.io/flyingfisch/pen/XbOmwQ?editors=010&quot;&gt;on the pen itself&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 04 Aug 2015 00:00:00 -0400</pubDate>
+        <pubDate>Tue, 04 Aug 2015 00:00:00 +0000</pubDate>
         <link>http://flyingfisch.github.io/project/2015/08/04/a-week-in-quotes.html</link>
         <guid isPermaLink="true">http://flyingfisch.github.io/project/2015/08/04/a-week-in-quotes.html</guid>
         
@@ -420,21 +440,21 @@ Don&#39;t worry about languages, go build awesome stuff!
 
 &lt;p&gt;OK, with that out of the way we can start styling. Let’s start by giving it a background color (remember that we set variables for the color values at the top of the stylesheet):&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;footer {
-    background-color: $light-secondary;
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;footer&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$light-secondary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now let’s throw some padding on it:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;padding: 2em;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;And then make the font a little larger and centered:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;font-size: 1.2em;
-text-align: center;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.2em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;That’s it for the footer, now let’s do some quick mobile optimizations and wrap this project up.&lt;/p&gt;
 
@@ -442,23 +462,23 @@ text-align: center;
 
 &lt;p&gt;The first thing we can do is make the navigation go below the logo on mobile.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;header {
-    @media (max-width: 630px) {
-        nav {
-            display: block;
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;header&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;630px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;nav&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Next let’s make the feature section come all the way to the edges of the screen.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;article {
-    .feature {
-        padding: 0;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;article&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;.feature&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;That’s it!&lt;/p&gt;
 
@@ -472,7 +492,7 @@ text-align: center;
 &lt;p&gt;Feel free to fork the pen and make it your own!&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 26 Jun 2015 00:00:00 -0400</pubDate>
+        <pubDate>Fri, 26 Jun 2015 00:00:00 +0000</pubDate>
         <link>http://flyingfisch.github.io/frontend/design/tutorial/modern-website-series/2015/06/26/building-a-modern-website-part-2.html</link>
         <guid isPermaLink="true">http://flyingfisch.github.io/frontend/design/tutorial/modern-website-series/2015/06/26/building-a-modern-website-part-2.html</guid>
         
@@ -519,49 +539,49 @@ text-align: center;
 
 &lt;p&gt;Now we have to style it. The first thing we’ll do is get rid of the bullets, margin and the padding.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;header {
-    ul {
-        list-style: none;
-        margin: 0;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;header&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;list-style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Hmm, those list items look kind of weird. Let’s line them up horizontally.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;header {
-    ul {
-        display: inline-block;
-        margin-left: 1em; // separate them a little
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;header&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inline-block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;margin-left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// separate them a little
+&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Well, those links are lined up now, but they are hard to read on the blue, so let’s style them up a little.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;header {
-    a {
-        color: $light;
-        font-family: $font-header;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;header&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$light&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$font-header&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;text-decoration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;text-transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;uppercase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;And then let’s get them to show up on the same line as the club name.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;header {
-    h1 {
-        float: left;
-    }
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;header&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-    ul {
-        float: right;
-        line-height: 80px; // centers the ul in the header. The trick is if you only need to center a single line of text you can do it by setting line-height to the height of the container
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
+    &lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;80px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// centers the ul in the header. The trick is if you only need to center a single line of text you can do it by setting line-height to the height of the container
+&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;body-copy&quot;&gt;Body copy&lt;/h1&gt;
 
@@ -576,33 +596,33 @@ text-align: center;
 &amp;lt;p&amp;gt;The Men were ravaging the countryside, leaving destruction in their wake. Eowyn attacked Weathertop, and slaughtered the Orcs in a surprise attack. Sam attacked The mines of Moria, and slaughtered the Hobbits in a surprise attack. The Elves ambushed Boromir at Bree. Meanwhile, The attack failed, forcing the Dwarves to retreat to Bree. &amp;lt;/p&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Time to style this stuff! The first thing I am going to do is make &lt;code&gt;h1&lt;/code&gt; and &lt;code&gt;h2&lt;/code&gt; small-caps.&lt;/p&gt;
+&lt;p&gt;Time to style this stuff! The first thing I am going to do is make &lt;code class=&quot;highlighter-rouge&quot;&gt;h1&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;h2&lt;/code&gt; small-caps.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;h1, h2 {
-    font-varient: small-caps;
-    font-weight: normal;
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;font-varient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;small-caps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;That looks nice, except the letters all touch the left hand side of the screen, making them hard to read. I’m going to add some padding to the article element to fix that.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;article {
-    padding: 1em;
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;article&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;You may have noticed in the mockup that the first paragraph and header were set off from the rest of the text. We can do this by sticking that text inside a &lt;code&gt;section&lt;/code&gt; with class &lt;code&gt;feature&lt;/code&gt; and styling it up like so:&lt;/p&gt;
+&lt;p&gt;You may have noticed in the mockup that the first paragraph and header were set off from the rest of the text. We can do this by sticking that text inside a &lt;code class=&quot;highlighter-rouge&quot;&gt;section&lt;/code&gt; with class &lt;code class=&quot;highlighter-rouge&quot;&gt;feature&lt;/code&gt; and styling it up like so:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;article {
-    .feature {
-        font-size: 1.2em;
-        margin-bottom: 2em;
-        padding-left: 20%;
-        padding-right: 20%;
-        text-align: center;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;article&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;.feature&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.2em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;margin-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;padding-left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;padding-right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
 
@@ -614,7 +634,7 @@ text-align: center;
 &lt;p&gt;That concludes this part of the series. In the next and final part I will build the footer, do some mobile optimizations, and put on the finishing touches. Stay tuned!&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 10 Jun 2015 00:00:00 -0400</pubDate>
+        <pubDate>Wed, 10 Jun 2015 00:00:00 +0000</pubDate>
         <link>http://flyingfisch.github.io/frontend/design/tutorial/modern-website-series/2015/06/10/building-a-modern-website-part-1.html</link>
         <guid isPermaLink="true">http://flyingfisch.github.io/frontend/design/tutorial/modern-website-series/2015/06/10/building-a-modern-website-part-1.html</guid>
         
@@ -626,23 +646,6 @@ text-align: center;
         <category>tutorial</category>
         
         <category>modern-website-series</category>
-        
-      </item>
-    
-      <item>
-        <title>Announcing Tolkien Ipsum</title>
-        <description>&lt;p&gt;I built a little website that generates Lord of the Rings themed Lorem Ipsum. You can &lt;a href=&quot;http://tolkienipsum.cloudapp.net/&quot;&gt;check it out live&lt;/a&gt; or view the source on &lt;a href=&quot;https://github.com/flyingfisch/tolkienIpsum&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h1 id=&quot;for-geeks&quot;&gt;For Geeks&lt;/h1&gt;
-
-&lt;p&gt;I am hosting the site on a &lt;a href=&quot;http://azure.microsoft.com/&quot;&gt;Microsoft Azure&lt;/a&gt; Ubuntu 14.04 virtual machine. The setup process for serving Django was pretty straightforward, I just adapted the excellent &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-uwsgi-and-nginx-on-ubuntu-14-04&quot;&gt;Digital Ocean tutorial&lt;/a&gt; to my needs. The project does use python3, so if you are planning on hosting it yourself you’ll want to keep that in mind.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 28 May 2015 00:00:00 -0400</pubDate>
-        <link>http://flyingfisch.github.io/announcement/2015/05/28/tolkien-ipsum.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/announcement/2015/05/28/tolkien-ipsum.html</guid>
-        
-        
-        <category>announcement</category>
         
       </item>
     

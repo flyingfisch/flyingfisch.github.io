@@ -37,8 +37,6 @@
             
         
             
-                
-            
         
             
                 
@@ -157,11 +155,15 @@
             
         
             
-        
+                
             
         
             
+                
+            
         
+            
+                
             
         
     </nav>
@@ -186,12 +188,12 @@
     </div>
 
     <h1 class="post-title">Pseudo-Element Kung-Fu</h1>
-    <p>I recently found that the <code>content</code> property can contain cooler stuff than just
-strings. For instance, you can show the <code>href</code> of a link in a cool popup with
+    <p>I recently found that the <code class="highlighter-rouge">content</code> property can contain cooler stuff than just
+strings. For instance, you can show the <code class="highlighter-rouge">href</code> of a link in a cool popup with
 absolutely no JS:</p>
 
-<pre><code class="language-css">content: attr(href);
-</code></pre>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">content</span><span class="o">:</span> <span class="nt">attr</span><span class="o">(</span><span class="nt">href</span><span class="o">);</span>
+</code></pre></div></div>
 
 <p data-height="378" data-theme-id="6851" data-slug-hash="YXypBV" data-default-tab="result" data-user="flyingfisch" class="codepen">See the Pen <a href="http://codepen.io/flyingfisch/pen/YXypBV/">Pure CSS link hover popup</a> by flyingfisch (<a href="http://codepen.io/flyingfisch">@flyingfisch</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
@@ -201,17 +203,17 @@ absolutely no JS:</p>
 <pre><code class="language-markup">&lt;span class="popup" data-popuptext="This is a CSS-only popup!"&gt;Hover!&lt;/span&gt;
 </code></pre>
 
-<pre><code class="language-css">span.popup:hover:after {
-    content: attr(data-popuptext);
-}
-</code></pre>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">span</span><span class="nc">.popup</span><span class="nd">:hover:after</span> <span class="p">{</span>
+    <span class="nl">content</span><span class="p">:</span> <span class="n">attr</span><span class="p">(</span><span class="n">data-popuptext</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p>And of course a live demo with the full source:</p>
 
 <p data-height="268" data-theme-id="6851" data-slug-hash="oXbBXz" data-default-tab="result" data-user="flyingfisch" class="codepen">See the Pen <a href="http://codepen.io/flyingfisch/pen/oXbBXz/">Pure CSS hover popup</a> by flyingfisch (<a href="http://codepen.io/flyingfisch">@flyingfisch</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-<p>That’s all I’ve got, have fun messing around with <code>content</code>!</p>
+<p>That’s all I’ve got, have fun messing around with <code class="highlighter-rouge">content</code>!</p>
 
 
 </article>

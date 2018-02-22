@@ -37,8 +37,6 @@
             
         
             
-                
-            
         
             
                 
@@ -157,11 +155,15 @@
             
         
             
-        
+                
             
         
             
+                
+            
         
+            
+                
             
         
     </nav>
@@ -217,12 +219,12 @@
 
 <p>The first thing I like to do before actually designing the site is find a font to use. For this project I just ran over to <a href="https://www.google.com/fonts/">Google Fonts</a> and chose Montserrat for the headers and Alegreya for the copy. As a rule of thumb it is usually good to choose a serif font for your body text if the headers are sans-serif, and vice versa.</p>
 
-<p>Here is the <code>link</code> tag for the fonts, we’re just going to add it into the header. Although there are other methods of using Google Fonts, the <code>link</code> tag has the best browser support.</p>
+<p>Here is the <code class="highlighter-rouge">link</code> tag for the fonts, we’re just going to add it into the header. Although there are other methods of using Google Fonts, the <code class="highlighter-rouge">link</code> tag has the best browser support.</p>
 
 <pre><code class="language-markup">&lt;link href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Alegreya:400,400italic,700,700italic" rel="stylesheet" type="text/css"&gt;
 </code></pre>
 
-<p>We will also be using <a href="https://necolas.github.io/normalize.css/">Normalize.css</a> which basically gives you a starting point that looks the same across all browsers. Since we want to override it’s styles with ours we put it’s link tag first. Our <code>head</code> tag should look something like this now:</p>
+<p>We will also be using <a href="https://necolas.github.io/normalize.css/">Normalize.css</a> which basically gives you a starting point that looks the same across all browsers. Since we want to override it’s styles with ours we put it’s link tag first. Our <code class="highlighter-rouge">head</code> tag should look something like this now:</p>
 
 <pre><code class="language-markup">&lt;head&gt;
     &lt;title&gt;R. S. Sailing Club&lt;/title&gt;
@@ -235,24 +237,24 @@
 
 <p>We’re going to be using <a href="http://sass-lang.com/">SASS</a> for the stylesheets, but don’t worry, I’ll explain any nuances we come across in the project. For now, just think of it as CSS with extra features. Here is our stylesheet so far:</p>
 
-<pre><code class="language-scss">html, body {
-    width: 100%;
-    height: 100%;
-}
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">html</span><span class="o">,</span> <span class="nt">body</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
 
-body * {
-    box-sizing: border-box;
-}
+<span class="nt">body</span> <span class="o">*</span> <span class="p">{</span>
+    <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+<span class="p">}</span>
 
-body {
-    font-family: 'Alegreya', serif;
-    font-size: 16px;
-}
+<span class="nt">body</span> <span class="p">{</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="s1">'Alegreya'</span><span class="o">,</span> <span class="nb">serif</span><span class="p">;</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+<span class="p">}</span>
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-}
-</code></pre>
+<span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="s1">'Montserrat'</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <h1 id="designing-the-header">Designing the header</h1>
 
@@ -274,62 +276,62 @@ h1, h2, h3, h4, h5, h6 {
 
 <h2 id="variables">Variables</h2>
 
-<p>Variables names start with a <code>$</code>, and can contain any information you can put in a property. For example:</p>
+<p>Variables names start with a <code class="highlighter-rouge">$</code>, and can contain any information you can put in a property. For example:</p>
 
-<pre><code class="language-scss">$my-border: 2px solid black;
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$my-border</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="no">black</span><span class="p">;</span>
 
-div {
-    border: $my-border;
-}
-</code></pre>
+<span class="nt">div</span> <span class="p">{</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="nv">$my-border</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p>That compiles to this CSS:</p>
 
-<pre><code class="language-css">div {
-    border: 2px solid black;
-}
-</code></pre>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="no">black</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <h1 id="nested-selectors">Nested Selectors</h1>
 
 <p>If you want to select an element inside another element, you can nest the selectors. Here is an example:</p>
 
-<pre><code class="language-scss">header {
-    h1 {
-        color: #fff;
-    }
-}
-</code></pre>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">header</span> <span class="p">{</span>
+    <span class="nt">h1</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p>This compiles to:</p>
 
-<pre><code class="language-css">header h1 {
-    color: #fff;
-}
-</code></pre>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">header</span> <span class="nt">h1</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-<p>You can also use the <code>&amp;</code> to select the parent element, like this:</p>
+<p>You can also use the <code class="highlighter-rouge">&amp;</code> to select the parent element, like this:</p>
 
-<pre><code class="language-scss">a {
-    color #000;
-    text-decoration: none;
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span> <span class="p">{</span>
+    <span class="nt">color</span> <span class="nn">#000</span><span class="p">;</span>
+    <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
 
-    &amp;:hover {
-        text-decoration: underline;
-    }
-}
-</code></pre>
+    <span class="k">&amp;</span><span class="nd">:hover</span> <span class="p">{</span>
+        <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">underline</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p>Which compiles into this CSS:</p>
 
-<pre><code class="language-css">a {
-    color: #000;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-</code></pre>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="m">#000</span><span class="p">;</span>
+    <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">underline</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 
 </article>

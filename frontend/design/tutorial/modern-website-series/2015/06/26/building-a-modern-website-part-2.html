@@ -37,8 +37,6 @@
             
         
             
-                
-            
         
             
                 
@@ -157,11 +155,15 @@
             
         
             
-        
+                
             
         
             
+                
+            
         
+            
+                
             
         
     </nav>
@@ -202,21 +204,21 @@
 
 <p>OK, with that out of the way we can start styling. Let’s start by giving it a background color (remember that we set variables for the color values at the top of the stylesheet):</p>
 
-<pre><code class="language-scss">footer {
-    background-color: $light-secondary;
-}
-</code></pre>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">footer</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$light-secondary</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p>Now let’s throw some padding on it:</p>
 
-<pre><code class="language-scss">padding: 2em;
-</code></pre>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">padding</span><span class="p">:</span> <span class="m">2em</span><span class="p">;</span>
+</code></pre></div></div>
 
 <p>And then make the font a little larger and centered:</p>
 
-<pre><code class="language-scss">font-size: 1.2em;
-text-align: center;
-</code></pre>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">font-size</span><span class="p">:</span> <span class="m">1</span><span class="mi">.2em</span><span class="p">;</span>
+<span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+</code></pre></div></div>
 
 <p>That’s it for the footer, now let’s do some quick mobile optimizations and wrap this project up.</p>
 
@@ -224,23 +226,23 @@ text-align: center;
 
 <p>The first thing we can do is make the navigation go below the logo on mobile.</p>
 
-<pre><code class="language-scss">header {
-    @media (max-width: 630px) {
-        nav {
-            display: block;
-        }
-    }
-}
-</code></pre>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">header</span> <span class="p">{</span>
+    <span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="o">:</span> <span class="m">630px</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nt">nav</span> <span class="p">{</span>
+            <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p>Next let’s make the feature section come all the way to the edges of the screen.</p>
 
-<pre><code class="language-scss">article {
-    .feature {
-        padding: 0;
-    }
-}
-</code></pre>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">article</span> <span class="p">{</span>
+    <span class="nc">.feature</span> <span class="p">{</span>
+        <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p>That’s it!</p>
 
