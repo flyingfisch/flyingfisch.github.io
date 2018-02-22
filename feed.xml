@@ -6,29 +6,9 @@
 </description>
     <link>http://flyingfisch.github.io/</link>
     <atom:link href="http://flyingfisch.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 22 Feb 2018 21:50:47 +0000</pubDate>
-    <lastBuildDate>Thu, 22 Feb 2018 21:50:47 +0000</lastBuildDate>
+    <pubDate>Thu, 22 Feb 2018 21:53:34 +0000</pubDate>
+    <lastBuildDate>Thu, 22 Feb 2018 21:53:34 +0000</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
-    
-      <item>
-        <title>test post</title>
-        <description>&lt;h1 id=&quot;this-is-a-test-post&quot;&gt;This is a test post&lt;/h1&gt;
-
-&lt;p&gt;testing&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;test&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;test.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 22 Feb 2018 20:10:00 +0000</pubDate>
-        <link>http://flyingfisch.github.io/test/2018/02/22/forestry-io-test-post.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/test/2018/02/22/forestry-io-test-post.html</guid>
-        
-        
-        <category>test</category>
-        
-      </item>
     
       <item>
         <title>Getting started with the HTML5 notification API</title>
@@ -646,6 +626,23 @@ Don't worry about languages, go build awesome stuff!
         <category>tutorial</category>
         
         <category>modern-website-series</category>
+        
+      </item>
+    
+      <item>
+        <title>Announcing Tolkien Ipsum</title>
+        <description>&lt;p&gt;I built a little website that generates Lord of the Rings themed Lorem Ipsum. You can &lt;a href=&quot;http://tolkienipsum.cloudapp.net/&quot;&gt;check it out live&lt;/a&gt; or view the source on &lt;a href=&quot;https://github.com/flyingfisch/tolkienIpsum&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;for-geeks&quot;&gt;For Geeks&lt;/h1&gt;
+
+&lt;p&gt;I am hosting the site on a &lt;a href=&quot;http://azure.microsoft.com/&quot;&gt;Microsoft Azure&lt;/a&gt; Ubuntu 14.04 virtual machine. The setup process for serving Django was pretty straightforward, I just adapted the excellent &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-uwsgi-and-nginx-on-ubuntu-14-04&quot;&gt;Digital Ocean tutorial&lt;/a&gt; to my needs. The project does use python3, so if you are planning on hosting it yourself you’ll want to keep that in mind.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
+        <link>http://flyingfisch.github.io/announcement/2015/05/28/tolkien-ipsum.html</link>
+        <guid isPermaLink="true">http://flyingfisch.github.io/announcement/2015/05/28/tolkien-ipsum.html</guid>
+        
+        
+        <category>announcement</category>
         
       </item>
     
