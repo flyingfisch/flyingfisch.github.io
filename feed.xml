@@ -6,8 +6,8 @@
 </description>
     <link>http://flyingfisch.github.io/</link>
     <atom:link href="http://flyingfisch.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 23 Feb 2018 02:12:50 +0000</pubDate>
-    <lastBuildDate>Fri, 23 Feb 2018 02:12:50 +0000</lastBuildDate>
+    <pubDate>Fri, 23 Feb 2018 02:14:44 +0000</pubDate>
+    <lastBuildDate>Fri, 23 Feb 2018 02:14:44 +0000</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -76,19 +76,6 @@ Where spring will come again.&lt;/p&gt;
         <link>http://flyingfisch.github.io/2018/02/22/test.html</link>
         <guid isPermaLink="true">http://flyingfisch.github.io/2018/02/22/test.html</guid>
         
-        
-      </item>
-    
-      <item>
-        <title>An updated thought on self documenting code</title>
-        <description>
-</description>
-        <pubDate>Thu, 22 Feb 2018 00:00:00 +0000</pubDate>
-        <link>http://flyingfisch.github.io/programming/2018/02/22/an-updated-thought-on-self-documenting-code.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/programming/2018/02/22/an-updated-thought-on-self-documenting-code.html</guid>
-        
-        
-        <category>programming</category>
         
       </item>
     
@@ -481,6 +468,91 @@ Don't worry about languages, go build awesome stuff!
         
         
         <category>project</category>
+        
+      </item>
+    
+      <item>
+        <title>Building a Modern Website: Part 2</title>
+        <description>&lt;p&gt;This is the third of a &lt;a href=&quot;/modern-website-series/&quot;&gt;3-post series&lt;/a&gt; on building a modern website (if you don’t understand the post title, this may help you: the series started with Part 0. &lt;a href=&quot;http://stackoverflow.com/questions/2785704/why-do-lua-arraystables-start-at-1-instead-of-0&quot;&gt;Lua developers are excused&lt;/a&gt; for not getting the significance.). The demo website is a fictional sailing club’s homepage. This post will go over the footer and finishing touches. This is what the site looked like at the end of the last post:&lt;/p&gt;
+
+&lt;p data-height=&quot;424&quot; data-theme-id=&quot;6851&quot; data-slug-hash=&quot;GJEWMR&quot; data-default-tab=&quot;result&quot; data-user=&quot;flyingfisch&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/flyingfisch/pen/GJEWMR/&quot;&gt;GJEWMR&lt;/a&gt; by flyingfisch (&lt;a href=&quot;http://codepen.io/flyingfisch&quot;&gt;@flyingfisch&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;footer&quot;&gt;Footer&lt;/h1&gt;
+
+&lt;p&gt;Before we get to the CSS, let’s stick a little markup in the footer like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-markup&quot;&gt;&amp;lt;footer&amp;gt;
+    &amp;amp;copy; 2015 R. S. Sailing Club
+&amp;lt;/footer&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;OK, with that out of the way we can start styling. Let’s start by giving it a background color (remember that we set variables for the color values at the top of the stylesheet):&lt;/p&gt;
+
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;footer&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$light-secondary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now let’s throw some padding on it:&lt;/p&gt;
+
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And then make the font a little larger and centered:&lt;/p&gt;
+
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.2em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;That’s it for the footer, now let’s do some quick mobile optimizations and wrap this project up.&lt;/p&gt;
+
+&lt;h1 id=&quot;mobile&quot;&gt;Mobile&lt;/h1&gt;
+
+&lt;p&gt;The first thing we can do is make the navigation go below the logo on mobile.&lt;/p&gt;
+
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;header&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;630px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;nav&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Next let’s make the feature section come all the way to the edges of the screen.&lt;/p&gt;
+
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;article&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;.feature&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;That’s it!&lt;/p&gt;
+
+&lt;h1 id=&quot;going-forward&quot;&gt;Going Forward&lt;/h1&gt;
+
+&lt;p&gt;That finishes this tutorial series, but there is still plenty left to do. For instance, we haven’t covered image styling or captions, and the footer is pretty empty. Maybe a background image behind the feature section would be a good idea, it’s up to you.&lt;/p&gt;
+
+&lt;p data-height=&quot;378&quot; data-theme-id=&quot;6851&quot; data-slug-hash=&quot;yNzQwd&quot; data-default-tab=&quot;result&quot; data-user=&quot;flyingfisch&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/flyingfisch/pen/yNzQwd/&quot;&gt;yNzQwd&lt;/a&gt; by flyingfisch (&lt;a href=&quot;http://codepen.io/flyingfisch&quot;&gt;@flyingfisch&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Feel free to fork the pen and make it your own!&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 26 Jun 2015 00:00:00 +0000</pubDate>
+        <link>http://flyingfisch.github.io/frontend/design/tutorial/modern-website-series/2015/06/26/building-a-modern-website-part-2.html</link>
+        <guid isPermaLink="true">http://flyingfisch.github.io/frontend/design/tutorial/modern-website-series/2015/06/26/building-a-modern-website-part-2.html</guid>
+        
+        
+        <category>frontend</category>
+        
+        <category>design</category>
+        
+        <category>tutorial</category>
+        
+        <category>modern-website-series</category>
         
       </item>
     
