@@ -78,6 +78,9 @@ pre.language-javascript:after {
 
 article > *, .center, pre.highlight {
   padding: 0 15%; }
+  @media only screen and (max-width: 640px) {
+    article > *, .center, pre.highlight {
+      padding: 0 2%; } }
 
 ol, ul {
   list-style-position: inside;
@@ -175,7 +178,6 @@ article.post {
     max-width: 70%; }
     @media only screen and (max-width: 640px) {
       article.post img {
-        display: block;
         clear: both;
         float: none; } }
   article.post figure {
