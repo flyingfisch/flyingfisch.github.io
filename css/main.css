@@ -168,12 +168,6 @@ article.post {
     margin-bottom: 2em; }
   article.post > p:first-of-type:not(.normal-font) {
     font-size: 1.1em; }
-    article.post > p:first-of-type:not(.normal-font):first-letter {
-      font-size: 2em;
-      vertical-align: middle; }
-    article.post > p:first-of-type:not(.normal-font):first-line {
-      font-variant: small-caps;
-      font-size: 1.25em; }
   article.post img {
     float: left;
     padding: 0;
