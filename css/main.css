@@ -18,6 +18,9 @@ body {
 pre, code {
   font-family: "Source Code Pro", sans-serif; }
 
+.highlighter-rouge {
+  padding: 0; }
+
 pre {
   margin: 4em 0;
   background-color: #fff;
@@ -73,7 +76,7 @@ pre.language-c:after {
 pre.language-javascript:after {
   content: "JS"; }
 
-article > *, .center {
+article > *, .center, pre.highlight {
   padding: 0 15%; }
 
 ol, ul {
