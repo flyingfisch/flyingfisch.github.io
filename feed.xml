@@ -6,8 +6,8 @@
 </description>
     <link>http://flyingfisch.github.io/</link>
     <atom:link href="http://flyingfisch.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 21 Mar 2018 01:55:01 +0000</pubDate>
-    <lastBuildDate>Wed, 21 Mar 2018 01:55:01 +0000</lastBuildDate>
+    <pubDate>Wed, 21 Mar 2018 01:55:46 +0000</pubDate>
+    <lastBuildDate>Wed, 21 Mar 2018 01:55:46 +0000</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
       <item>
@@ -122,7 +122,7 @@
 
 &lt;h1 id=&quot;going-forward&quot;&gt;Going forward&lt;/h1&gt;
 
-&lt;p&gt;I’ll be blogging further findings as I get to them, at the moment I’m only about a week into test driven development (or behavior driven development or acceptance driven development or whatever it is we’re doing here). This post has just been about setting up the project structure, I’ll be getting into actual test writing and Continuous Integration using TFS in future posts.&lt;/p&gt;
+&lt;p&gt;I’ll be blogging further findings as I get to them, at the moment I’m only about a week into test driven development (or behavior driven development or acceptance driven development or whatever it is we’re doing here). This post has just been about setting up the project structure, I’ll be getting into actual test writing and Continuous Integration using TFS in future posts. I might also add other web drivers or a headless web driver as this develops.&lt;/p&gt;
 </description>
         <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
         <link>http://flyingfisch.github.io/testing/2018/03/20/automated-testing-with-mstest-and-selenium.html</link>
