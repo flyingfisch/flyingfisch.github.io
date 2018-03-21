@@ -202,7 +202,7 @@
 
 <p>Create the project using the “Unit Test” template in Visual Studio. As far as I understand the naming convention for test projects is usually <code class="highlighter-rouge">ProjectBeingTested.Tests</code>.</p>
 
-<p>Add the following nuget packages to the project: <code class="highlighter-rouge">Selenium.WebDriver</code> and <code class="highlighter-rouge">Selenium.Support</code>. You will also need to add nuget packages for the browsers you want to test with. I used <code class="highlighter-rouge">Selenium.Firefox.WebDriver</code>. For some reason the browser nuget packages are third party and not made by the Selenium team, but you need them so that the browser executables are in the right directory.</p>
+<p>Add the following nuget packages to the project: <code class="highlighter-rouge">Selenium.WebDriver</code> and <code class="highlighter-rouge">Selenium.Support</code>. You will also need to add nuget packages for the browsers you want to test with. I used <code class="highlighter-rouge">Selenium.Firefox.WebDriver</code>. For some reason the browser nuget packages are made by a third party and not by the Selenium team, but you need them in order for the tests to run. As far as I can tell this isn’t documented anywhere.</p>
 
 <h1 id="getting-the-tests-to-run-in-the-same-browser">Getting the tests to run in the same browser</h1>
 

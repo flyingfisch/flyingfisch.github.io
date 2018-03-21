@@ -6,8 +6,8 @@
 </description>
     <link>http://flyingfisch.github.io/</link>
     <atom:link href="http://flyingfisch.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 21 Mar 2018 01:55:46 +0000</pubDate>
-    <lastBuildDate>Wed, 21 Mar 2018 01:55:46 +0000</lastBuildDate>
+    <pubDate>Wed, 21 Mar 2018 01:57:19 +0000</pubDate>
+    <lastBuildDate>Wed, 21 Mar 2018 01:57:19 +0000</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
       <item>
@@ -18,7 +18,7 @@
 
 &lt;p&gt;Create the project using the “Unit Test” template in Visual Studio. As far as I understand the naming convention for test projects is usually &lt;code class=&quot;highlighter-rouge&quot;&gt;ProjectBeingTested.Tests&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Add the following nuget packages to the project: &lt;code class=&quot;highlighter-rouge&quot;&gt;Selenium.WebDriver&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Selenium.Support&lt;/code&gt;. You will also need to add nuget packages for the browsers you want to test with. I used &lt;code class=&quot;highlighter-rouge&quot;&gt;Selenium.Firefox.WebDriver&lt;/code&gt;. For some reason the browser nuget packages are third party and not made by the Selenium team, but you need them so that the browser executables are in the right directory.&lt;/p&gt;
+&lt;p&gt;Add the following nuget packages to the project: &lt;code class=&quot;highlighter-rouge&quot;&gt;Selenium.WebDriver&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Selenium.Support&lt;/code&gt;. You will also need to add nuget packages for the browsers you want to test with. I used &lt;code class=&quot;highlighter-rouge&quot;&gt;Selenium.Firefox.WebDriver&lt;/code&gt;. For some reason the browser nuget packages are made by a third party and not by the Selenium team, but you need them in order for the tests to run. As far as I can tell this isn’t documented anywhere.&lt;/p&gt;
 
 &lt;h1 id=&quot;getting-the-tests-to-run-in-the-same-browser&quot;&gt;Getting the tests to run in the same browser&lt;/h1&gt;
 
