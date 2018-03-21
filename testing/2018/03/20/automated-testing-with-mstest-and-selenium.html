@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Setting up  automated testing with MSTest and Selenium</title>
+    <meta name="description" content="My personal blog where I post about programming as well as other topics.
+">
+
+    <script type="text/javascript" src="/js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.viewport.js"></script>
+    <script type="text/javascript" src="/js/prism.js"></script>
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://flyingfisch.github.io/testing/2018/03/20/automated-testing-with-mstest-and-selenium.html">
+</head>
+
+
+    <body>
+
+        <header>
+    <a href="/"><h1>Expositus</h1></a>
+
+    <nav>
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+    </nav>
+</header>
+
+
+
+        <nav class="article"></nav>
+
+<article lang="en" class="post">
+    <div class="post-info">
+        <strong>Author:</strong> Mark Fischer, Jr.<br>
+
+        <strong>Posted:</strong> Mar 20, 2018<br>
+
+        
+        
+        <strong>Tags:</strong> testing<br>
+        
+
+        
+    </div>
+
+    <h1 class="post-title">Setting up  automated testing with MSTest and Selenium</h1>
+    <p>I’ve started implementing automated testing on a project I’m working on using MSTest and Selenium. I’ve run into several issues that I couldn’t find answers for online so I thought I’d document my findings here.</p>
+
+<h1 id="creating-the-test-project">Creating the test project</h1>
+
+<p>Create the project using the “Unit Test” template in Visual Studio. Add the following nuget packages to the project: <code class="highlighter-rouge">Selenium.WebDriver</code> and <code class="highlighter-rouge">Selenium.Support</code>. You will also need to add nuget packages for the browsers you want to test with. I used <code class="highlighter-rouge">Selenium.Firefox.WebDriver</code>. For some reason the browser nuget packages are third party and not made by the Selenium team, but you need them so that the browser executables are in the right directory.</p>
+
+<h1 id="getting-the-tests-to-run-in-the-same-browser">Getting the tests to run in the same browser</h1>
+
+<p>Most of the examples online show something like this:</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">[TestClass]</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">HomeControllerTests</span>
+<span class="p">{</span>
+    <span class="p">[</span><span class="n">TestMethod</span><span class="p">]</span>
+    <span class="k">public</span> <span class="k">void</span> <span class="n">HomePage_WhenSuccessful_PageTitleIsHome</span>
+    <span class="p">{</span>
+    	<span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">driver</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">FirefoxDriver</span><span class="p">())</span>
+        <span class="p">{</span>
+            <span class="n">driver</span><span class="p">.</span><span class="nf">Navigate</span><span class="p">().</span><span class="nf">GoToUrl</span><span class="p">(</span><span class="s">"http://localhost/MyWebsite/"</span><span class="p">);</span>
+            
+            <span class="n">Assert</span><span class="p">.</span><span class="nf">IsTrue</span><span class="p">(</span><span class="n">driver</span><span class="p">.</span><span class="n">Title</span> <span class="p">==</span> <span class="s">"Home"</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The issue with this is that each test method will use it’s own browser, meaning that every single test will need to open a new browser, which is slow (around 3 seconds on my machine).</p>
+
+<p>Instead, the following code can be used to have all tests in the test class use the same browser:</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">[TestClass]</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">HomeControllerTests</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="k">static</span> <span class="n">RemoteDriver</span> <span class="n">driver</span><span class="p">;</span>
+    
+    <span class="p">[</span><span class="n">ClassInitialize</span><span class="p">]</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">ClassInitialize</span><span class="p">(</span><span class="n">TestContext</span> <span class="n">context</span><span class="p">)</span>
+    <span class="p">{</span>
+    	<span class="c1">// initialize the web driver</span>
+    	<span class="n">driver</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">FirefoxDriver</span><span class="p">();</span>
+    <span class="p">}</span>
+    
+    <span class="p">[</span><span class="n">ClassCleanup</span><span class="p">]</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">ClassCleanup</span><span class="p">()</span>
+    <span class="p">{</span>
+    	<span class="c1">// close the web driver</span>
+        <span class="n">driver</span><span class="p">.</span><span class="nf">Dispose</span><span class="p">();</span>
+    <span class="p">}</span>
+    
+    <span class="p">[</span><span class="n">TestCleanup</span><span class="p">]</span>
+    <span class="k">public</span> <span class="k">void</span> <span class="n">TestCleanup</span>
+    <span class="p">{</span>
+    	<span class="c1">// delete the cookies. interestingly there was an example for this in the selenium documentation for all supported languages _except_ C#</span>
+        <span class="c1">// I &lt;3 incomplete documentation</span>
+        <span class="n">driver</span><span class="p">.</span><span class="nf">Manage</span><span class="p">().</span><span class="n">Cookies</span><span class="p">.</span><span class="nf">DeleteAllCookies</span><span class="p">();</span>
+    <span class="p">}</span>
+    
+    <span class="p">[</span><span class="n">TestMethod</span><span class="p">]</span>
+    <span class="k">public</span> <span class="k">void</span> <span class="n">HomePage_WhenSuccessful_PageTitleIsHome</span>
+    <span class="p">{</span>
+       	<span class="n">driver</span><span class="p">.</span><span class="nf">Navigate</span><span class="p">().</span><span class="nf">GoToUrl</span><span class="p">(</span><span class="s">"http://localhost/MyWebsite/"</span><span class="p">);</span>
+            
+        <span class="n">Assert</span><span class="p">.</span><span class="nf">IsTrue</span><span class="p">(</span><span class="n">driver</span><span class="p">.</span><span class="n">Title</span> <span class="p">==</span> <span class="s">"Home"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This logic can be abstracted away into an abstract class which has the added benefit of allowing all test classes in the assembly to use the same browser.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">[TestClass]</span>
+<span class="k">public</span> <span class="k">abstract</span> <span class="k">class</span> <span class="nc">Tests</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="n">RemoteDriver</span> <span class="n">driver</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">private</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+    
+    <span class="p">[</span><span class="n">ClassInitialize</span><span class="p">]</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">ClassInitialize</span><span class="p">(</span><span class="n">TestContext</span> <span class="n">context</span><span class="p">)</span>
+    <span class="p">{</span>
+    	<span class="n">driver</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">FirefoxDriver</span><span class="p">();</span>
+    <span class="p">}</span>
+    
+    <span class="p">[</span><span class="n">ClassCleanup</span><span class="p">]</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">ClassCleanup</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">driver</span><span class="p">.</span><span class="nf">Dispose</span><span class="p">();</span>
+    <span class="p">}</span>
+    
+    <span class="p">[</span><span class="n">TestCleanup</span><span class="p">]</span>
+    <span class="k">public</span> <span class="k">void</span> <span class="n">TestCleanup</span>
+    <span class="p">{</span>
+        <span class="n">driver</span><span class="p">.</span><span class="nf">Manage</span><span class="p">().</span><span class="n">Cookies</span><span class="p">.</span><span class="nf">DeleteAllCookies</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="na">[TestClass]</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">HomeControllerTests</span> <span class="p">:</span> <span class="n">Tests</span>
+<span class="p">{</span>
+    <span class="p">[</span><span class="n">TestMethod</span><span class="p">]</span>
+    <span class="k">public</span> <span class="k">void</span> <span class="n">HomePage_WhenSuccessful_PageTitleIsHome</span>
+    <span class="p">{</span>
+    	<span class="n">driver</span><span class="p">.</span><span class="nf">Navigate</span><span class="p">().</span><span class="nf">GoToUrl</span><span class="p">(</span><span class="s">"http://localhost/MyWebsite/"</span><span class="p">);</span>
+            
+        <span class="n">Assert</span><span class="p">.</span><span class="nf">IsTrue</span><span class="p">(</span><span class="n">driver</span><span class="p">.</span><span class="n">Title</span> <span class="p">==</span> <span class="s">"Home"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h1 id="going-forward">Going forward</h1>
+
+<p>I’ll be blogging further findings as I get to them, at the moment I’m only about a week into test driven development (or behavior driven development or acceptance driven development or whatever it is we’re doing here). This post has just been about setting up the project structure, I’ll be getting into actual test writing and Continuous Integration using TFS in future posts.</p>
+
+</article>
+
+<section id="comments" class="center">
+    <h1 class="post-title">Comments</h1>
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES * * */
+        // Required: on line below, replace text in quotes with your forum shortname
+        var disqus_shortname = 'expositus';
+        var diqus_identifier = 'SettingupautomatedtestingwithMSTestandSelenium';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</section>
+
+
+<script type="text/javascript" src="/js/post-nav.js"></script>
+
+
+
+        <footer>
+    <p>My personal blog where I post about programming as well as other topics.
+</p>
+
+    <p>
+        <a href="mailto:flyingfisch@toppagedesign.com">flyingfisch@toppagedesign.com</a> |
+        <a href="https://github.com/flyingfisch">GitHub</a> |
+        <a href="https://twitter.com/flyingfisch_">Twitter</a>
+    </p>
+
+    <p class="rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a></p>
+</footer>
+
+
+    </body>
+
+</html>
