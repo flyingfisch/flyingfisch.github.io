@@ -270,7 +270,7 @@
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">[TestClass]</span>
 <span class="k">public</span> <span class="k">abstract</span> <span class="k">class</span> <span class="nc">Tests</span>
 <span class="p">{</span>
-    <span class="k">public</span> <span class="k">static</span> <span class="n">RemoteDriver</span> <span class="n">driver</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">private</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">protected</span> <span class="k">static</span> <span class="n">RemoteDriver</span> <span class="n">driver</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">private</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
     
     <span class="p">[</span><span class="n">AssemblyInitialize</span><span class="p">]</span>
     <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">AssemblyInitialize</span><span class="p">(</span><span class="n">TestContext</span> <span class="n">context</span><span class="p">)</span>
