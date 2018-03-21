@@ -272,14 +272,14 @@
 <span class="p">{</span>
     <span class="k">public</span> <span class="k">static</span> <span class="n">RemoteDriver</span> <span class="n">driver</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">private</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
     
-    <span class="p">[</span><span class="n">ClassInitialize</span><span class="p">]</span>
-    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">ClassInitialize</span><span class="p">(</span><span class="n">TestContext</span> <span class="n">context</span><span class="p">)</span>
+    <span class="p">[</span><span class="n">AssemblyInitialize</span><span class="p">]</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">AssemblyInitialize</span><span class="p">(</span><span class="n">TestContext</span> <span class="n">context</span><span class="p">)</span>
     <span class="p">{</span>
     	<span class="n">driver</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">FirefoxDriver</span><span class="p">();</span>
     <span class="p">}</span>
     
-    <span class="p">[</span><span class="n">ClassCleanup</span><span class="p">]</span>
-    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">ClassCleanup</span><span class="p">()</span>
+    <span class="p">[</span><span class="n">AssemblyCleanup</span><span class="p">]</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">AssemblyCleanup</span><span class="p">()</span>
     <span class="p">{</span>
         <span class="n">driver</span><span class="p">.</span><span class="nf">Dispose</span><span class="p">();</span>
     <span class="p">}</span>
