@@ -6,9 +6,46 @@
 </description>
     <link>http://flyingfisch.github.io/</link>
     <atom:link href="http://flyingfisch.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 21 Mar 2018 20:10:53 +0000</pubDate>
-    <lastBuildDate>Wed, 21 Mar 2018 20:10:53 +0000</lastBuildDate>
+    <pubDate>Mon, 09 Apr 2018 16:13:12 +0000</pubDate>
+    <lastBuildDate>Mon, 09 Apr 2018 16:13:12 +0000</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
+    
+      <item>
+        <title>Grocery stores are broken</title>
+        <description>&lt;p&gt;Imagine walking into a new grocery store. What are the first things you notice? Maybe it’s the dim fluorescent lights. Maybe it’s the &lt;a href=&quot;https://youtu.be/wbQSAdU4Qb4?t=40s&quot;&gt;sound of&lt;/a&gt; low quality &lt;a href=&quot;https://youtu.be/wbQSAdU4Qb4?t=40s&quot;&gt;music&lt;/a&gt; on a lower quality speaker, quiet enough that you can’t tell what’s playing, loud enough that you can’t ignore it.&lt;/p&gt;
+
+&lt;p&gt;As you walk further into the store you feel increasingly trapped. It’s not the immediate panic of claustrophobia, but a dull anxiety that makes you wish you were somewhere else. Shelves obscure your vision past a few feet. Even if you happen to be near a window, you can’t see out because it’s plastered in advertisements.&lt;/p&gt;
+
+&lt;p&gt;At this point you just want to get what you need and leave as quickly as possible. Unfortunately this is impossible since without previous knowledge of the store’s categorization system and layout, the only way to find anything is by making an educated guess based on the aisle signs. Signs that &lt;em&gt;lie.&lt;/em&gt; Are you looking for ketchup? Maybe it’s with the “Tomato Products”, or possibly with the hot dog buns. Actually, it’s on the end cap of aisle 7.&lt;/p&gt;
+
+&lt;p&gt;You finally have your items and it’s time to check out. There are huge lines at the human-operated registers so you decide to use the self-checkout machine. You scan your first item and fumble to open the bag in the bagging area. A disembodied voice tells you to “please place item in bagging area”. After finally getting the bag open you place said item in the bagging area, only to be reproached with “unexpected item in bagging area”. You just can’t win with this woman! Embarrassed, you call the clerk overseeing the self-checkout machines and ask her to reset it. She punches in a code and the machine accepts your item. You scan some more items, filling up the bag. Oh &lt;em&gt;no&lt;/em&gt;! You have to open another bag. Time to fight with the machine again. This whole experience makes you feel like you were accused of stealing before you even scanned your first item.&lt;/p&gt;
+
+&lt;p&gt;I could write a whole blog post on the botheration that is self-checkout machine user interfaces, but this post is intended to capture the broad experience of shopping at a grocery store, not the experiences within that experience that make it even more aggravating.&lt;/p&gt;
+
+&lt;p&gt;The grocery store shopping experience is broken, and the worst part about it is that &lt;em&gt;people think this is okay&lt;/em&gt;. This is not okay! Here are some things I’ve been thinking about that could improve the grocery shopping experience:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Grocery stores should have ceiling-to-floor windows wherever possible. These windows &lt;em&gt;should not&lt;/em&gt; be covered with any advertisements whatsoever.&lt;/li&gt;
+  &lt;li&gt;Shelves should be 5 feet or shorter. There is no point in having large windows if you can’t see them from most parts of the store.&lt;/li&gt;
+  &lt;li&gt;Refrigerators should be in the center of the store, and should be chest-style refrigerators. This allows you to see over them and also frees up wall space for more windows.&lt;/li&gt;
+  &lt;li&gt;More items should be unavailable in the main store area. It’s common for deli meats and baked goods to be sold in this manner, but I think this should be the case for all fresh food. This prevents customers from damaging items while looking for the “freshest” food.&lt;/li&gt;
+  &lt;li&gt;The browsable section of the store should be categorized using a decimal system similar to the Dewey Decimal System in use by libraries. This allows customers unfamiliar with the store to find items quickly without having to navigate the entire store or ask a clerk for assistance.&lt;/li&gt;
+  &lt;li&gt;Abolish end caps. I don’t care if the statistically increase revenue, they make the store harder to navigate. I believe that an overall consumer-friendly atmosphere will increase revenue much more than micro-optimizing a consumer-hostile environment.&lt;/li&gt;
+  &lt;li&gt;Self-checkout machines need to be fixed. I think the only reason we still have human cashiers at grocery stores is because the self-checkout experience is so exasperating. Again, this almost warrants its own article, but I think just saying that we need to fix them is enough for this post.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This is not an exhaustive list, nor are these necessarily the best or even good solutions. The intention I had in posting this is to raise awareness about one of the most common yet unaddressed issues we encounter in day-to-day life.&lt;/p&gt;
+
+&lt;p&gt;A future with self-driving cars and colonies in space is fun to think about, but a future where experiences such as these are resolved is also important. The best thing is, that future can start today.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 08 Apr 2018 16:13:38 +0000</pubDate>
+        <link>http://flyingfisch.github.io/rant/2018/04/08/grocery-stores-are-broken.html</link>
+        <guid isPermaLink="true">http://flyingfisch.github.io/rant/2018/04/08/grocery-stores-are-broken.html</guid>
+        
+        
+        <category>rant</category>
+        
+      </item>
     
       <item>
         <title>Weird TFS Error Message</title>
@@ -539,55 +576,6 @@ Don't worry about languages, go build awesome stuff!
         <category>culture</category>
         
         <category>programming</category>
-        
-      </item>
-    
-      <item>
-        <title>A Week in Quotes</title>
-        <description>&lt;p&gt;This past week I have been making one &lt;a href=&quot;http://codepen.io/collection/ANqEdj/&quot;&gt;codepen a day&lt;/a&gt; featuring an interesting quote. Here is an example.&lt;/p&gt;
-
-&lt;p data-height=&quot;391&quot; data-theme-id=&quot;6851&quot; data-slug-hash=&quot;XbOmwQ&quot; data-default-tab=&quot;result&quot; data-user=&quot;flyingfisch&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/flyingfisch/pen/XbOmwQ/&quot;&gt;Quote of the Day - Day 6 (Antoine de Saint-Exupery)&lt;/a&gt; by Mark Fischer, Jr (&lt;a href=&quot;http://codepen.io/flyingfisch&quot;&gt;@flyingfisch&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;The most challenging part, and the part that spawned the whole thing, were the lines on each side of the quotation marks. The first thing you have to do is make the line. This is easy enough, we just add &lt;code class=&quot;highlighter-rouge&quot;&gt;border-bottom&lt;/code&gt; like so:&lt;/p&gt;
-
-&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;blockquote&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;err&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;before&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nl&quot;&gt;border-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Next, we need that line to go behind our &lt;code class=&quot;highlighter-rouge&quot;&gt;::before&lt;/code&gt; element. We can do this by making the height of the element half of the height of the letters, the best way to do that is with &lt;code class=&quot;highlighter-rouge&quot;&gt;0.5em&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;blockquote&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;err&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;before&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nl&quot;&gt;border-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.5em&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now comes the tricky part. How do we get the line to only show on either side of the element? One way would be to give the element a background color that matches the parent background color. Unfortunately, this only works when we have a solid background color. Since we want images behind it, we need another method. The one I came up with was using a gradient, like so:&lt;/p&gt;
-
-&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;blockquote&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;err&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;before&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nl&quot;&gt;border-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;nl&quot;&gt;border-image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#555&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#555&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;47%&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;47%&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;53%&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#555&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;53%&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#555&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.5em&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Note that this is not the finished code, I am only showing the interesting properties. If you want code you can copy and paste, check out the source code &lt;a href=&quot;http://codepen.io/flyingfisch/pen/XbOmwQ?editors=010&quot;&gt;on the pen itself&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 04 Aug 2015 00:00:00 +0000</pubDate>
-        <link>http://flyingfisch.github.io/project/2015/08/04/a-week-in-quotes.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/project/2015/08/04/a-week-in-quotes.html</guid>
-        
-        
-        <category>project</category>
         
       </item>
     
