@@ -6,20 +6,9 @@
 </description>
     <link>http://markfischerjr.com//</link>
     <atom:link href="http://markfischerjr.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 15 Jan 2019 13:59:22 +0000</pubDate>
-    <lastBuildDate>Tue, 15 Jan 2019 13:59:22 +0000</lastBuildDate>
+    <pubDate>Tue, 15 Jan 2019 14:00:47 +0000</pubDate>
+    <lastBuildDate>Tue, 15 Jan 2019 14:00:47 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
-    
-      <item>
-        <title>test</title>
-        <description>
-</description>
-        <pubDate>Tue, 15 Jan 2019 05:00:00 +0000</pubDate>
-        <link>http://markfischerjr.com//2019/01/15/test.html</link>
-        <guid isPermaLink="true">http://markfischerjr.com//2019/01/15/test.html</guid>
-        
-        
-      </item>
     
       <item>
         <title>Grocery stores are broken</title>
@@ -465,6 +454,128 @@ $ sudo apt-get install cinnamon
         
         
         <category>linux</category>
+        
+      </item>
+    
+      <item>
+        <title>Don't Worry, Just Code</title>
+        <description>&lt;p&gt;Use &lt;a href=&quot;http://lifehacker.com/this-graphic-helps-you-pick-your-first-programming-lang-1719213677&quot;&gt;this chart&lt;/a&gt; to decide your first programming language. Hey, come back! I was just making a point. Hello?&lt;/p&gt;
+
+&lt;p&gt;For those of you who stayed, charts like this are just about the worst way to choose a programming language.&lt;/p&gt;
+
+&lt;h1 id=&quot;my-saga&quot;&gt;My Saga&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;If you don’t want to read the long personal story of my relationship with programming, you can take the elevator &lt;a href=&quot;#Its-easy-to-learn-new-languages&quot;&gt;another floor down&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/fx9750gii.jpeg&quot; alt=&quot;Casio fx-9750GII&quot; /&gt;
+&lt;figcaption&gt;The fx-9750GII&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This is a Casio fx-9750GII, the device that first introduced me to programming. It was given to me on my 14th birthday and I was overjoyed. The first thing I did was start reading the manual from page one. After getting through the calculating and graphing sections, I came across a chapter I didn’t expect to see, labeled “Programming”. Well, right there I decided I was going to program the thing (there was no tutorial, just a syntax guide and documentation of the built-in functions). My first program ever was named &lt;code class=&quot;highlighter-rouge&quot;&gt;SQRT&lt;/code&gt;, and it looked something like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;?→A
+Locate 1,1,√A
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It took user input, assigned it to &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt;, and then printed the square root of &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt; at position &lt;code class=&quot;highlighter-rouge&quot;&gt;1, 1&lt;/code&gt; on the screen. My next program printed “Yay I can code!” over and over and over again. As much as I hate to admit it, it used &lt;code class=&quot;highlighter-rouge&quot;&gt;goto&lt;/code&gt; instead of a &lt;code class=&quot;highlighter-rouge&quot;&gt;while&lt;/code&gt; loop.&lt;/p&gt;
+
+&lt;p&gt;Fast forward a couple months. I had learned from some friendly people on the &lt;a href=&quot;http://casiocalc.org/&quot;&gt;Universal Casio Forums&lt;/a&gt; that using &lt;code class=&quot;highlighter-rouge&quot;&gt;goto&lt;/code&gt; was usually a bad idea, and had started using loops and subroutines to organize my code. I had also begun to realize that Casio’s BASIC dialect was pretty slow for anything other than math. Since I wanted to program games for it, I started researching other ways to program calculators. After googling around a bit I learned that the hardware on my calculator was actually the same as the hardware on the fx-9860GII, which had an SDK for developing &lt;em&gt;addins&lt;/em&gt; for it in C. So I installed a third-party custom ROM with the addin feature flag set to true, and got to work learning C.&lt;/p&gt;
+
+&lt;p&gt;There was a problem, though. Writing C for that calculator was hard. Most of the default libraries that online C tutorials referenced were not available or were named differently, and the documentation for the SDK was somewhat obscure. I ended up going back to good old BASIC and optimizing the programs I wrote to try to improve their speed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Lua-logo-nolabel.svg/128px-Lua-logo-nolabel.svg.png&quot; alt=&quot;Lua logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This wasn’t the end though, because a couple weeks later I came across a thread on a french calculator forum announcing development on a Lua port for the fx9860GII. I couldn’t wait for the first release, and probably pestered the developers much more than I should have (to the point where I am surprised they continued to put up with me), but it finally came.&lt;/p&gt;
+
+&lt;p&gt;And then I dove into Lua. I wrote sh’mups. I made some obstacle dodging games. I wrote a couple libraries to help other developers who came my way. Life was good.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/prizm.jpeg&quot; alt=&quot;Casio fx-9750GII&quot; /&gt;
+&lt;figcaption&gt;The Casio PRIZM&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Until Casio released the &lt;a href=&quot;http://www.casioeducation.com/prizm&quot;&gt;PRIZM&lt;/a&gt;. It had colors! I had to have one, but I knew no one would justify $99 on another calculator when the one I had was working just fine. And then it happened. Casio started a promotion where they gave away free PRIZM’s to people who finished their online training course. I took the course, and a week later my beautiful PRIZM was waiting for me in the mailbox. So I delved deep into the inner workings of the PRIZM, managing to brick three of them in two years before Casio got suspicious and stopped sending replacements (though I hadn’t voided my warranty).&lt;/p&gt;
+
+&lt;p&gt;Around the same time one of my dad’s friends wanted a website built for his company and my dad asked if I wanted to try building one for him. I took that offer and spent two months learning HTML and CSS, as well as GIMP and Inkscape so I could make the background image. The website I made &lt;a href=&quot;https://web.archive.org/web/20120625182415/http://www.atgworldwide.us/&quot;&gt;looked somewhat crude&lt;/a&gt;, but  the my dad’s friend liked it and I was proud of it.&lt;/p&gt;
+
+&lt;p&gt;I spent my free time in the next couple years experimenting with web programming, and hacking on my calculator, eventually starting &lt;a href=&quot;http://casio.clrhome.org/&quot;&gt;a blog&lt;/a&gt; to try to help other people learn to program their calculators as well. The experience with the blog got me into web development, and I ended up freelancing during my last two high school summers. I built a website in vanilla PHP for converting PNG images to sprites that calculators could understand and then uploading them to share, in the process learning about open source licenses, filetype validation, and basic hacking techniques like SQL injection. That experience led me to &lt;a href=&quot;http://laravel.com/&quot;&gt;Laravel&lt;/a&gt;, an excellent MVC framework written in PHP which allowed me to write much more organized and safe code.&lt;/p&gt;
+
+&lt;p&gt;The summer following learning Laravel, I decided to challenge myself by learning Haskell, which I had heard would help me thing about coding problems in a different way. Boy, did it. It took me a long time to learn, not only because it is a completely different paradigm, but because I was my first real experience with a statically typed language since C.&lt;/p&gt;
+
+&lt;p&gt;In the end I had a pretty satisfying sense of accomplishment, and I wondered if I had learned enough to be able to make it into the world of professional programmers. So I wrote up a resumé, took a look around, and applied for a couple of junior web developer positions, not really expecting anything to happen since I was less than a year out of high school, but a couple days later I started getting phone interviews, then face-to-face interviews, and ended up starting at &lt;a href=&quot;http://pantherpremium.com/&quot;&gt;Panther&lt;/a&gt; about a month later. This happened even though they develop exclusively in C# on the backend, and I was very open about the fact that I hadn’t touched the language at all.&lt;/p&gt;
+
+&lt;p&gt;The fact of the matter was, I had enough general programming experience to build on that I didn’t need to know the language I was going to work in. It took me two weeks to get familiar enough with C# to start working on projects. Which makes a good segway for my next point.&lt;/p&gt;
+
+&lt;h1 id=&quot;its-easy-to-learn-new-languages&quot;&gt;It’s easy to learn new languages.&lt;/h1&gt;
+
+&lt;p&gt;Take a look at this code:&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now have a look at this:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And this (getting a little trickier):&lt;/p&gt;
+
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The point is, knowing one language makes learning another much easier. Even with Python’s different syntax, the &lt;code class=&quot;highlighter-rouge&quot;&gt;if&lt;/code&gt; statement still works the same way.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Even though the syntax has changed slightly and the curly brackets are gone, you still know what an &lt;code class=&quot;highlighter-rouge&quot;&gt;if&lt;/code&gt; statement is and when to use it. Programming is 90% thinking and 10% typing. Knowing what to express is more important than knowing how to express it.&lt;/p&gt;
+
+&lt;p&gt;So Ruby developers make more, on average, than Python developers? Who cares? You can always switch later.&lt;/p&gt;
+
+&lt;h1 id=&quot;one-language-programmers-considered-harmful&quot;&gt;One-language programmers considered harmful&lt;/h1&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;https://i.imgflip.com/p8zfl.jpg&quot; alt=&quot;One does not simply learn one language only.&quot; /&gt;
+&lt;figcaption&gt;Boromir even knows!&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;(Yes, I know, &lt;a href=&quot;http://meyerweb.com/eric/comment/chech.html&quot;&gt;it’s cliché&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;You can’t know the shortcomings of a language unless you experience them yourself. Regardless of how much you may think you know that PHP “doesn’t scale”, without attempting to use it for a large project you will never truly understand what that means. Conversly, unless you have experienced the shortcomings of vanilla PHP, you won’t truly appreciate the added perceived complexity of an MVC framework like Django.&lt;/p&gt;
+
+&lt;p&gt;When starting out in programming, you can’t know what you don’t know. A man who has lived his entire life in a totalitarian state without ever hearing of freedom doesn’t understand why he would want it. Likewise, someone who has never experienced functional programming would never know why or when to use &lt;code class=&quot;highlighter-rouge&quot;&gt;map&lt;/code&gt; in Python or pass functions as arguments in C#.&lt;/p&gt;
+
+&lt;h1 id=&quot;skill-is-directly-proportional-to-salary&quot;&gt;Skill is directly proportional to salary&lt;/h1&gt;
+
+&lt;p&gt;The idea that the language you code in is a major factor in the amount of money you make is also somewhat absurd. The first problem is that those are average salaries – a great PHP developer can make more at Facebook than a Python developer is going to make writing one-off scripts at a small business (not a far-fetched example either, I have a coworker who did just that before switching to C#).&lt;/p&gt;
+
+&lt;p&gt;The application you write code for is actually more related to your salary than the language you are coding in. Writing guidance systems in Ada at NASA or fly-by-wire systems in FORTRAN for General Dynamics is going to be more lucrative than designing websites for small companies in Ruby on Rails. That said, your expertise may be in animations and interface design instead of the more technical side of programming. This is absolutely fine. Persue what you enjoy.&lt;/p&gt;
+
+&lt;h1 id=&quot;no-one-remembers-you-for-your-code&quot;&gt;No one remembers you for your code&lt;/h1&gt;
+
+&lt;p&gt;One last point before wrapping up (promise!): no one is going to remember you for the language you programmed in, but they &lt;em&gt;will&lt;/em&gt; remember the products you build. No one is going to remember Mark Zuckerberg because he was a PHP whiz, they’ll remember him for Facebook.&lt;/p&gt;
+
+&lt;blockquote class=&quot;pull-quote&quot;&gt;
+Don't worry about languages, go build awesome stuff!
+&lt;/blockquote&gt;
+
+</description>
+        <pubDate>Tue, 04 Aug 2015 00:00:00 +0000</pubDate>
+        <link>http://markfischerjr.com//culture/programming/2015/08/04/dont-worry-just-build.html</link>
+        <guid isPermaLink="true">http://markfischerjr.com//culture/programming/2015/08/04/dont-worry-just-build.html</guid>
+        
+        
+        <category>culture</category>
+        
+        <category>programming</category>
         
       </item>
     
