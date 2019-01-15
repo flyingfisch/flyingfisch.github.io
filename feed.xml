@@ -4,11 +4,11 @@
     <title>Expositus</title>
     <description>My personal blog where I post about programming as well as other topics.
 </description>
-    <link>http://flyingfisch.github.io/</link>
-    <atom:link href="http://flyingfisch.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 09 Apr 2018 16:13:12 +0000</pubDate>
-    <lastBuildDate>Mon, 09 Apr 2018 16:13:12 +0000</lastBuildDate>
-    <generator>Jekyll v3.7.3</generator>
+    <link>http://markfischerjr.com//</link>
+    <atom:link href="http://markfischerjr.com//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 15 Jan 2019 13:57:14 +0000</pubDate>
+    <lastBuildDate>Tue, 15 Jan 2019 13:57:14 +0000</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
     
       <item>
         <title>Grocery stores are broken</title>
@@ -39,8 +39,8 @@
 &lt;p&gt;A future with self-driving cars and colonies in space is fun to think about, but a future where experiences such as these are resolved is also important. The best thing is, that future can start today.&lt;/p&gt;
 </description>
         <pubDate>Sun, 08 Apr 2018 16:13:38 +0000</pubDate>
-        <link>http://flyingfisch.github.io/rant/2018/04/08/grocery-stores-are-broken.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/rant/2018/04/08/grocery-stores-are-broken.html</guid>
+        <link>http://markfischerjr.com//rant/2018/04/08/grocery-stores-are-broken.html</link>
+        <guid isPermaLink="true">http://markfischerjr.com//rant/2018/04/08/grocery-stores-are-broken.html</guid>
         
         
         <category>rant</category>
@@ -52,8 +52,8 @@
         <description>&lt;p&gt;Ran into a fun little bug with the Visual Studio Team Explorer widget today. I clicked “check in” as usual, and was met with this error: “Value was either too large or too small for a UINT32”. Turns out what that error actually means is that one of the files you are attempting to check in is unsaved. &lt;code class=&quot;highlighter-rouge&quot;&gt;File &amp;gt; Save All&lt;/code&gt; and clicking “check in” again fixes this.&lt;/p&gt;
 </description>
         <pubDate>Wed, 21 Mar 2018 00:00:00 +0000</pubDate>
-        <link>http://flyingfisch.github.io/2018/03/21/weird-tfs-error-message.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/2018/03/21/weird-tfs-error-message.html</guid>
+        <link>http://markfischerjr.com//2018/03/21/weird-tfs-error-message.html</link>
+        <guid isPermaLink="true">http://markfischerjr.com//2018/03/21/weird-tfs-error-message.html</guid>
         
         
       </item>
@@ -173,8 +173,8 @@
 &lt;p&gt;I’ll be blogging further findings as I get to them, at the moment I’m only about a week into test driven development (or behavior driven development or acceptance driven development or whatever it is we’re doing here). This post has just been about setting up the project structure, I’ll be getting into actual test writing and Continuous Integration using TFS in future posts. I might also add other web drivers or a headless web driver as this develops.&lt;/p&gt;
 </description>
         <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
-        <link>http://flyingfisch.github.io/testing/2018/03/20/automated-testing-with-mstest-and-selenium.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/testing/2018/03/20/automated-testing-with-mstest-and-selenium.html</guid>
+        <link>http://markfischerjr.com//testing/2018/03/20/automated-testing-with-mstest-and-selenium.html</link>
+        <guid isPermaLink="true">http://markfischerjr.com//testing/2018/03/20/automated-testing-with-mstest-and-selenium.html</guid>
         
         
         <category>testing</category>
@@ -228,8 +228,8 @@ But soon his next life shall begin&lt;br /&gt;
 Where spring will come again.&lt;/p&gt;
 </description>
         <pubDate>Thu, 22 Feb 2018 22:00:00 +0000</pubDate>
-        <link>http://flyingfisch.github.io/poetry/2018/02/22/poetry.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/poetry/2018/02/22/poetry.html</guid>
+        <link>http://markfischerjr.com//poetry/2018/02/22/poetry.html</link>
+        <guid isPermaLink="true">http://markfischerjr.com//poetry/2018/02/22/poetry.html</guid>
         
         
         <category>poetry</category>
@@ -270,8 +270,8 @@ Where spring will come again.&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 19 Aug 2016 00:00:00 +0000</pubDate>
-        <link>http://flyingfisch.github.io/javascript/2016/08/19/using-the-html5-notification-api.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/javascript/2016/08/19/using-the-html5-notification-api.html</guid>
+        <link>http://markfischerjr.com//javascript/2016/08/19/using-the-html5-notification-api.html</link>
+        <guid isPermaLink="true">http://markfischerjr.com//javascript/2016/08/19/using-the-html5-notification-api.html</guid>
         
         
         <category>javascript</category>
@@ -291,8 +291,8 @@ xmap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;C&lt;span class=&quot;
 
 </description>
         <pubDate>Sun, 07 Aug 2016 00:00:00 +0000</pubDate>
-        <link>http://flyingfisch.github.io/vim/2016/08/07/deoplete-and-neosnippet-compat.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/vim/2016/08/07/deoplete-and-neosnippet-compat.html</guid>
+        <link>http://markfischerjr.com//vim/2016/08/07/deoplete-and-neosnippet-compat.html</link>
+        <guid isPermaLink="true">http://markfischerjr.com//vim/2016/08/07/deoplete-and-neosnippet-compat.html</guid>
         
         
         <category>vim</category>
@@ -367,8 +367,8 @@ xmap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;C&lt;span class=&quot;
 
 </description>
         <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
-        <link>http://flyingfisch.github.io/flight-simulator/fsx/2016/08/01/best-fsx-plane.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/flight-simulator/fsx/2016/08/01/best-fsx-plane.html</guid>
+        <link>http://markfischerjr.com//flight-simulator/fsx/2016/08/01/best-fsx-plane.html</link>
+        <guid isPermaLink="true">http://markfischerjr.com//flight-simulator/fsx/2016/08/01/best-fsx-plane.html</guid>
         
         
         <category>flight-simulator</category>
@@ -402,8 +402,8 @@ xmap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;C&lt;span class=&quot;
 
 </description>
         <pubDate>Sun, 06 Mar 2016 00:00:00 +0000</pubDate>
-        <link>http://flyingfisch.github.io/programming/2016/03/06/a-thought-on-self-documenting-code.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/programming/2016/03/06/a-thought-on-self-documenting-code.html</guid>
+        <link>http://markfischerjr.com//programming/2016/03/06/a-thought-on-self-documenting-code.html</link>
+        <guid isPermaLink="true">http://markfischerjr.com//programming/2016/03/06/a-thought-on-self-documenting-code.html</guid>
         
         
         <category>programming</category>
@@ -449,8 +449,8 @@ $ sudo apt-get install cinnamon
 
 </description>
         <pubDate>Sun, 17 Jan 2016 00:00:00 +0000</pubDate>
-        <link>http://flyingfisch.github.io/linux/2016/01/17/linux-on-lenovo-x1-carbon.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/linux/2016/01/17/linux-on-lenovo-x1-carbon.html</guid>
+        <link>http://markfischerjr.com//linux/2016/01/17/linux-on-lenovo-x1-carbon.html</link>
+        <guid isPermaLink="true">http://markfischerjr.com//linux/2016/01/17/linux-on-lenovo-x1-carbon.html</guid>
         
         
         <category>linux</category>
@@ -569,8 +569,8 @@ Don't worry about languages, go build awesome stuff!
 
 </description>
         <pubDate>Tue, 04 Aug 2015 00:00:00 +0000</pubDate>
-        <link>http://flyingfisch.github.io/culture/programming/2015/08/04/dont-worry-just-build.html</link>
-        <guid isPermaLink="true">http://flyingfisch.github.io/culture/programming/2015/08/04/dont-worry-just-build.html</guid>
+        <link>http://markfischerjr.com//culture/programming/2015/08/04/dont-worry-just-build.html</link>
+        <guid isPermaLink="true">http://markfischerjr.com//culture/programming/2015/08/04/dont-worry-just-build.html</guid>
         
         
         <category>culture</category>
